@@ -42,7 +42,27 @@
 ### Porque ayuda?
 - Que pasa si actualizo un servidor 
 - En mi pc funciona
-- 
+- Se trabaja con el mismo entorno que en prod
+#### Maquinas virtuales vs Docker
+- ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/556x291/3c4f9c634ae255f11820e2569f708eed/image.png)
+- Una VM se podría traducir en un Contenedor
+- **Servidor físico con VM**
+  - Sistema operativo independiente de cada VM
+  - Hypervisor (gestor de vm)
+  - VM1,...,VMn
+    - Para cada Vi
+    - Sistema operativo independiente del físico
+    - Bin/Labs
+    - App-i
+  
+- **Servidor físico con Docker**
+  - Sistema operativo (compartido con los contenedores)
+  - Docker
+  - Container-1,...,Container-n
+    - Para cada Container-i
+    - Bin/Labs
+    - App-i
+  
 
 
 ## Comandos Docker
