@@ -183,6 +183,11 @@ RUN ./example.SH
     - No ha trabajado con esta arquitectura.
     - Propone instalar mmsql en el host y usando los contenedores conectarse al sqlserver
   - [Para ahorrar espacio se puede instalar las librerias en una imagen y que las otras utilicen esa imagen?](https://youtu.be/X0lFXKSjjxk?t=4674)
+    - No, cada imagen es independiente. Cuando la imagen se esta construyendo utiliza capas
+    - Docker es capaz de ver los puntos en común entre estas para reutilizar esas dependencias.
+  - [Todos los despliegues serán compatibles en wind?](https://youtu.be/X0lFXKSjjxk?t=4761)
+    - Todo funcionara 
+    - Se tendran consideraciones especiales para los **volúmenes**
 - [**``**]()
 - [**``**]()
 - [**``**]()
