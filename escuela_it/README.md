@@ -57,12 +57,15 @@
   
 - **Servidor físico con Docker**
   - Sistema operativo (compartido con los contenedores)
-  - Docker
+  - **Docker Engine**
   - Container-1,...,Container-n
     - Para cada Container-i
     - Bin/Labs
     - App-i
-  
+- En cada servidor que tenga **docker engine** se podrá desplegar cualquier **imágen** de docker
+- La imágen va ser todo el empaquetado de lo que se desea desplegar (tanto la app con las reglas de negocio como las libs, servicios y apps propias de infraestructura) y se va a poder desplegar multiples veces
+- Cuando la **imágen** esta desplegada le llamarémos **contenedor**
+- [La naturaleza de cada app]https://youtu.be/X0lFXKSjjxk?t=1083) nos indicará los requerimientos tanto de infraestructura como de lógica de negocio que necesitaremos para generar la imágen.
 
 
 ## Comandos Docker
