@@ -119,7 +119,27 @@ FROM ubuntu
 - **error:** No me va `docker build .`.  Creo que es pq no tengo activado **Hyper-V**
   - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/927x363/cef6621c24efa5d32c18411e442e8fac/image.png)
   - [Porque Docker necesita Hyper-V en windows?](https://stackoverflow.com/questions/48251703/if-docker-runs-natively-on-windows-then-why-does-it-need-hyper-v)
-- [`docker build .`](https://youtu.be/X0lFXKSjjxk?t=2707)
+- [**`docker build .`**](https://youtu.be/X0lFXKSjjxk?t=2707)
   - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/574x426/5e6cc7d73544e7c88a4f896305417d60/image.png)
-- [`docker images`](https://youtu.be/X0lFXKSjjxk?t=2868)
+- [**`docker images`**](https://youtu.be/X0lFXKSjjxk?t=2868)
   - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/864x256/84fbab463eb11d11af51fba7da277125/image.png)
+- [**`docker run -it <IMAGE ID> bash`**](https://youtu.be/X0lFXKSjjxk?t=2892)
+  - **-it** da permisos para entrar en el contenedor y que permaneza de forma interactivo
+  - bash el comando que se va a ejecutar dentro de contenedor.
+  - con esto ya se **inicia sesión** en el contenedor ^^
+  - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/339x73/d2ca10dcf8d56cb4cce1344c7e578619/image.png)
+- [**`docker ps -a`**](https://youtu.be/X0lFXKSjjxk?t=3066)
+  - Como no hay nada ejecutandose dentro del contenedor al salirnos (con exit) este se detiene.
+  - Status EXITED
+  - Cada vez que se lanza un contenedor se vuelve al punto inicial de la imagen.
+- [**`docker rm <tag contenedor>`**](https://youtu.be/X0lFXKSjjxk?t=3238)
+  - Elimino los contenedores que no se están usando
+- [**`docker build . --tag example:1 --no-cache`**](https://youtu.be/X0lFXKSjjxk?t=3328)
+  - **--no-cache** indica que no se va a usar de la cache. Reconstruye desde 0, por ejemplo cuando se cambia algo en el **Dockerfile**
+- [Se puede hacer algo para que el cont no se cierre?](https://youtu.be/X0lFXKSjjxk?t=3398)
+  - Si, cuando tenga un servicio permanente en el contenedor automaticamente no se cerrara.
+  -
+
+
+- [**``**]()
+
