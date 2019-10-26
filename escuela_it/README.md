@@ -67,6 +67,13 @@
 - Cuando la **imágen** esta desplegada le llamarémos **contenedor**
 - [La naturaleza de cada app]https://youtu.be/X0lFXKSjjxk?t=1083) nos indicará los requerimientos tanto de infraestructura como de lógica de negocio que necesitaremos para generar la imágen.
 
+## [Yb - Como funciona docker o como se generan las imágenes?](https://youtu.be/X0lFXKSjjxk?t=1137)
+- ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/1030x407/73647653a48c94de637110e214d7e75a/image.png)
+- **capas**
+  - Necesitaremos python 3.7, se obtiene del repo de imágenes [Docker Hub](https://cloud.docker.com/repository/list)
+  - A partir de esta imágen base, se puede agregar componentes y/o servicios que se necesiten en la app
+  - Ejemplo: Posgres, nginx, etc...
+  - Cada una de estas instrucciones (de instalación de los serv anteriores) se ejecutarán por capas
 
 ## Comandos Docker
 
