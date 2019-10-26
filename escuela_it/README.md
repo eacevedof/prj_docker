@@ -1,4 +1,5 @@
-# [escuela.it/cursos/curso-docker/](https://register.gotowebinar.com/recording/recordingView?webinarKey=1386177801230585859&registrantEmail=eacevedof%40yahoo.es)
+# [Youtube - Curso docker](https://www.youtube.com/watch?v=X0lFXKSjjxk&feature=youtu.be)
+  - [escuela.it/cursos/curso-docker/](https://register.gotowebinar.com/recording/recordingView?webinarKey=1386177801230585859&registrantEmail=eacevedof%40yahoo.es)
 
 ## Capitulo 01
 - Docker. 
@@ -32,4 +33,18 @@
   - Usando gitlab ^^ para tus pipelines
   - Consideraciones de Seguridad
   - Herramientas útiles que puedes usar con Docker
-  
+
+## Qué es Docker?
+- Empaquetaremos todo en un contenedor
+- Ubuntu
+- Alpy
+- Dependencias
+### Porque ayuda?
+- Que pasa si actualizo un servidor 
+- En mi pc funciona
+- 
+
+
+## Comandos Docker
+
+# 
