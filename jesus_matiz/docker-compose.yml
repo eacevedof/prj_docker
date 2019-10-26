@@ -4,11 +4,12 @@ services:
     image: mysql:5.7
     enviroment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: db_test1
+      MYSQL_DATABASE: db_chalan
       MYSQL_USER: eaf
       MYSQL_PASSWORD: eaf123
     ports:
-      - 33069
+      # puerto host:puerto contenedor
+      - 33069:3306
     volumes:
       - E:\projects\docker\databases\mysql_3.7:/var/lib/mysql
     networks: 
