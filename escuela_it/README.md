@@ -129,6 +129,7 @@ FROM ubuntu
   - con esto ya se **inicia sesión** en el contenedor ^^
   - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/339x73/d2ca10dcf8d56cb4cce1344c7e578619/image.png)
 - [**`docker ps -a`**](https://youtu.be/X0lFXKSjjxk?t=3066)
+  - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/1181x136/a8769c67b7c9c1b9662d26c8b750c52e/image.png)
   - Como no hay nada ejecutandose dentro del contenedor al salirnos (con exit) este se detiene.
   - Status EXITED
   - Cada vez que se lanza un contenedor se vuelve al punto inicial de la imagen.
@@ -142,7 +143,9 @@ FROM ubuntu
   - Esto dará error si el contenedor sigue corriendo
 - [**`docker rm -f <hash>|<name>`**](https://youtu.be/X0lFXKSjjxk?t=4127)
   - Fuerza el borrado aunque este corriendo el contenedor
-- [**``**]()
-- [**``**]()
+- [**`docker rm -f $(docker ps -aq)`**](https://youtu.be/X0lFXKSjjxk?t=4178)
+  - Elimina todos los contenedores. `$(docker ps -aq)` extrae los *CONTAINER ID*
+- [**`docker images`**](https://youtu.be/X0lFXKSjjxk?t=4202)
+  - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/866x357/4efe086feb13cfd163c2dba99a6c43c3/image.png)
 - [**``**]()
 
