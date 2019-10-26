@@ -73,7 +73,14 @@
   - Necesitaremos python 3.7, se obtiene del repo de imágenes [Docker Hub](https://cloud.docker.com/repository/list)
   - A partir de esta imágen base, se puede agregar componentes y/o servicios que se necesiten en la app
   - Ejemplo: Posgres, nginx, etc...
+    ```js
+    FROM python: 3.7
+    RUN apt-get install -g postregsql
+    RUN apt-get install -g nginx
+    RUN pip install -r requirements.txt
+    ```
   - Cada una de estas instrucciones (de instalación de los serv anteriores) se ejecutarán por capas
+  - Todas estas instrucciones terminarán formando una **receta**
 
 ## Comandos Docker
 
