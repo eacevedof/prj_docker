@@ -83,7 +83,7 @@
   - Todas estas instrucciones terminarán formando una **receta**
 
 - **Preguntas**
-  - Se puede reutilizar el mismo dockerfile en distintos proyectos?.
+  - Se puede reutilizar el mismo Dockerfile en distintos proyectos?.
     - Si, en dockerhub
   - Las apps necesitan requerimientos especificos para docker?
     - No, es suficiente declarar los requerimientos en la **receta**
@@ -98,9 +98,26 @@
     - Cuando a la imagen le hago docker run se convierte en un contenedor.
     - **`docker file => docker build => imagen => docker run => contenedor`**
     - Para bases de datos tendremos que montar volumenes, ya que apenas se para el contenedor no hay datos.
-    
-    
-
+### [Yb - Dockerfile](https://youtu.be/X0lFXKSjjxk?t=1929)
+```js
+FROM ubuntu
+```
+- Preguntas
+  - [Se tiene que descargar la img antes de ejecutar Dockerfile o se descargará automaticamente?](https://youtu.be/X0lFXKSjjxk?t=2238)
+    - Se descarga al ejecutar el **Dockerfile**
+    - Las lineas de las recetas se van a convertir en una img con un tag
+    - Se almacenará en local pero tendría la posibilidad de compartirla en dockerhub
+  - [Instalación de extension de Docker](https://youtu.be/X0lFXKSjjxk?t=2319)
+  - [Software malicioso en imagenes?](https://youtu.be/X0lFXKSjjxk?t=2347)
+    - Abrimos la receta, el [**Dockerfile** en github](https://github.com/docker-library/mysql/blob/6659750146b7a6b91a96c786729b4d482cf49fe6/8.0/Dockerfile), podremos revisar las instrucciones
+    - Se recomienda usar las recetas oficiales.
+  - [Puedo migrar mi infra a docker?](https://youtu.be/X0lFXKSjjxk?t=2414)
+    - Directamente no.
+    - Habría que definir los paquetes (en Dockerfile)
 ## Comandos Docker
+- [Trello](https://trello.com/b/xxK10wBd/docker)
+- **error:** No me va `docker build .`.  Creo que es pq no tengo activado **Hyper-V**
+  - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/927x363/cef6621c24efa5d32c18411e442e8fac/image.png)
+  - [Porque Docker necesita Hyper-V en windows?](https://stackoverflow.com/questions/48251703/if-docker-runs-natively-on-windows-then-why-does-it-need-hyper-v)
+- [`docker build .`](https://youtu.be/X0lFXKSjjxk?t=2707)
 
-# 
