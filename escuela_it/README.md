@@ -82,6 +82,23 @@
   - Cada una de estas instrucciones (de instalación de los serv anteriores) se ejecutarán por capas
   - Todas estas instrucciones terminarán formando una **receta**
 
+- **Preguntas**
+  - Se puede reutilizar el mismo dockerfile en distintos proyectos?.
+    - Si, en dockerhub
+  - Las apps necesitan requerimientos especificos para docker?
+    - No, es suficiente declarar los requerimientos en la **receta**
+    - Para desarrollo trabajaremos con un volumen. (mapeo carpeta loc ruta en el contenedor)
+    - [De esta forma](https://youtu.be/X0lFXKSjjxk?t=1525) haremos nuestros cambios, hacemos el build de la app (como si hicieramos un pseudo despliegue en prod) dentro del contenedor.
+    - Versionamos el contenedor.
+  - Cada contenedor tendra sus dependencias de forma independiente, esto no implica el consumo de más recursos?
+    - Se puede gestionar cada contendor de forma aislada con sus propios recursos.
+  - [Contenedores, imágenes y volumen:](https://youtu.be/X0lFXKSjjxk?t=1720)
+    - Al definir un docker file, definimos las instrucciones que generan una imágen.
+    - Cuando al docker-file le hago docker build se convierte una imágen
+    - Cuando a la imagen le hago docker run se convierte en un contenedor.
+    - **`docker file => docker build => imagen => docker run => contenedor`**
+    
+
 ## Comandos Docker
 
 # 
