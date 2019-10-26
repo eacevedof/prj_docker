@@ -170,6 +170,19 @@ RUN ./example.SH
   - Una vez eliminada la imagen eliminara todas sus dependencias
   - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/715x283/e8b4f2e3f57c0459b3ce22790a86db90/image.png)
   - Es importante ir limpiando el sistema sobretodo cuando versionamos imagenes y lo desplegamos en producción.
+  - **Preguntas**
+  - [Dockerfile vs Dockercompose](https://youtu.be/X0lFXKSjjxk?t=4399)
+    - Dockerfile es la configuración para un contenedor
+    - Dockercompose (orquestación) configuración de interacción entre los contenedores
+    - Con dockercompose podría montar cada servicio en un contenedor independiente esto me permitará escabilidad
+  - [Veremos algún orquestador de contenedores? Docker swarn o Kubernetes](https://youtu.be/X0lFXKSjjxk?t=4584)
+    - Se presentará como funcionan, no su utilización en profundidad.
+    - Se explicará como usarlos con AWS para desplegar contenedores
+    - Se mirará como se orquesta y como se define el paso a producción.
+  - [Se puede tener un sqlserver en un cont windows serv 2017?](https://youtu.be/X0lFXKSjjxk?t=4620)
+    - No ha trabajado con esta arquitectura.
+    - Propone instalar mmsql en el host y usando los contenedores conectarse al sqlserver
+  - [Para ahorrar espacio se puede instalar las librerias en una imagen y que las otras utilicen esa imagen?](https://youtu.be/X0lFXKSjjxk?t=4674)
 - [**``**]()
 - [**``**]()
 - [**``**]()
