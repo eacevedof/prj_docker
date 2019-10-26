@@ -97,6 +97,8 @@
     - Cuando al docker-file le hago docker build se convierte una imágen
     - Cuando a la imagen le hago docker run se convierte en un contenedor.
     - **`docker file => docker build => imagen => docker run => contenedor`**
+    - Para bases de datos tendremos que montar volumenes, ya que apenas se para el contenedor no hay datos.
+    
     
 
 ## Comandos Docker
