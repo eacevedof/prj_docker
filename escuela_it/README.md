@@ -188,9 +188,9 @@ RUN ./example.SH
   - [Todos los despliegues serán compatibles en wind?](https://youtu.be/X0lFXKSjjxk?t=4761)
     - Todo funcionara 
     - Se tendran consideraciones especiales para los **volúmenes**
-- [**``**]()
-- [**``**]()
-- [**``**]()
-- [**``**]()
+
+## Mis preguntas:
+- Que es un pipeline?
+
 
 
