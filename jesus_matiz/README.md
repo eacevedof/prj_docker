@@ -4,3 +4,5 @@
   - **-d** interactivo
   - Puede que de un error: Pool overlaps with oter one on this address space
   - Se debe a que otro contenedor está usando esta ip
+- [**`docker exec -it 7430 /bin/bash`**](https://youtu.be/q7v2Qqf2Vmk?t=1424)
+  - Entra de modo interactivo al contenedor
