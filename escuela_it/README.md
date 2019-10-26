@@ -138,8 +138,11 @@ FROM ubuntu
   - **--no-cache** indica que no se va a usar de la cache. Reconstruye desde 0, por ejemplo cuando se cambia algo en el **Dockerfile**
 - [Se puede hacer algo para que el cont no se cierre?](https://youtu.be/X0lFXKSjjxk?t=3398)
   - Si, cuando tenga un servicio permanente en el contenedor automaticamente no se cerrara.
-  -
-
-
+- [**`docker rm <hash>|<name>`**](https://youtu.be/X0lFXKSjjxk?t=4035)
+  - Esto dará error si el contenedor sigue corriendo
+- [**`docker rm -f <hash>|<name>`**](https://youtu.be/X0lFXKSjjxk?t=4127)
+  - Fuerza el borrado aunque este corriendo el contenedor
+- [**``**]()
+- [**``**]()
 - [**``**]()
 
