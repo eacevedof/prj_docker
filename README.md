@@ -8,6 +8,7 @@
 
 ## Notas.
 - Para arrancar docker en windows hay que lanzar el **Docker Quickstar Terminal** en modo administrador
+- **`<programs>\git-bash.exe --login -i "<programs>\docker-toolbox\start.sh"`**
 - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/300x160/4fa986b5a080f668ffe7ca1332d1f509/image.png)
 - Esto resolvió el problema
 ```
