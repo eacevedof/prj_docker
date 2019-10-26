@@ -121,5 +121,5 @@ FROM ubuntu
   - [Porque Docker necesita Hyper-V en windows?](https://stackoverflow.com/questions/48251703/if-docker-runs-natively-on-windows-then-why-does-it-need-hyper-v)
 - [`docker build .`](https://youtu.be/X0lFXKSjjxk?t=2707)
   - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/574x426/5e6cc7d73544e7c88a4f896305417d60/image.png)
-- [`docker images`][https://youtu.be/X0lFXKSjjxk?t=2868] 
+- [`docker images`](https://youtu.be/X0lFXKSjjxk?t=2868)
   - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/864x256/84fbab463eb11d11af51fba7da277125/image.png)
