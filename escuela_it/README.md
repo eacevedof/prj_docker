@@ -145,7 +145,7 @@ FROM ubuntu
   - Fuerza el borrado aunque este corriendo el contenedor
 - [**`docker rm -f $(docker ps -aq)`**](https://youtu.be/X0lFXKSjjxk?t=4178)
   - Elimina todos los contenedores. `$(docker ps -aq)` extrae los *CONTAINER ID*
-- [**`docker images`**](https://youtu.be/X0lFXKSjjxk?t=4200)
+- [**`docker images`**](https://youtu.be/X0lFXKSjjxk?t=4189)
   - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/866x357/4efe086feb13cfd163c2dba99a6c43c3/image.png)
 - [**``**]()
 
