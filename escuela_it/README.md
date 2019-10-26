@@ -1,4 +1,5 @@
-# [Youtube - Curso docker](https://www.youtube.com/watch?v=X0lFXKSjjxk&feature=youtu.be)
+# [Youtube - Curso docker by Carlos Martinez](https://www.youtube.com/watch?v=X0lFXKSjjxk&feature=youtu.be)
+  - [@carlosmart626](https://twitter.com/carlosmart626)
   - [escuela.it/cursos/curso-docker/](https://register.gotowebinar.com/recording/recordingView?webinarKey=1386177801230585859&registrantEmail=eacevedof%40yahoo.es)
 
 ## Capitulo 01
