@@ -33,6 +33,7 @@ latavel-prod:
     context: ./
     dockerfile: dockerfile
   ports:
+    # será equivalente a: http://localhost:8200/
     - 8200:80
   volume:
     - E:\projects\prj_elchalanaruba:/var/www/
@@ -121,6 +122,7 @@ services.laravel-db.ports contains unsupported option: '33069'
   ```
   - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/1029x117/f59cbe9b236dfe04a5946d5451f9d8e6/image.png)
   - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5db43f16df811534517445ec/9ef401a42f3e99506fc5bfe72729f5a2/image.png)
+  - Veo un problema: El mysql tiene un tamaños de 210 MB recien instalado. Si esto se hace para cada imágen se me dispararía el espacio en disco.
 
 ### Comandos básicos:
 ```js
