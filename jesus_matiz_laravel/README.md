@@ -2,16 +2,20 @@
 
 ### Comandos básicos:
 ```js
-//accediendo por bash MINGW64
-winpty docker exec -it e057 //bin//bash
-//accediendo por bash cmder
-docker exec -it e057 /bin/bash
-//construyendo la imagen y levantando los contenedores con esta imagen
-docker-compose up -d
 //borrar todos los contenedores
 docker rm -f $(docker ps -aq)
+
 //borrar todas las imagenes
 docker rmi -f $(docker images -aq)
+
+//construyendo la imagen y levantando los contenedores con esta imagen
+docker-compose up -d
+
+//accediendo por bash MINGW64
+winpty docker exec -it e057 //bin//bash
+
+//accediendo por bash cmder
+//docker exec -it e057 /bin/bash
 ```
 
 - [**`docker-compose up -d`**](https://youtu.be/q7v2Qqf2Vmk?t=1217)
@@ -32,10 +36,10 @@ services:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: 
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: db_killme
-      MYSQL_USER: fulled
-      MYSQL_PASSWORD: usr1234
+      MYSQL_USER: userfull
+      MYSQL_PASSWORD: userfull
     ports:
       # puerto externo: puerto interno
       - 3306:3306

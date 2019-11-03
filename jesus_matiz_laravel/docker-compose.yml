@@ -5,10 +5,10 @@ services:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: 
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: db_killme
-      MYSQL_USER: fulled
-      MYSQL_PASSWORD: usr1234
+      MYSQL_USER: userfull
+      MYSQL_PASSWORD: userfull
     ports:
       # puerto externo: puerto interno
       - 3306:3306
