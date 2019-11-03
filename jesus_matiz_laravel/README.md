@@ -78,8 +78,5 @@ SECURITY WARNING: You are building a Docker image from Windows against a non-Win
 λ docker-compose up -d
 ERROR: The Compose file '.\docker-compose.yml' is invalid because:
 Unsupported config option for services.laravel-db: 'enviroment'
-Invalid top-level property "latavel-prod". Valid top-level sections for this Compose file are: version, services, networks, volumes, secrets, configs, and extensions starting with "x-".
-
-You might be seeing this error because you're using the wrong Compose file version. Either specify a supported version (e.g "2.2" or "3.3") and place your service definitions under the `services` key, or omit the `version` key and place your service definitions at the root of the file to use version 1.
-For more on the Compose file format versions, see https://docs.docker.com/compose/compose-file/
+services.laravel-db.ports contains unsupported option: '33069'
 ```

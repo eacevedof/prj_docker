@@ -1,42 +1,49 @@
 version: '3.7'
 services:
-  database:
-    build:
-      context: ./database
-      dockerfile: db.dockerfile
-    container_name: web_database
-    environment:
+  # servicio 1: La base de datos
+  laravel-db:
+    image: mysql:5.7
+    enviroment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: docker-laravel
-      MYSQL_USER: user_laravel
-      MYSQL_PASSWORD: user2019
+      MYSQL_DATABASE: laravel_prod
+      MYSQL_USER: usr_laravel
+      MYSQL_PASSWORD: usr1234
     ports:
-      - 33069:3306
+      # puerto externo: puerto interno
+      - 33069:
     volumes:
-      - ./database/schemas:/var/lib/mysql
+      - ./database/schemas/:/var/lib/mysql
     networks:
-      laravel_net:
-        ipv4_address: 172.16.100.9
-  backend:
+      laravel_prod_net:
+        ipv4_address: 173.22.100.9
+
+  # servicio 2: La instalación de apache
+  laravel-prod:
     build:
-      context: ./api
-      dockerfile: api.dockerfile
-    container_name: web_backend
-    depends_on:
-      - database
+      # context: de donde se va a recuperar la configuración para la instalación
+      context: ./
+      dockerfile: dockerfile
     ports:
       - 8200:80
     volumes:
-      - ./api:/var/www
-      - ./api/public:/var/www/html
+      - ./example-prod:/var/www/
+      - ./example-prod/public:/var/www/html
     networks:
-      laravel_net:
-        ipv4_address: 172.16.100.10
+      laravel_prod_net:
+        ipv4_address: 173.22.100.10
+    # depends_on indica que se cree primero la bd (servicio 1)
+    depends_on:
+      - laravel-db
+
+# se confirman los volumenes
+volumes:
+  example-prod:  # carpeta ./example-prod
+  database:      # carpeta ./database
 networks:
-  laravel_net:
+  laravel_prod_net:
     driver: bridge
     ipam:
       driver: default
       config:
-        -
-          subnet: 172.16.100.0/24
+        - 
+          subnet: 173.22.100.0/24
