@@ -92,28 +92,7 @@ services.laravel-db.ports contains unsupported option: '33069'
   Creating volume "jesus_matiz_laravel_example-prod" with default driver
   Creating volume "jesus_matiz_laravel_database" with default driver
   Pulling laravel-db (mysql:5.7)...
-  5.7: Pulling from library/mysql
-  80369df48736: Pull complete
-  e8f52315cb10: Pull complete
-  cf2189b391fc: Pull complete
-  cc98f645c682: Pull complete
-  27a27ac83f74: Pull complete
-  fa1f04453414: Pull complete
-  d45bf7d22d33: Pull complete
-  c7d49ffebc56: Pull complete
-  511a8052b204: Pull complete
-  5d5df4c12444: Pull complete
-  d482603a2922: Pull complete
-  Digest: sha256:44b33224e3c406bf50b5a2ee4286ed0d7f2c5aec1f7fdb70291f7f7c570284dd
-  Status: Downloaded newer image for mysql:5.7
-  Building laravel-prod
-  Step 1/2 : FROM php:7.3-apache
-  ---> d04b0f5fdc60
-  Step 2/2 : RUN apt-get update                                      && apt-get install -y                               && docker-php-ext-install mysqli pdo pdo_mysql      && a2enmod rewrite
-              && chmod 777 -R -c /var/www
-  ---> Using cache
-  ---> 34cb9f31d6a4
-
+  ...
   Successfully built 34cb9f31d6a4
   Successfully tagged jesus_matiz_laravel_laravel-prod:latest
   WARNING: Image for service laravel-prod was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
@@ -124,8 +103,27 @@ services.laravel-db.ports contains unsupported option: '33069'
   - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5db43f16df811534517445ec/9ef401a42f3e99506fc5bfe72729f5a2/image.png)
   - Veo un problema: El mysql tiene un tamaños de 210 MB recien instalado. Si esto se hace para cada imágen se me dispararía el espacio en disco.
 
+- **docker exec -it e057 /bin/bash**
+  - En **cmder** va ok
+  - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/417x225/5b7ce272a66e71913472112bada3f4cd/image.png)
+  - En **MINGW64** va mal
+  ```js
+  //este ocurre en MINGW64 (terminal de git)
+  $ docker exec -it e057 /bin/bash
+  the input device is not a TTY.  If you are using mintty, try prefixing the command with 'winpty'
+
+  //se soluciona agregando winpty y doble barra a bin/bash => //bin//bash
+  $ winpty docker exec -it e057 //bin//bash
+  root@e057e2ee35cc:/var/www/html#
+  ```
+
 ### Comandos básicos:
 ```js
+//accediendo por bash MINGW64
+winpty docker exec -it e057 //bin//bash
+//accediendo por bash cmder
+docker exec -it e057 /bin/bash
+//construyendo la imagen y levantando los contenedores con esta imagen
 docker-compose up -d
 //borrar todos los contenedores
 docker rm -f $(docker ps -aq)
