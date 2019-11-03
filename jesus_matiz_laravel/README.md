@@ -65,3 +65,8 @@ RUN apt-get update                                  \
     && a2enmod rewrite                              \
     && chmod 777 -R -c /var/www
 ```
+### Prueba concepto 03/11/2019
+```js
+// he ejecutado en esta misma carpeta:
+docker build .
+```
