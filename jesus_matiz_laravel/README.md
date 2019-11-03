@@ -119,3 +119,14 @@ services.laravel-db.ports contains unsupported option: '33069'
   Creating jesus_matiz_laravel_laravel-db_1 ... done
   Creating jesus_matiz_laravel_laravel-prod_1 ... done
   ```
+  - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/1029x117/f59cbe9b236dfe04a5946d5451f9d8e6/image.png)
+  - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5db43f16df811534517445ec/9ef401a42f3e99506fc5bfe72729f5a2/image.png)
+
+### Comandos básicos:
+```js
+docker-compose up -d
+//borrar todos los contenedores
+docker rm -f $(docker ps -aq)
+//borrar todas las imagenes
+docker rmi -f $(docker images -aq)
+```
