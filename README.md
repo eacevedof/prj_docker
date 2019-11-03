@@ -10,7 +10,7 @@
 - ~~Para arrancar docker en windows hay que lanzar el **Docker Quickstar Terminal** en modo administrador~~
 - ~~**`<programs>\git-bash.exe --login -i "<programs>\docker-toolbox\start.sh"`**~~
 - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/300x160/4fa986b5a080f668ffe7ca1332d1f509/image.png)
-- Esto resolvió el problema (no del todo)
+- **Esto SI resolvió el problema:**
   - Realmente habia que ejecutar **Docker desktop** al lanzar **DD** tarda unos 2 minutos el arranque completo
   - El terminal no hace falta ejecutarlo en *modo administrador*
   - > Despues ya se puede ejecutar **`docker images`**
