@@ -1,4 +1,4 @@
-version: '3.7'
+version: "3.7"
 services:
   # servicio 1: La base de datos
   laravel-db:
@@ -11,7 +11,7 @@ services:
       MYSQL_PASSWORD: usr1234
     ports:
       # puerto externo: puerto interno
-      - 33069:3306
+      - 3306:3306
     volumes:
       - ./database/schemas/:/var/lib/mysql
     networks:
