@@ -79,4 +79,43 @@ SECURITY WARNING: You are building a Docker image from Windows against a non-Win
 ERROR: The Compose file '.\docker-compose.yml' is invalid because:
 Unsupported config option for services.laravel-db: 'enviroment'
 services.laravel-db.ports contains unsupported option: '33069'
+
+//tenía mal la palabra enviroment. es "enviroNment" ^^
 ```
+- Ahora funciona:
+  - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5db43f16df811534517445ec/b029c21a9b7184f354ead3845138f04a/image.png)
+  ```js
+  E:\projects\prj_docker\jesus_matiz_laravel (master -> origin)
+  λ docker-compose up -d
+  Creating network "jesus_matiz_laravel_laravel_prod_net" with driver "bridge"
+  Creating volume "jesus_matiz_laravel_example-prod" with default driver
+  Creating volume "jesus_matiz_laravel_database" with default driver
+  Pulling laravel-db (mysql:5.7)...
+  5.7: Pulling from library/mysql
+  80369df48736: Pull complete
+  e8f52315cb10: Pull complete
+  cf2189b391fc: Pull complete
+  cc98f645c682: Pull complete
+  27a27ac83f74: Pull complete
+  fa1f04453414: Pull complete
+  d45bf7d22d33: Pull complete
+  c7d49ffebc56: Pull complete
+  511a8052b204: Pull complete
+  5d5df4c12444: Pull complete
+  d482603a2922: Pull complete
+  Digest: sha256:44b33224e3c406bf50b5a2ee4286ed0d7f2c5aec1f7fdb70291f7f7c570284dd
+  Status: Downloaded newer image for mysql:5.7
+  Building laravel-prod
+  Step 1/2 : FROM php:7.3-apache
+  ---> d04b0f5fdc60
+  Step 2/2 : RUN apt-get update                                      && apt-get install -y                               && docker-php-ext-install mysqli pdo pdo_mysql      && a2enmod rewrite
+              && chmod 777 -R -c /var/www
+  ---> Using cache
+  ---> 34cb9f31d6a4
+
+  Successfully built 34cb9f31d6a4
+  Successfully tagged jesus_matiz_laravel_laravel-prod:latest
+  WARNING: Image for service laravel-prod was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+  Creating jesus_matiz_laravel_laravel-db_1 ... done
+  Creating jesus_matiz_laravel_laravel-prod_1 ... done
+  ```

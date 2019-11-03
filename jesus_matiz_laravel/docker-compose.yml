@@ -3,14 +3,15 @@ services:
   # servicio 1: La base de datos
   laravel-db:
     image: mysql:5.7
-    enviroment:
+    restart: always
+    environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: laravel_prod
       MYSQL_USER: usr_laravel
       MYSQL_PASSWORD: usr1234
     ports:
       # puerto externo: puerto interno
-      - 33069:
+      - 33069:3306
     volumes:
       - ./database/schemas/:/var/lib/mysql
     networks:
