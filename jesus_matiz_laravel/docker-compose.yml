@@ -1,25 +1,25 @@
 version: "3.7"
 services:
   # servicio 1: La base de datos
-  laravel-db:
+  serv-mysql:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: laravel_prod
-      MYSQL_USER: usr_laravel
+      MYSQL_ROOT_PASSWORD: 
+      MYSQL_DATABASE: db_killme
+      MYSQL_USER: fulled
       MYSQL_PASSWORD: usr1234
     ports:
       # puerto externo: puerto interno
       - 3306:3306
     volumes:
-      - ./database/schemas/:/var/lib/mysql
+      - E:/projects/docker/databases/mysql_3.7/schemas:/var/lib/mysql
     networks:
       laravel_prod_net:
         ipv4_address: 173.22.100.9
 
   # servicio 2: La instalación de apache
-  laravel-prod:
+  serv-laravel:
     build:
       # context: de donde se va a recuperar la configuración para la instalación
       context: ./
@@ -34,12 +34,12 @@ services:
         ipv4_address: 173.22.100.10
     # depends_on indica que se cree primero la bd (servicio 1)
     depends_on:
-      - laravel-db
+      - serv-mysql
 
 # se confirman los volumenes
 volumes:
   example-prod:  # carpeta ./example-prod
-  database:      # carpeta ./database
+  database:      # carpeta E:/projects/docker/databases/mysql_3.7/schemas
 networks:
   laravel_prod_net:
     driver: bridge

@@ -1,5 +1,19 @@
 ## [Youtube - Laravel + MySql con Docker Despliegue a Produccion - Jesus Matíz](https://youtu.be/q7v2Qqf2Vmk)
 
+### Comandos básicos:
+```js
+//accediendo por bash MINGW64
+winpty docker exec -it e057 //bin//bash
+//accediendo por bash cmder
+docker exec -it e057 /bin/bash
+//construyendo la imagen y levantando los contenedores con esta imagen
+docker-compose up -d
+//borrar todos los contenedores
+docker rm -f $(docker ps -aq)
+//borrar todas las imagenes
+docker rmi -f $(docker images -aq)
+```
+
 - [**`docker-compose up -d`**](https://youtu.be/q7v2Qqf2Vmk?t=1217)
   - **-d** interactivo
   - Puede que de un error: Pool overlaps with oter one on this address space
@@ -13,40 +27,46 @@
 ```yml
 version: "3.7"
 services:
-  laravel-db:
+  # servicio 1: La base de datos
+  serv-mysql:
     image: mysql:5.7
-    enviroment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: db_chalan
-      MYSQL_USER: eaf
-      MYSQL_PASSWORD: eaf123
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 
+      MYSQL_DATABASE: db_killme
+      MYSQL_USER: fulled
+      MYSQL_PASSWORD: usr1234
     ports:
-      # puerto host:puerto contenedor
-      - 33069:3306
+      # puerto externo: puerto interno
+      - 3306:3306
     volumes:
-      - E:\projects\docker\databases\mysql_3.7:/var/lib/mysql
-    networks: 
-      latavel_prod_net:
-        ipv4_address: 172.21.100.9
-latavel-prod:
-  build:
-    context: ./
-    dockerfile: dockerfile
-  ports:
-    # será equivalente a: http://localhost:8200/
-    - 8200:80
-  volume:
-    - E:\projects\prj_elchalanaruba:/var/www/
-    - E:\projects\prj_elchalanaruba\the_public:/var/www/html
-  networks: 
-      latavel_prod_net:
-        ipv4_address: 172.21.100.10
-  depends_on:
-    # puntero a item anterior
-    - laravel-db
+      - E:/projects/docker/databases/mysql_3.7/schemas:/var/lib/mysql
+    networks:
+      laravel_prod_net:
+        ipv4_address: 173.22.100.9
+
+  # servicio 2: La instalación de apache
+  serv-laravel:
+    build:
+      # context: de donde se va a recuperar la configuración para la instalación
+      context: ./
+      dockerfile: dockerfile
+    ports:
+      - 8200:80
+    volumes:
+      - ./example-prod:/var/www/
+      - ./example-prod/public:/var/www/html
+    networks:
+      laravel_prod_net:
+        ipv4_address: 173.22.100.10
+    # depends_on indica que se cree primero la bd (servicio 1)
+    depends_on:
+      - serv-mysql
+
+# se confirman los volumenes
 volumes:
-  example-prod:
-  database:
+  example-prod:  # carpeta ./example-prod
+  database:      # carpeta E:/projects/docker/databases/mysql_3.7/schemas
 networks:
   laravel_prod_net:
     driver: bridge
@@ -54,7 +74,7 @@ networks:
       driver: default
       config:
         - 
-          subnet: 172.21.100.0/24
+          subnet: 173.22.100.0/24
 ```
 ### dockerfile
 ```yml
@@ -116,17 +136,3 @@ services.laravel-db.ports contains unsupported option: '33069'
   $ winpty docker exec -it e057 //bin//bash
   root@e057e2ee35cc:/var/www/html#
   ```
-
-### Comandos básicos:
-```js
-//accediendo por bash MINGW64
-winpty docker exec -it e057 //bin//bash
-//accediendo por bash cmder
-docker exec -it e057 /bin/bash
-//construyendo la imagen y levantando los contenedores con esta imagen
-docker-compose up -d
-//borrar todos los contenedores
-docker rm -f $(docker ps -aq)
-//borrar todas las imagenes
-docker rmi -f $(docker images -aq)
-```
