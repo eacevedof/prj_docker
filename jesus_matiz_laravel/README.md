@@ -6,13 +6,16 @@
 docker rm -f $(docker ps -aq)
 
 //borrar todas las imagenes
-docker rmi -f $(docker images -aq)
+//docker rmi -f $(docker images -aq)
+
+//re-construyendo la imagen
+docker-compose build
 
 //construyendo la imagen y levantando los contenedores con esta imagen
 docker-compose up -d
 
 //accediendo por bash MINGW64
-winpty docker exec -it e057 //bin//bash
+winpty docker exec -it bbd5e1ff1467 //bin//bash
 
 //accediendo por bash cmder
 //docker exec -it e057 /bin/bash
