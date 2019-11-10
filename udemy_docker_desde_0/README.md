@@ -80,7 +80,15 @@ systemctl enable docker
 - **docker images -q**
 ### [19. Práctica. Primeros pasos con contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9685168#questions)
 - [pdf practicas](https://a.udemycdn.com/2018-03-16_08-31-28-0ff693fad42beee2453cba8ce991f1d9/original.pdf?nva=20191110230129&download=True&filename=4-Visualizar-informaci-nde-contenedores-e-imagenes.pdf&token=03ff577d75ebc55b97bfd)
-### []()
+- **docker run -it ubuntu bash**
+  - Monta un contenedor de ubuntu y accede por shell
+- **docker run busybox**
+- **docker ps**
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1080x99/20a0b941a0c4d9bba1f08a6ac5be1deb/image.png)
+- **docker ps -a -f name=busy**
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1025x52/82e71292be614884fbb23e90b090bf43/image.png)
+  
+### [20. Crear un contenedor interactivo](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626196#questions)
 - 
 ### []()
 - 
