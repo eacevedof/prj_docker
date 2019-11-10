@@ -45,8 +45,16 @@
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/336x69/10b92ce8030d6dcdffa152f719a1001d/image.png) 
 - **`docker ps`** muestra el listado de contenedores
 
-### []()
-- 
+### [15. Prácticas con Arranque y parada de Docker](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9678000)
+- [Practica](https://a2.udemycdn.com/2018-03-15_14-50-42-4b352139a9c59ff669055d2759d7167b/original.pdf?nva=20191110214945&download=True&filename=3-Arrancar-y-parar-los-servicios-docker.pdf&token=034f3b5844f88d12498c6)
+```sh
+# centos
+docker version
+ps -ef | grep docker
+systemctl start Docker
+systemctl status docker
+systemctl enable docker
+```
 ### []()
 - 
 ### []()
