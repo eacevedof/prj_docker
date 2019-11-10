@@ -78,7 +78,7 @@ systemctl enable docker
 - **docker ps -a -f "name=<some name>"** listado con where name='some name'
 - **docker images**
 - **docker images -q**
-### []()
+### [19. Práctica. Primeros pasos con contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9685168#questions)
 - [pdf practicas](https://a.udemycdn.com/2018-03-16_08-31-28-0ff693fad42beee2453cba8ce991f1d9/original.pdf?nva=20191110230129&download=True&filename=4-Visualizar-informaci-nde-contenedores-e-imagenes.pdf&token=03ff577d75ebc55b97bfd)
 ### []()
 - 
