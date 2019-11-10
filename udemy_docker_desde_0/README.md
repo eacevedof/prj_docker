@@ -14,7 +14,14 @@
 ### [11. Instalar Docker en Windows Parte 1](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626120#overview)
 - Docker Toolbox está desactualizada
 ### [12. Instalar Windows en Docker Parte 2](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626858#overview)
-- 
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/396x244/ae59381db77f38adcb816fc81e6a4604/image.png)
+- Windows containers y linux container
+- Si trabajamos con windows containers es mas eficiente ya que no tiene que montar un Hyper-V con Moby que es el emulador linux
+- No se podían ejecutar en paralelo los Windows y los Linux, se debe seleccionar uno.
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/418x444/c40058eaaa53018ed385c57a7b6cab65/image.png)
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/731x604/51fa5b1e1548dad8b74a50c75ce2a714/image.png)
+- Los contenedores windows sirven para instalar servicios windows. 
+  - IIS, SSIS, .Net, Outlook, OneDrive, etc
 
 ## Sección 2: Trabajar con contenedores
 - [Github]()
