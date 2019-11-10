@@ -61,12 +61,25 @@ systemctl enable docker
   - busca la imagen hello-world en local
   - no la encuentra, la busca y descarga de Docker Hub
   - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/830x61/f1c354600a140110c8c788ac0106860d/image.png)
+### [17. Ver imágenes y contenedores Parte 1](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626180)
+- **docker images**
+- **docker ps**
+  - no muestra nada porque el contenedor que hemos arrancado se ha parado
+- **docker ps -a**
+  - `-a` todo (all)
+  - muestra los contenedores detenidos 
+  - **Exited (0)** es que se ha parado correctamente
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/923x71/0193e3491218e4b1b188ed5104e9e84c/image.png)
+
+### [18. Ver imágenes y contenedores Parte 2](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626186)
+- **docker ps -n 7** listado limit 7 Los ultimos 7 contenedores sobre los que se ha operado
+- **docker ps -a -q** listado de ids
+- **docker ps -a -n 3 -s** listado ultimos 3 con su tamaño (-s)
+- **docker ps -a -f "name=<some name>"** listado con where name='some name'
+- **docker images**
+- **docker images -q**
 ### []()
-- 
-### []()
-- 
-### []()
-- 
+- [pdf practicas](https://a.udemycdn.com/2018-03-16_08-31-28-0ff693fad42beee2453cba8ce991f1d9/original.pdf?nva=20191110230129&download=True&filename=4-Visualizar-informaci-nde-contenedores-e-imagenes.pdf&token=03ff577d75ebc55b97bfd)
 ### []()
 - 
 ### []()
