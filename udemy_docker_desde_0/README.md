@@ -37,7 +37,14 @@
 ## Sección 2: Trabajar con contenedores
 
 ### [14. Arrancar y parar Docker](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626140#overview)
-- 
+- **`dockerd`** arrancar el daemon.
+- En windows no funciona
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/489x61/f11d116eacf7eaa707515ec2380bc5f5/image.png)
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/945x194/317aab0408072eaf0746baf0f439a263/image.png)
+  - Habría que usar la app de docker instalada para levantar este servicio
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/336x69/10b92ce8030d6dcdffa152f719a1001d/image.png) 
+- **`docker ps`** muestra el listado de contenedores
+
 ### []()
 - 
 ### []()
