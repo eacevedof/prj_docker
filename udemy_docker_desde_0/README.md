@@ -22,6 +22,17 @@
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/731x604/51fa5b1e1548dad8b74a50c75ce2a714/image.png)
 - Los contenedores windows sirven para instalar servicios windows. 
   - IIS, SSIS, .Net, Outlook, OneDrive, etc
+### [13. Arquitectura de Docker. Imágenes, Containers y daemons](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626128#overview)
+- Ya tenemos instalado el **Docker Host y el Docker Client**
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/585x286/dba4144953bc8054599905505003bacc/image.png)
+- Docker Host
+- Docker Daemon
+- Docker Client
+  - Hace llamadas REST al Daemon
+  - Pull, Push, Run
+- Imagenes:
+  - Plantilla de solo lectura
+  - Los contenedores se crean a partir de estas
 
 ## Sección 2: Trabajar con contenedores
 - [Github]()
