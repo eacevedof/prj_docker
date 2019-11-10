@@ -55,8 +55,11 @@ systemctl start Docker
 systemctl status docker
 systemctl enable docker
 ```
-### []()
-- 
+### [16. Crear nuestro primer contenedor](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626148)
+- **docker run hello-world**
+  - busca la imagen hello-world en local
+  - no la encuentra, la busca y descarga de Docker Hub
+
 ### []()
 - 
 ### []()
