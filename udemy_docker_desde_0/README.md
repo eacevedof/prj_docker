@@ -57,9 +57,10 @@ systemctl enable docker
 ```
 ### [16. Crear nuestro primer contenedor](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626148)
 - **docker run hello-world**
+  - crea un contenedor basado en una plantilla
   - busca la imagen hello-world en local
   - no la encuentra, la busca y descarga de Docker Hub
-
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/830x61/f1c354600a140110c8c788ac0106860d/image.png)
 ### []()
 - 
 ### []()
