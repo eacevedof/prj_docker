@@ -12,7 +12,7 @@
 ### [10. Prácticas. Instalación en Linux: Centos y Ubuntu](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9678418#overview)
 - [pdf](https://a2.udemycdn.com/2018-03-15_10-17-37-b55782c603d5ecd0cc007432116aa550/original.pdf?nva=20191110205206&download=True&filename=1-Practicas-Docker.Instalar-Centos.pdf&token=0e65864f2497f13cb7d83)
 ### [11. Instalar Docker en Windows Parte 1](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626120#overview)
--
+- Docker Toolbox está desactualizada
 ### [12. Instalar Windows en Docker Parte 2](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626858#overview)
 - 
 
