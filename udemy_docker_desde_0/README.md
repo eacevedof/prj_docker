@@ -152,7 +152,21 @@ it: inicia sesion con root@<CONTAINER-ID>
   - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/9604211dc9f1dd6050522cb38f396906/image.png)
 
 ### [23. Crear contenedores en Windows](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628524#questions)
-- 
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/369x374/88b415710e0ba4d272295ecdbb54c25d/image.png)
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/927x404/0967bc109dea3a53daf7e76ae2d0de3d/image.png)
+- Buscando imágenes windows:
+  - [Imagenes microsoft en hub.docker](https://hub.docker.com/search?q=microsoft&type=image&certification_status=certified)
+- Imagen recomendada por msoft:
+  - **microsoft/nanoserver**
+  - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/130bbdef85a90d364fd62073600f6fb5/image.png)
+  - Imágen de SO pequeña
+  - `docker pull mcr.microsoft.com/windows/nanoserver`
+  - A partir de esta imagen básica podemos construir nuestros componentes
+  - **microsoft-windows-servercore** una imagen de mayor tamaño.
+  - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/013493628990a06f7e2e739a498f15d7/image.png)
+  - `docker pull mcr.microsoft.com/windows/servercore`
+  - Se recomienda esta opción para aquellos que vayamos a trabjar con contenedores windows
+
 ### []()
 - 
 ### []()
