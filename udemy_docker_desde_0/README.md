@@ -108,6 +108,8 @@ systemctl enable docker
 docker run -it ubuntu
 //mingw64
 winpty docker run -it ubuntu
+
+it: inicia sesion con root@<CONTAINER-ID>
 ```
 - Podemos ver el contenedor al que se le agrega un nombre aleatorio
 ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1131x69/fbe65504104b206e63cd3edbe85fb453/image.png)
