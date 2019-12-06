@@ -89,7 +89,20 @@ systemctl enable docker
   - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1025x52/82e71292be614884fbb23e90b090bf43/image.png)
   
 ### [20. Crear un contenedor interactivo](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626196#questions)
-- 
+- Vamos a crear un contenedor un poco más amplio
+- Sistema operativo minificado **Bear bone**?? *consultado en udemy*
+- `winpty docker exec -it borrame2 //bin//bash  **conecta con contenedor por git console**`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/305x61/7077a35b548ef5f47dcd6f24d417b5c3/image.png)
+```js
+//conetenedor 
+docker run -it ubuntu
+/*
+Esto da error en windows: 
+the input device is not a TTY.  If you are using mintty, try prefixing the command with 'winpty'
+*/
+//windows:
+winpty docker run -it ubuntu
+```
 ### []()
 - 
 ### []()

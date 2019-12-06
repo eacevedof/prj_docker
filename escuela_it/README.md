@@ -168,6 +168,7 @@ RUN ./example.SH
   - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/866x357/4efe086feb13cfd163c2dba99a6c43c3/image.png)
   - Pueden llenar nuestro disco duro, asi que las podemos ir eliminando.
 - [**`docker rmi <IMAGE ID>`**](https://youtu.be/X0lFXKSjjxk?t=4228)
+  - **docker rmi $(docker images -q)** Elimina todas las imagenes
   - Una vez eliminada la imagen eliminara todas sus dependencias
   - ![](https://trello-attachments.s3.amazonaws.com/5db43f16df811534517445ec/715x283/e8b4f2e3f57c0459b3ce22790a86db90/image.png)
   - Es importante ir limpiando el sistema sobretodo cuando versionamos imagenes y lo desplegamos en producción.
