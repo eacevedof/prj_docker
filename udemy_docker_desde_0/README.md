@@ -119,6 +119,17 @@ it: inicia sesion con root@<CONTAINER-ID>
 - Dos contenedores de una misma imagen
 ![docker ps](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/984x74/fa706c208b4d310160925f224b3a556a/image.png)
 ![uname -a](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/1d0433e5ac42155d3e794a48237aef30/image.png)
+- contenedor: `cd dev/;ls -l`
+  - dispositivos del ubuntu (contenedor), se muestran muy poquitos
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/561x291/e53b10a4deedddb65ca4b5b5b56e7404/image.png)
+- contenedor: `exit` salimos del contenedor (se resetean los cambios?, por ejemplo un fichero creado)
+  - No, no se resetea
+- `dcoker ps -a`:
+- [docker ps -a](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1189x83/a9773c66ffc27e021e3446776b1deb91/image.png)
+- Muestra que hemos salido de los contenedores
+- **Iniciar sesion en un contenedor:**
+  - `docker start -i <CONTAINER_ID>`
+  - `docker start -i d263e346335d`
 ### []()
 - 
 ### []()
