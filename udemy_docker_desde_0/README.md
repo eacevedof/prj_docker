@@ -128,6 +128,7 @@ it: inicia sesion con root@<CONTAINER-ID>
 - [docker ps -a](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1189x83/a9773c66ffc27e021e3446776b1deb91/image.png)
 - Muestra que hemos salido de los contenedores
 - **Iniciar sesion en un contenedor:**
+  - Esto funciona tanto en **cmder como mingw64**
   - `docker start -i <CONTAINER_ID>`
   - `docker start -i d263e346335d`
 ### []()
