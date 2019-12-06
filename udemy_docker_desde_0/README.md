@@ -99,13 +99,19 @@ systemctl enable docker
     - ![mingw64 ok](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/566x184/902a6736b2a63beb55200673da6049a9/image.png)    
   - **cmder ok**
   - ![cmder ok](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/657x184/a4e967fcbe8401bde66a60d3a2fc1e24/image.png)
-
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/709x75/841177a2369669779365bff00d8e32e5/image.png)
+- Una imagen en docker está formada por varias capas (con un id)
+- Estas capas permiten su reutilización entre varias imágenes
 ```js
-//conetenedor 
+//instala ubuntu mini 
+//cmder
 docker run -it ubuntu
-
+//mingw64
 winpty docker run -it ubuntu
 ```
+- Podemos ver el contenedor al que se le agrega un nombre aleatorio
+![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1131x69/fbe65504104b206e63cd3edbe85fb453/image.png)
+
 ### []()
 - 
 ### []()
