@@ -217,6 +217,36 @@ it: inicia sesion con root@<CONTAINER-ID>
 - *No puedo crear repositorios desde la docker hub*
 - [Más info de como crear un repo desde consola](https://github.com/willitscale/learning-docker/tree/master/tutorial-09)
   - [Learning Docker 09 : Creating a docker repository on Docker hub](https://www.youtube.com/watch?v=EjvNWa_GTK0)
+### [27. NOTA IMPORTANTE: Docker Store se integra con Docker Hub](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/14332690#questions)
+```
+NOTA IMPORTANTE: Docker Store se integra con Docker Hub
+Desde Diciembre de 2018, Docker Store se ha unificado con Docker Hub y por lo tanto ha desaparecido. 
+Mantengo el vídeo del capítulo siguiente, pero ya no tiene ninguna utilidad, se puede saltar.
+
+Cualquier duda me perseguís por favor.
+
+Un saludo a todos
+```
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
 ### []()
 - 
 
