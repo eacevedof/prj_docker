@@ -132,8 +132,13 @@ it: inicia sesion con root@<CONTAINER-ID>
   - `docker start -i <CONTAINER_ID>`
   - `docker start -i d263e346335d`
 - Muy importante: **docker run** crea un nuevo contenedor de una imagen cada vez que se ejecuta
-### []()
-- 
+### [21. Prácticas contenedores interactivos](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9691060#questions)
+- [5-Contenedores-interactivos.pdf](https://a2.udemycdn.com/2018-03-16_18-37-05-8c262838875e03db98bd45503beb64ff/original.pdf?nva=20191206170809&filename=5-Contenedores-interactivos.pdf&download=True&token=05b228d84abb4a2406bca)
+- `docker run -it fedora bash`
+- `docker system df` ver lo que ocupan los contenedores
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/743x123/1a584ec62b9bc41a7c92115b8599c2ef/image.png)
+- `docker stop` sale del contenedor
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/204x128/1a65c5595f2cba196d40e392037cb4bf/image.png)
 ### []()
 - 
 ### []()
