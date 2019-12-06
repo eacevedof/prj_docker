@@ -91,16 +91,19 @@ systemctl enable docker
 ### [20. Crear un contenedor interactivo](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626196#questions)
 - Vamos a crear un contenedor un poco más amplio
 - Sistema operativo minificado **Bear bone**?? *consultado en udemy*
-- `winpty docker exec -it borrame2 //bin//bash  **conecta con contenedor por git console**`
-  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/305x61/7077a35b548ef5f47dcd6f24d417b5c3/image.png)
+- `docker run -it ubuntu`
+  - **error windows mingw64**
+    - `the input device is not a TTY.  If you are using mintty, try prefixing the command with 'winpty'`
+    - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/772x54/7b7fe562bfea6b798dc4390ad2a551e3/image.png)
+    - **mingw64 ok** `winpty docker run -it ubuntu`
+    - ![mingw64 ok](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/305x61/7077a35b548ef5f47dcd6f24d417b5c3/image.png)    
+  - **cmder ok**
+  - ![cmder ok](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/657x184/a4e967fcbe8401bde66a60d3a2fc1e24/image.png)
+  
 ```js
 //conetenedor 
 docker run -it ubuntu
-/*
-Esto da error en windows: 
-the input device is not a TTY.  If you are using mintty, try prefixing the command with 'winpty'
-*/
-//windows:
+
 winpty docker run -it ubuntu
 ```
 ### []()

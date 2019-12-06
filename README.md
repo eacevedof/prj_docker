@@ -6,6 +6,8 @@
 - [Curso Docker - Escuela It](https://github.com/eacevedof/prj_docker/tree/master/escuela_it#youtube---curso-docker)
 - [Docker - Jesus Conde](https://github.com/eacevedof/prj_docker/tree/master/jesus_conde#youtube-playlist---curso-docker-jesus-conde)
 
+## Terminales:
+- ![cmder vs mingw64](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1090x576/be1d634911b74db9d7039ba4cf7c9113/image.png)
 ## Notas.
 - ~~Para arrancar docker en windows hay que lanzar el **Docker Quickstar Terminal** en modo administrador~~
 - ~~**`<programs>\git-bash.exe --login -i "<programs>\docker-toolbox\start.sh"`**~~
