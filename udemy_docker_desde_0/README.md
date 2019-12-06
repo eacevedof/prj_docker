@@ -81,6 +81,7 @@ systemctl enable docker
 ### [19. Práctica. Primeros pasos con contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9685168#questions)
 - [pdf practicas](https://a.udemycdn.com/2018-03-16_08-31-28-0ff693fad42beee2453cba8ce991f1d9/original.pdf?nva=20191110230129&download=True&filename=4-Visualizar-informaci-nde-contenedores-e-imagenes.pdf&token=03ff577d75ebc55b97bfd)
 - **docker run -it ubuntu bash**
+  - **i**: interactive, **t**: terminal
   - Monta un contenedor de ubuntu y accede por shell
 - **docker run busybox**
 - **docker ps**
@@ -235,8 +236,35 @@ Un saludo a todos
 ### [30. Borrar imágenes y contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628642#questions)
 - docker rm -f $(docker ps -aq)    select all ids, no solo los activos
 - docker rmi -f $(docker images -q)  select ids
-### []()
-- 
+### [31. Docker Exec: ejecutar comandos contra contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628644#questions)
+- Crear contenedor con nombre (no con nombre aletorio)
+  - `docker run -it --name miubuntu ubuntu bash`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1045x55/cfedbb40540b88b4c80389fb804f7c30/image.png)
+- `dcoker exec miubuntu echo hola`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/272x53/b0c52305626dc95f2cc66b9f330d785a/image.png)
+  - Esto viene bien para contenedores en modo background
+- `docker exec -it miubuntu bash`
+- **descargando la imágen**
+  - `docker pull python`
+  - No instala solo descarga
+  - run:
+    - baja la imagen      (pull)
+    - crea el contenedor
+    - arrancar
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/646x261/0aad37f52e6df116d99d48c94bb84cf5/image.png)
+  - `docker run -it --name mypython python`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1033x213/f70c7ce93572aa173336a4bb9f404dc2/image.png)
+  - `docker exec -it mypython bash`
+  - Una vez que se tiene el contenedor creado no se puede volver a lanzar run con el mismo nombre
+    ```
+    docker: Error response from daemon: Conflict. The container name "/mypython" is already in use by container 
+    "88fa7a2dc5b8d15a72f68879c7545d868166adf68ebab5679457003418a0969f". 
+    You have to remove (or rename) that container to be able to reuse that name.    
+    ```
+  - Si se desea levantar un contenedor se hace con: `docker start mypython`
+  - Iniciar sesion en un contenedor que está en ejecución: `docker exec -it mypython bash`
+  
+
 ### []()
 - 
 ### []()
