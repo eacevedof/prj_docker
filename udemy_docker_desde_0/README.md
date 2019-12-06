@@ -276,6 +276,9 @@ Un saludo a todos
   - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/1b17cef427cb246c3e783a057a0788c9/image.png)
 - `winpty docker exec -it nginx1 bash`
 - `docker rm nginx1`
+- `docker rmi -f fedora` deja un contenedor con imagen fantasma
+- ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/22d8afc532c38bf326d4b1ba55551df6/image.png)
+- **docker rm `docker ps -aq | grep 9110ae7f579f`** no me ha funcionado
 ### []()
 - 
 ### []()
