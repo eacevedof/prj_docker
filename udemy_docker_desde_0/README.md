@@ -192,8 +192,21 @@ it: inicia sesion con root@<CONTAINER-ID>
 - usuario:
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/173x49/3bd39406f9e18cdde6816ed9b37c055c/image.png)
 ### [25. Docker Hub Parte 1: Tags y pulls](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628624#questions)
-- 
-### []()
+- Repositiorio de imágenes
+- Las imágenes son tanto de particulares como empresas
+- Buscamos: **ubuntu**
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/494x505/1521c1d61daf19ce9a3ab27ca52ea356/image.png)
+- **tags**
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/642x97/d6844b11740d222364734ae953af7800/image.png)
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/682x144/b0c42a5f526e9655cbc4ff0fc1cb5207/image.png)
+  - `docker pull ubuntu:trusty`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/783x114/a8b6f380f9a815e5a78ee18747b9c3e7/image.png)
+  - Info más detallada de los tags:
+    - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/672x363/72e447ccbfc94a451a5e362db73c0b9f/image.png)
+- Siempre que se desea recuperar algo del hub hay que ejecutar:
+  - `dodcker pull <REPOSITORY>:<TAG>`
+
+### [26. Docker Hub Parte 2: Crear cuenta](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628632#questions)
 - 
 
 ## Sección 3: Redes En Docker
