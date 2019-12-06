@@ -125,12 +125,13 @@ it: inicia sesion con root@<CONTAINER-ID>
 - contenedor: `exit` salimos del contenedor (se resetean los cambios?, por ejemplo un fichero creado)
   - No, no se resetea
 - `dcoker ps -a`:
-- [docker ps -a](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1189x83/a9773c66ffc27e021e3446776b1deb91/image.png)
+- ![docker ps -a](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1189x83/a9773c66ffc27e021e3446776b1deb91/image.png)
 - Muestra que hemos salido de los contenedores
 - **Iniciar sesion en un contenedor:**
   - Esto funciona tanto en **cmder como mingw64**
   - `docker start -i <CONTAINER_ID>`
   - `docker start -i d263e346335d`
+- Muy importante: **docker run** crea un nuevo contenedor de una imagen cada vez que se ejecuta
 ### []()
 - 
 ### []()
