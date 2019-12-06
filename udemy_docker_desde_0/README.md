@@ -140,7 +140,17 @@ it: inicia sesion con root@<CONTAINER-ID>
 - `docker stop` sale del contenedor
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/204x128/1a65c5595f2cba196d40e392037cb4bf/image.png)
 ### [22. Crear un contenedor en Background](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628330#questions)
-- 
+- Hemos visto como trabajar con containers interactivos
+- En la mayoria de las veces vamos a trabajar con containers en background y pueda interaccionar con el sin la necesidad de una shell
+- Para esto vamos a usar un container de **nginx**
+- `docker run -d nginx`
+- flag -d detached (ejecuta el contenedor como servicio)
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/643x169/79f5784510b587093a81464a6912e6b2/image.png)
+- Tamaño nginx
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/621x95/015d12f34d09c1dadd650e834ae52e4e/image.png)
+- No permite crear sesion interactiva, se queda en espera
+  - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/9604211dc9f1dd6050522cb38f396906/image.png)
+
 ### []()
 - 
 ### []()
