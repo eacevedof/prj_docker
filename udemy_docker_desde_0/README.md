@@ -96,10 +96,10 @@ systemctl enable docker
     - `the input device is not a TTY.  If you are using mintty, try prefixing the command with 'winpty'`
     - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/772x54/7b7fe562bfea6b798dc4390ad2a551e3/image.png)
     - **mingw64 ok** `winpty docker run -it ubuntu`
-    - ![mingw64 ok](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/305x61/7077a35b548ef5f47dcd6f24d417b5c3/image.png)    
+    - ![mingw64 ok](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/566x184/902a6736b2a63beb55200673da6049a9/image.png)    
   - **cmder ok**
   - ![cmder ok](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/657x184/a4e967fcbe8401bde66a60d3a2fc1e24/image.png)
-  
+
 ```js
 //conetenedor 
 docker run -it ubuntu
