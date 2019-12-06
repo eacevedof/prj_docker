@@ -151,7 +151,7 @@ it: inicia sesion con root@<CONTAINER-ID>
 - No permite crear sesion interactiva, se queda en espera
   - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/9604211dc9f1dd6050522cb38f396906/image.png)
 
-### []()
+### [23. Crear contenedores en Windows](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628524#questions)
 - 
 ### []()
 - 
