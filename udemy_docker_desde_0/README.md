@@ -177,9 +177,14 @@ it: inicia sesion con root@<CONTAINER-ID>
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/575x239/8c2a9fba074257567d9953eb2d6ec666/image.png)
 - `docker run -it mcr.microsoft.com/windows/nanoserver:1903`
 - `docker pull mcr.microsoft.com/windows/nanoserver:1903`
-- 
+- docker images:
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/848x56/7c8515a28f1876c383d77f612452b7f3/image.png)
+- docker ps -a
+  - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/f16bbb126e2e613b5ad6b832796517f1/image.png)
+- docker system df
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/741x100/89ff75a8246b8b295e95415980f85516/image.png)
 ### []()
-- 
+- [6-Contenedores en Windows.pdf]()
 ### []()
 - 
 ### []()
