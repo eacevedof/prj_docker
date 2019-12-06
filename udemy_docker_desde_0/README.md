@@ -111,7 +111,12 @@ winpty docker run -it ubuntu
 ```
 - Podemos ver el contenedor al que se le agrega un nombre aleatorio
 ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1131x69/fbe65504104b206e63cd3edbe85fb453/image.png)
-
+- como se ha instalado un ubuntu minificado puede que no existan todos los comandos
+- Lo que consume un contenedor:
+![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/658x151/0ef77026605047ad783ad790ae9a51b0/image.png)
+- Dos contenedores de una misma imagen
+![docker ps](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/984x74/fa706c208b4d310160925f224b3a556a/image.png)
+![uname -a](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/1d0433e5ac42155d3e794a48237aef30/image.png)
 ### []()
 - 
 ### []()
