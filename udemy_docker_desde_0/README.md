@@ -227,8 +227,9 @@ Cualquier duda me perseguís por favor.
 
 Un saludo a todos
 ```
-### []()
-- 
+### [28. Docker Store: Diferencias con Docker Hub](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628638#questions)
+- Se puede saltar
+
 ### []()
 - 
 ### []()
