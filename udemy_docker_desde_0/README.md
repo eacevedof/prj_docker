@@ -207,6 +207,17 @@ it: inicia sesion con root@<CONTAINER-ID>
   - `dodcker pull <REPOSITORY>:<TAG>`
 
 ### [26. Docker Hub Parte 2: Crear cuenta](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628632#questions)
+- La semantica del nombre:
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/702x432/7103757b9fcf4922d32258667f818352/image.png)
+- Repos con solo nombre, repositorios root (raiz), pertenecen a empresas de software que tienen acuerdo con docker para que suban sus imágenes.
+- Por ejemplo si buscampos python.
+- `<usuario>/<nombre-de-la-imagen>` suelen ser imagenes de particulares
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/693x218/363ab518677a93670294bdfc71d3962f/image.png)
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/185x118/17b37b70f2a8b9dc0251010f519cdf0d/image.png)
+- *No puedo crear repositorios desde la docker hub*
+- [Más info de como crear un repo desde consola](https://github.com/willitscale/learning-docker/tree/master/tutorial-09)
+  - [Learning Docker 09 : Creating a docker repository on Docker hub](https://www.youtube.com/watch?v=EjvNWa_GTK0)
+### []()
 - 
 
 ## Sección 3: Redes En Docker
