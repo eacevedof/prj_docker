@@ -164,9 +164,20 @@ it: inicia sesion con root@<CONTAINER-ID>
   - A partir de esta imagen básica podemos construir nuestros componentes
   - **microsoft-windows-servercore** una imagen de mayor tamaño.
   - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/013493628990a06f7e2e739a498f15d7/image.png)
-  - `docker pull mcr.microsoft.com/windows/servercore`
+  - `docker pull mcr.microsoft.com/windows/servercore` la imágen es de varios **gigas**
   - Se recomienda esta opción para aquellos que vayamos a trabjar con contenedores windows
-
+- **cmder** `docker version`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/401x314/ee4a02fbc465de889921c465c62849ee/image.png)
+- ~~`docker run -it microsoft/nanoserver`~~
+  - `Error response from daemon: manifest for microsoft/nanoserver:latest not found: manifest unknown: manifest unknown.`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1003x85/9e9070333c35200bae601330373836f8/image.png)
+  - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/9f00c21824cb654f1837c0a9e0338c10/image.png)
+- Respuesta instructor:
+  - > Hola , es que Microsoft ha eliminado elbtag "latest" de sus inagenes. Hay que usar vomo tag el numero de windows que tienes en el pc. En informacion de sistema delnoc aparecec el numero . Debes poner ese tag. Ahora estoy de viaje y no puedovsacar una imagen para que lo veas. En cuanto llegue te mando un ejemplo. Voy a modificar el capitulo para adapyarlo. um saludo
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/575x239/8c2a9fba074257567d9953eb2d6ec666/image.png)
+- `docker run -it mcr.microsoft.com/windows/nanoserver:1903`
+- `docker pull mcr.microsoft.com/windows/nanoserver:1903`
+- 
 ### []()
 - 
 ### []()
