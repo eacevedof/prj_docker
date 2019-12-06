@@ -230,8 +230,8 @@ Un saludo a todos
 ### [28. Docker Store: Diferencias con Docker Hub](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628638#questions)
 - Se puede saltar
 
-### []()
-- 
+### [29. Prácticas Docker HUB](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9691070#questions)
+- [7-DockerHub.pdf](https://a.udemycdn.com/2018-03-16_18-39-37-a528f264790115fbb68a89792eb56dc9/original.pdf?nva=20191206213003&filename=7-DockerHub.pdf&download=True&token=0b5f3a66c24e8ef12c1cd)
 ### []()
 - 
 ### []()
