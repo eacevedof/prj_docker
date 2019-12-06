@@ -191,7 +191,7 @@ it: inicia sesion con root@<CONTAINER-ID>
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1200x145/bfa3d9a38940bcaa5185b470f757b331/image.png)
 - usuario:
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/173x49/3bd39406f9e18cdde6816ed9b37c055c/image.png)
-### []()
+### [25. Docker Hub Parte 1: Tags y pulls](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628624#questions)
 - 
 ### []()
 - 
