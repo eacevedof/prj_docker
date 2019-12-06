@@ -185,8 +185,12 @@ it: inicia sesion con root@<CONTAINER-ID>
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/741x100/89ff75a8246b8b295e95415980f85516/image.png)
 - sesion en el contenedor:
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/549x377/bb15742f0196882b9ade3c758aecae11/image.png)
-### []()
-- [6-Contenedores en Windows.pdf]()
+### [24. Práctica- Crear contenedores en Windows](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9692684#questions)
+- [6-Contenedores en Windows.pdf](https://a2.udemycdn.com/2018-03-17_10-38-17-345f7e5d73eaf6876356d0dbe9317f03/original.pdf?nva=20191206201814&download=True&filename=6-Contenedores-en-Windows.pdf&token=0b2fbcdceebae62db7051)
+- saliendo del contenedor:
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1200x145/bfa3d9a38940bcaa5185b470f757b331/image.png)
+- usuario:
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/173x49/3bd39406f9e18cdde6816ed9b37c055c/image.png)
 ### []()
 - 
 ### []()
