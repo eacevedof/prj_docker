@@ -255,6 +255,7 @@ Un saludo a todos
   - `docker run -it --name mypython python`
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1033x213/f70c7ce93572aa173336a4bb9f404dc2/image.png)
   - `docker exec -it mypython bash`
+  - si solo se hace docker -i solo se muestra la panttala negra
   - Una vez que se tiene el contenedor creado no se puede volver a lanzar run con el mismo nombre
     ```
     docker: Error response from daemon: Conflict. The container name "/mypython" is already in use by container 
@@ -263,7 +264,7 @@ Un saludo a todos
     ```
   - Si se desea levantar un contenedor se hace con: `docker start mypython`
   - Iniciar sesion en un contenedor que está en ejecución: `docker exec -it mypython bash`
-  
+  - El comando **exec** es más para administración de contenedores
 
 ### []()
 - 
