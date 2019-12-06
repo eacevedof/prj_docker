@@ -266,8 +266,16 @@ Un saludo a todos
   - Iniciar sesion en un contenedor que está en ejecución: `docker exec -it mypython bash`
   - El comando **exec** es más para administración de contenedores
 
-### []()
-- 
+### [32. Prácticas: Docker exec y borrados](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9741902#questions)
+- [8-docker-Exec-y-docker-rm.pdf](https://a.udemycdn.com/2018-03-21_13-51-33-4b412376e968cf1cd75261f8462d2ea1/original.pdf?nva=20191206235036&download=True&filename=8-docker-Exec-y-docker-rm.pdf&token=0a2d5fafcb45b23e81e42)
+- `docker run -d --name nginx1 nginx`
+- `docker exec nginx1 date; uname -n`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/303x68/29fcc732ef0aa3269aebb0d8e8504415/image.png)
+- **mingw64** `docker exec nginx1 //bin//sh -c 'for archivo in in * ; do echo "fichero_i -->" $archivo ; done'`
+- **cmder** `docker exec nginx1 /bin/sh -c "for archivo in in * ; do echo 'fichero_i -->' $archivo ; done"`
+  - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/1b17cef427cb246c3e783a057a0788c9/image.png)
+- `winpty docker exec -it nginx1 bash`
+- `docker rm nginx1`
 ### []()
 - 
 ### []()
