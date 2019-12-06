@@ -8,6 +8,9 @@
 
 ## Terminales:
 - ![cmder vs mingw64](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1090x576/be1d634911b74db9d7039ba4cf7c9113/image.png)
+- ![cmder: docker run -it ubuntu](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/657x184/a4e967fcbe8401bde66a60d3a2fc1e24/image.png)
+- ![wingw64: winpty docker run -it ubuntu](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/566x184/902a6736b2a63beb55200673da6049a9/image.png)
+
 ## Notas.
 - ~~Para arrancar docker en windows hay que lanzar el **Docker Quickstar Terminal** en modo administrador~~
 - ~~**`<programs>\git-bash.exe --login -i "<programs>\docker-toolbox\start.sh"`**~~
