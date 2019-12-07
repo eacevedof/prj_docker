@@ -91,7 +91,7 @@ systemctl enable docker
   
 ### [20. Crear un contenedor interactivo](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626196#questions)
 - Vamos a crear un contenedor un poco más amplio
-- Sistema operativo minificado **Bear bone**?? *consultado en udemy*
+- Sistema operativo minificado **bare bone** (casi en los huesos :v)
 - `docker run -it ubuntu`
   - **error windows mingw64**
     - `the input device is not a TTY.  If you are using mintty, try prefixing the command with 'winpty'`
@@ -279,7 +279,7 @@ Un saludo a todos
 - `docker rmi -f fedora` deja un contenedor con imagen fantasma
 - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/22d8afc532c38bf326d4b1ba55551df6/image.png)
 - **docker rm `docker ps -aq | grep 9110ae7f579f`** no me ha funcionado
-### []()
+### [33. Comandos Docker Image y Docker container](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628652#questions/8801798)
 - 
 ### []()
 - 
