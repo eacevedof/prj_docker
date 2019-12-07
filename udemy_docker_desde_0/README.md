@@ -329,7 +329,7 @@ Un saludo a todos
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1173x43/987c297e4b388b9b05c8ed42ba5bd1c1/image.png)
 - matamos el contendor
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1138x131/1a9297afaebf63166c40177df2f6c38c/image.png)
-### []()
+### [37. Docker inspect](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628662#questions/8801798)
 - 
 ### []()
 - 
