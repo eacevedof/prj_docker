@@ -292,7 +292,19 @@ Un saludo a todos
     - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1101x71/a023bf8f875810448f608d464cf9f3e4/image.png)
   - `docker container ls --help`
 ### [34. Docker Logs y Docker Kill](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628656#questions/8801798)
-- 
+- Hay contenedores que se pueden ejecutar en background
+- `docker run -d ubuntu sh -c "while true; do date; done"`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/527x55/12484b390df62dfadb93ee5feb39747f/image.png)
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1179x72/5c8200bf4653eedaf06106198043c7e6/image.png)
+- como está en background no veo lo que está imprimiendo
+- con **docker logs** podemos ver lo que esta imprimiendo por pantalla
+- esto sirve para ver que es lo que está pasando si por ejemplo un mysql no levanta
+- `docker logs 0046eab8d9d1`
+  - `docker logs 0046eab8d9d1 --tail  10`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/547x205/cd1d27965c971e2076343b5e9d20c15c/image.png)
+- `docker kill <CONTAINER ID>`
+  - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/addf12297da00e5cc032481232e2c1a8/image.png)
+  - como se ha eliminado el proceso se guarda con **STATUS** distinto de 0
 ### []()
 - 
 ### []()
