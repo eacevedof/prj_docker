@@ -381,7 +381,22 @@ Un saludo a todos
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/703x285/1980b0261fd1b8a69a8692bed23c0f6b/image.png)
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1144x65/6bee1832c2fb71818a3ffdd2a1cb23df/image.png)
 ### [41. Redes en Docker](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630886#questions/8801798)
-- 
+- `docker network ls`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/539x88/5f7e5d95a52547f67697f5af8ae2f5d3/image.png)
+  - **bridge**: permiten que hayan redes privadas dentro de la maquina y estas se conecten con redes físicas
+  - Por defecto siempre hay esa red en docker
+  - el **DRIVER** no tiene que ser el mismo que el **NAME**
+  - **SCOPE** ámbito si es a nivel local o puede extenderse a otras máquinas (se escapa del alcance del curso)
+  - **host**: no se pueden ver entre si, solo con la maquina host
+  - **none**: es un contenedor que no tiene nada. Es un proceso
+- Todos los contenedores son bridge por defecto
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1135x249/9113fde380c857a4e77b41ef1d6f7a69/image.png)
+- La red bridge tiene configurada un rango de ips. La .0.1 es la NIC de enlace, a partir de ahi va asignando.
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1137x224/504cc99b86ec8a6797f6bb88866ab211/image.png)
+- comando para inspeccionar la red: `docker inspect nginxy | grep IPAd`
+- volcamos el inspect y comprobamos el fichero:
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/663x258/4820e4e887e65602b7109621300d0785/image.png)
+
 ### [42. Inspeccionar una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630890#questions/8801798)
 - 
 ### [43. Práctica. Trabajar con puertos y redes. Ejemplo con MongoDB](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9753792#questions/8801798)
