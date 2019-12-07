@@ -306,7 +306,10 @@ Un saludo a todos
   - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/addf12297da00e5cc032481232e2c1a8/image.png)
   - como se ha eliminado el proceso se guarda con **STATUS** distinto de 0
 ### [35. Docker Top, Docker Stats](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628658#questions/8801798)
-- 
+- `docker exec -it ubuntu bash`
+- `docker top <CONTAINER ID>|<NAMES>`
+  - Si tengo la sospecha que un contenedor está consumiendo demasiado puedo visualizar estos procesos
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/559x207/bfeb15fdd5ee10546ba0a115b9ba6111/image.png)
 ### []()
 - 
 ### []()
