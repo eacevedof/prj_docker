@@ -12,7 +12,11 @@
 - ![wingw64: winpty docker run -it ubuntu](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/566x184/902a6736b2a63beb55200673da6049a9/image.png)
 - Localización de vhdx en windows:
   - `C:\Users\Public\Documents\Hyper-V\Virtual hard disks\MobyLinuxVM.vhdx`
-- ![Localizacion de vhdx](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1026x701/5c79a086dc06f5885e0abd93d60a5eee/image.png)
+  - ![Localizacion de vhdx](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1026x701/5c79a086dc06f5885e0abd93d60a5eee/image.png)
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/995x122/00d1de2a9a060c74fd47db2a167c1f62/image.png)
+
+## Comandos importantes:
+- Iniciar sesion en un contenedor: `docker exec -it <NAMES> bash` bash es la app con la que interactuaremos
 
 ## Notas.
 - ~~Para arrancar docker en windows hay que lanzar el **Docker Quickstar Terminal** en modo administrador~~
