@@ -320,8 +320,15 @@ Un saludo a todos
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1188x56/4688be3345e8b8c340b81b809452899f/image.png)
 ### [36. Prácticas- Docker logs, stats, top, kill](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9750238#questions/8801798)
 - [9-Pr-cticas-Comprobar-estado-de-contenedores.pdf](https://a.udemycdn.com/2018-03-21_23-22-25-1ea15d9f5a377224690d2f630707a89f/original.pdf?nva=20191207183251&filename=9-Pr-cticas-Comprobar-estado-de-contenedores.pdf&download=True&token=06d505c4b6f73331075a6)
-
-
+- `docker -d --name nginxxx nginx`
+  ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/533x121/bee11edca3eb394ef65f9d2694208e76/image.png)
+- `docker exec -it nginxxx bash`
+- con el sleep 500
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1179x43/ae5bec2af352048f46e271e06deb0452/image.png)
+- `dd if=/dev/zero of=f1.dat bs=1024 count=100000000`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1173x43/987c297e4b388b9b05c8ed42ba5bd1c1/image.png)
+- matamos el contendor
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1138x131/1a9297afaebf63166c40177df2f6c38c/image.png)
 ### []()
 - 
 ### []()
