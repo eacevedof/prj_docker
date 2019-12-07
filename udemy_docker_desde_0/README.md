@@ -339,12 +339,26 @@ Un saludo a todos
 - `docker inspect <IMAGE ID>|<REPOSITORY> > dump.json`
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/622x43/c1eaebd40e545dcf2d291da132e8f221/image.png)
   - [ejemplo inspect image](https://github.com/eacevedof/prj_docker/blob/master/udemy_docker_desde_0/imgubuntu_cfg.json)
-### []()
-- 
+### [38. Práctica. docker inspect](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9753668#questions/8801798)
+- ![10-Pr-cticas-inspect.pdf](https://a.udemycdn.com/2018-03-22_07-29-18-5010cbdc74e9b9eea59f57e85b06d84b/original.pdf?nva=20191207190753&filename=10-Pr-cticas-inspect.pdf&download=True&token=0a5a055890d30eb0acdfc)
+- `docker pull mongo`
+- `docker run -d --name mongoxxx mongo`
+- `docker exec -it mongoxxx bash`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/764x210/c65e5090141fca9d5906b19a5d0331c2/image.png)
+- `docker exec -it mongoxxx mongo` 
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/782x404/29e7afa6ea61c1328ca13b83b308925c/image.png)
+- `docker image inspect mongo | grep MONGO_VERSION`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/422x55/8a0734bf4d9115ae5a31d7ae92ef2308/image.png)
+- `docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mongoxx`
+  - las direcciones ip que puede tener el contenedor
+- `docker inspect --format='{{.LogPath}}' mongoxxx`
+  - donde se deja el fichero log
+- `docker inspect --format='{{.Config.Image}}' mongoxxx`
+  - la imagen en la que está basado
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/766x174/6045345390c22240373acf13aea5e8f7/image.png)
 
 ## Sección 3: Redes En Docker
-- [Github]()
-- [Udemy]()
+
 
 ## Sección 4: Volúmenes
 - [Github]()
