@@ -402,7 +402,23 @@ Un saludo a todos
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/771x331/9a81211ef6e5074e42917ccfe91787af/image.png)
 
 ### [43. Práctica. Trabajar con puertos y redes. Ejemplo con MongoDB](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9753792#questions/8801798)
-- 
+- [12-Pr-cticas-Puertos-y-Redes.pdf](https://a2.udemycdn.com/2018-03-22_11-13-43-44a0ed16f7cd4641e662cfce896689f8/original.pdf?nva=20191207212013&download=True&filename=12-Pr-cticas-Puertos-y-Redes.pdf&token=01ba7dbeee27af0fedc35)
+- comprobar puertos por donde se escucha:
+  - `docker inspect --format='{{.Config.ExposedPorts}}' mongo`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/605x307/3d6b019c1004321749e98d273d8ff539/image.png)
+```js
+$ docker run -d -p 27017:27017 --name mongox mongo
+ef6c1a7dd1c590d17f15a144e213e92f58d05d1771fd380d9e411091e4b2af9c
+```
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/476x373/647b61a83caa6488bb3474d6ae508990/image.png)
+- *no me llega el ping*
+- `docker exec -it mongo3 bash`
+- `apt-get update`
+- `apt-get install iputils-ping -y`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1131x55/a8ea1918d80296ebe57fbca80c5d1d82/image.png)
+- `mongo --host 172.17.0.5 --port 27017`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/750x400/49f036f0d8ac4176c20b18a72755c7c5/image.png)
+
 ### [44. Crear una nueva red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630888#questions/8801798)
 - 
 ### [45. Asociar contenedores a una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630896#questions/8801798)
