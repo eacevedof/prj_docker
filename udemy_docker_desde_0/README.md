@@ -359,7 +359,11 @@ Un saludo a todos
 
 ## Sección 3: Redes En Docker
 ### [39. Introducción a los puertos en Docker](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9631512#questions/8801798)
--
+- Hasta ahora hemos trabajado con contenedores simples
+- Los contenedores deben ser accesibles desde afuera
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/819x421/30961778afe8961b82af19bc5edf6054/image.png)
+- La publicación es hostport:vmachineport
+
 ### [40. Gestionar Puertos para acceder al contenedor. Ejemplo con NGINX](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630790#questions/8801798)
 - 
 ### [41. Redes en Docker](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630886#questions/8801798)
