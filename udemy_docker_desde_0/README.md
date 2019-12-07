@@ -330,7 +330,12 @@ Un saludo a todos
 - matamos el contendor
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1138x131/1a9297afaebf63166c40177df2f6c38c/image.png)
 ### [37. Docker inspect](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628662#questions/8801798)
-- 
+- Nos permite recuperar información de una img o cont a nivel de sus propiedades, caracteristicas.
+- Si deseamos saber la ip, el estado, el path, el hash de la imagen en la que está basado, etc
+- `docker inspect <CONTAINER ID>|<NAMES> > dump.json`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/624x45/65e0762f303e5d955ccfd3d66d3471bf/image.png)
+- `docker inspect <IMAGE ID>|<REPOSITORY> > dump.json`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/622x43/c1eaebd40e545dcf2d291da132e8f221/image.png)
 ### []()
 - 
 
