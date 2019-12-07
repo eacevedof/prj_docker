@@ -291,7 +291,7 @@ Un saludo a todos
   - `docker ps` = `docker container ls`
     - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1101x71/a023bf8f875810448f608d464cf9f3e4/image.png)
   - `docker container ls --help`
-### []()
+### [34. Docker Logs y Docker Kill](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628656#questions/8801798)
 - 
 ### []()
 - 
