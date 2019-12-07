@@ -365,7 +365,21 @@ Un saludo a todos
 - La publicación es hostport:vmachineport
 
 ### [40. Gestionar Puertos para acceder al contenedor. Ejemplo con NGINX](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630790#questions/8801798)
-- 
+- El creador de la imagen nos indica como (por que puerto) acceder al servidor
+- `docker pull nginx`
+- despues de tener la imagen debemos configurar un contenedor al que se pueda acceder
+- `docker run -d -P nginx`  **-P** todos los puertos del contenedor se convierten en públicos y la configuración del puerto la gestiona aleatoriamente docker
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1139x51/0bd81485bea01f9a60563edef9ddd99f/image.png)
+  - `0.0.0.0` nos indica que vamos a poder acceder desde cualquier ip que tenga la maquina principal
+  - Si nuestra pc tuviera dos o más ips (wifi, red, wwan, vpn) podríamos configurar para que solo se acceda de una determinada ip.
+  - ` ...0:32768->80/tcp` el puerto local 32768 se traducirá en el puerto 80 del contenedor
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/737x286/41b54d95d38a77a8e058bd05f2b0cfe1/image.png)
+- Se crea un puerto aleatorio que empieza desde el 32000
+- Mejoramos la conf del puerto (nuevo contenedor): `docker run -d --name nginxx -p 8080:80 nginx`
+  - **-p** p minuscula es una conf manual del puerto
+  - El puerto 80 de este nuevo contenedor se mapea con el local 8080
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/703x285/1980b0261fd1b8a69a8692bed23c0f6b/image.png)
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1144x65/6bee1832c2fb71818a3ffdd2a1cb23df/image.png)
 ### [41. Redes en Docker](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630886#questions/8801798)
 - 
 ### [42. Inspeccionar una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630890#questions/8801798)
