@@ -1,0 +1,59 @@
+[
+    {
+        "Name": "bridge",
+        "Id": "175a9826a4d1806fb308ff68b63d8bc88e9f26fad47057d08bc6dddbcc9161ac",
+        "Created": "2019-12-07T13:00:27.3689597Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.17.0.0/16",
+                    "Gateway": "172.17.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "27273876c7c9c141da6962762b9cf116d143b9913849adce5a8fe3e35be453a2": {
+                "Name": "nginxx",
+                "EndpointID": "972c67287367502df4828dfc396596a064b9a55418e0fc73c70c6de0b6da2d75",
+                "MacAddress": "02:42:ac:11:00:03",
+                "IPv4Address": "172.17.0.3/16",
+                "IPv6Address": ""
+            },
+            "f2982ac4db89517d4618537a29e83820cebc1ca415ae67d78716cbafdaa5a09a": {
+                "Name": "gallant_pike",
+                "EndpointID": "5aeb9987cfb8ec11728b6343d324fa9c41025fe17b5162bddcdd3549f0bdda88",
+                "MacAddress": "02:42:ac:11:00:02",
+                "IPv4Address": "172.17.0.2/16",
+                "IPv6Address": ""
+            },
+            "f6776b66ae9993a10430c3b1a0035d3fcb7bcdc0b0b21e068ae66f0f7de131ec": {
+                "Name": "nginxy",
+                "EndpointID": "6c63be82b96db044243ef8544dc0a2c5c02419d7a45cf9543cc0477c423ef158",
+                "MacAddress": "02:42:ac:11:00:04",
+                "IPv4Address": "172.17.0.4/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {
+            "com.docker.network.bridge.default_bridge": "true",
+            "com.docker.network.bridge.enable_icc": "true",
+            "com.docker.network.bridge.enable_ip_masquerade": "true",
+            "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+            "com.docker.network.bridge.name": "docker0",
+            "com.docker.network.driver.mtu": "1500"
+        },
+        "Labels": {}
+    }
+]

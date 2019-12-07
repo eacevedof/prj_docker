@@ -398,7 +398,9 @@ Un saludo a todos
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/663x258/4820e4e887e65602b7109621300d0785/image.png)
 
 ### [42. Inspeccionar una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630890#questions/8801798)
-- 
+- `docker network inspect bridge > inspectbridge1.json`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/771x331/9a81211ef6e5074e42917ccfe91787af/image.png)
+
 ### [43. Práctica. Trabajar con puertos y redes. Ejemplo con MongoDB](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9753792#questions/8801798)
 - 
 ### [44. Crear una nueva red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630888#questions/8801798)
