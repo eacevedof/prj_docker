@@ -318,8 +318,10 @@ Un saludo a todos
   ```
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/408x37/7581ddc0b7fd1e417663b345b14bab40/image.png)  
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1188x56/4688be3345e8b8c340b81b809452899f/image.png)
-### []()
-- 
+### [36. Prácticas- Docker logs, stats, top, kill](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9750238#questions/8801798)
+- [9-Pr-cticas-Comprobar-estado-de-contenedores.pdf](https://a.udemycdn.com/2018-03-21_23-22-25-1ea15d9f5a377224690d2f630707a89f/original.pdf?nva=20191207183251&filename=9-Pr-cticas-Comprobar-estado-de-contenedores.pdf&download=True&token=06d505c4b6f73331075a6)
+
+
 ### []()
 - 
 ### []()
