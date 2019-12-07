@@ -280,7 +280,17 @@ Un saludo a todos
 - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/22d8afc532c38bf326d4b1ba55551df6/image.png)
 - **docker rm `docker ps -aq | grep 9110ae7f579f`** no me ha funcionado
 ### [33. Comandos Docker Image y Docker container](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628652#questions/8801798)
-- 
+- La intención es separar comandos de imagen y comandos de contenedores
+- `docker image`
+  - `docker images` = `docker image ls`
+  - `docker rmi` = `docker image rm`
+  - Gestiona imágenes
+  - `docker image rm ubuntu:ubuntu`
+- `docker container`
+  - Agrupa todos los comandos que tienen que ver con contenedores
+  - `docker ps` = `docker container ls`
+    - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1101x71/a023bf8f875810448f608d464cf9f3e4/image.png)
+  - `docker container ls --help`
 ### []()
 - 
 ### []()
