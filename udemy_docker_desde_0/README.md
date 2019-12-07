@@ -358,6 +358,7 @@ Un saludo a todos
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/766x174/6045345390c22240373acf13aea5e8f7/image.png)
 
 ## Sección 3: Redes En Docker
+### [51. Ejemplo enlazar contenedores. WordPress y Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9633144#questions/8801798)
 
 
 ## Sección 4: Volúmenes
