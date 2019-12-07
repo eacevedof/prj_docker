@@ -307,9 +307,16 @@ Un saludo a todos
   - como se ha eliminado el proceso se guarda con **STATUS** distinto de 0
 ### [35. Docker Top, Docker Stats](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628658#questions/8801798)
 - `docker exec -it ubuntu bash`
-- `docker top <CONTAINER ID>|<NAMES>`
+- `docker top <CONTAINER ID>|<NAMES>` *nombre exacto*
   - Si tengo la sospecha que un contenedor está consumiendo demasiado puedo visualizar estos procesos
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/559x207/bfeb15fdd5ee10546ba0a115b9ba6111/image.png)
+- `docker stats <CONTAINER ID>|<NAMES>` *nombre exacto*
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1182x41/352e7d938a5612fabec238109f46d602/image.png)
+- Forzamos uso de cpu y memoria con el siguiente script:
+  ```js
+  while true; do date; done
+  ```
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1188x56/4688be3345e8b8c340b81b809452899f/image.png)
 ### []()
 - 
 ### []()
