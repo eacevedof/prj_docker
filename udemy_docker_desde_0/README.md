@@ -335,8 +335,10 @@ Un saludo a todos
 - Si deseamos saber la ip, el estado, el path, el hash de la imagen en la que está basado, etc
 - `docker inspect <CONTAINER ID>|<NAMES> > dump.json`
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/624x45/65e0762f303e5d955ccfd3d66d3471bf/image.png)
+  - [ejemplo inspect container](https://github.com/eacevedof/prj_docker/blob/master/udemy_docker_desde_0/nginxxx_cfg.json)
 - `docker inspect <IMAGE ID>|<REPOSITORY> > dump.json`
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/622x43/c1eaebd40e545dcf2d291da132e8f221/image.png)
+  - [ejemplo inspect image](https://github.com/eacevedof/prj_docker/blob/master/udemy_docker_desde_0/imgubuntu_cfg.json)
 ### []()
 - 
 
