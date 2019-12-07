@@ -321,7 +321,8 @@ Un saludo a todos
 ### [36. Prácticas- Docker logs, stats, top, kill](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9750238#questions/8801798)
 - [9-Pr-cticas-Comprobar-estado-de-contenedores.pdf](https://a.udemycdn.com/2018-03-21_23-22-25-1ea15d9f5a377224690d2f630707a89f/original.pdf?nva=20191207183251&filename=9-Pr-cticas-Comprobar-estado-de-contenedores.pdf&download=True&token=06d505c4b6f73331075a6)
 - `docker -d --name nginxxx nginx`
-  ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/533x121/bee11edca3eb394ef65f9d2694208e76/image.png)
+  - *importante el que sea --name no va con -n*
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/533x121/bee11edca3eb394ef65f9d2694208e76/image.png)
 - `docker exec -it nginxxx bash`
 - con el sleep 500
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1179x43/ae5bec2af352048f46e271e06deb0452/image.png)
