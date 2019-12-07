@@ -358,12 +358,59 @@ Un saludo a todos
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/766x174/6045345390c22240373acf13aea5e8f7/image.png)
 
 ## Sección 3: Redes En Docker
+### [39. Introducción a los puertos en Docker](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9631512#questions/8801798)
+-
+### [40. Gestionar Puertos para acceder al contenedor. Ejemplo con NGINX](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630790#questions/8801798)
+- 
+### [41. Redes en Docker](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630886#questions/8801798)
+- 
+### [42. Inspeccionar una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630890#questions/8801798)
+- 
+### [43. Práctica. Trabajar con puertos y redes. Ejemplo con MongoDB](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9753792#questions/8801798)
+- 
+### [44. Crear una nueva red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630888#questions/8801798)
+- 
+### [45. Asociar contenedores a una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630896#questions/8801798)
+- 
+### [46. Prácticas: Creación de redes y asociación de contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9766566#questions/8801798)
+- 
+### [47. Enlazar contenedores con --link. Con imagen Busybox](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9631694#questions/8801798)
+- 
+### [48. Práctica-Enlazar con link. Ejemplo Drupal y PostgreSQL](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9774582#questions/8801798)
+- 
+### [49. Enlazar contenedores en Redes personalizadas. Con imagen Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9633152#questions/8801798)
+- 
+### [50. NOTA IMPORTANTE RESPECTO AL SIGUIENTE VÍDEO](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/10714234#questions/8801798)
+- 
 ### [51. Ejemplo enlazar contenedores. WordPress y Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9633144#questions/8801798)
-
+- Wp se va a conectar a mysql_wp y creara esa bd
+- ![arquitectura](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/690x327/1f2354585edc0698ba1c48373a7ba2fa/image.png)
+### [52. Práctica-Enlazar contenedores con redes personalizadas. Joomla y Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9778720#questions/8801798)
+- 
+### [53. Borrar una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630898#questions/8801798)
+- 
 
 ## Sección 4: Volúmenes
-- [Github]()
-- [Udemy]()
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
+### []()
+- 
 
 ## Sección 5: Crear y gestionar imágenes
 - [Github]()
