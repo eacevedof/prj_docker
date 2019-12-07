@@ -316,6 +316,7 @@ Un saludo a todos
   ```js
   while true; do date; done
   ```
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/408x37/7581ddc0b7fd1e417663b345b14bab40/image.png)  
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1188x56/4688be3345e8b8c340b81b809452899f/image.png)
 ### []()
 - 
