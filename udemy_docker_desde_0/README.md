@@ -451,8 +451,10 @@ Options:
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/538x114/eddcefa81d11a56e288666c084e5e538/image.png)
 - *he creado una imagen de centos para probar el comando "nmcli con" pero no he tenido éxito :S*
 - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/77189f22965f18d111c8180328287283/image.png)
-
-
+- `docker inspect red1`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/608x267/b677d913358f4725908971ea0280d6f1/image.png)
+- Docker recomienda que creemos nuestras propias redes de modo que cuando asociemos nuestro contenedores a esa red verán todos sus puertos publicados de manera automática.
+- 
 
 
 
