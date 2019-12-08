@@ -420,7 +420,50 @@ ef6c1a7dd1c590d17f15a144e213e92f58d05d1771fd380d9e411091e4b2af9c
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/750x400/49f036f0d8ac4176c20b18a72755c7c5/image.png)
 
 ### [44. Crear una nueva red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630888#questions/8801798)
-- 
+- Cuando creamos una red: nombre que tiene y el driver al que pertenece
+- En la ver más reciente de docker, cuando creamos una red especifica nuestra tipo bridge tiene más caracteristicas que la red bridge por defecto.
+- La legacy brige requiere que abramos puertos, la nueva expone todos sus puertos entre ellos.
+- `docker network create --help`
+```
+Options:
+  --attachable           Enable manual container attachment
+  --aux-address map      Auxiliary IPv4 or IPv6 addresses used by
+                          Network driver (default map[])
+  --config-from string   The network from which copying the configuration
+  --config-only          Create a configuration only network
+-d, --driver string        Driver to manage the Network (default "bridge")
+  --gateway strings      IPv4 or IPv6 Gateway for the master subnet
+  --ingress              Create swarm routing-mesh network
+  --internal             Restrict external access to the network
+  --ip-range strings     Allocate container ip from a sub-range
+  --ipam-driver string   IP Address Management Driver (default "default")
+  --ipam-opt map         Set IPAM driver specific options (default map[])
+  --ipv6                 Enable IPv6 networking
+  --label list           Set metadata on a network
+-o, --opt map              Set driver specific options (default map[])
+  --scope string         Control the network's scope
+  --subnet strings       Subnet in CIDR format that represents a
+                          network segment
+```
+- El **DRIVER** (*flag -d o --driver <string>*) también puede ser overlay que se usará para docker en cluster
+- `docker network create red1`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/529x64/c0be98dac4bb5dbd556b2f70bfa19893/image.png)
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/538x114/eddcefa81d11a56e288666c084e5e538/image.png)
+- *he creado una imagen de centos para probar el comando "nmcli con" pero no he tenido éxito :S*
+- ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/77189f22965f18d111c8180328287283/image.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### [45. Asociar contenedores a una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630896#questions/8801798)
 - 
 ### [46. Prácticas: Creación de redes y asociación de contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9766566#questions/8801798)

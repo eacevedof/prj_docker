@@ -17,6 +17,7 @@
 
 ## Comandos importantes:
 - Iniciar sesion en un contenedor: `docker exec -it <NAMES> bash` bash es la app con la que interactuaremos
+- Arrancar un contenedor que esté como servicio: `docker run -itd --name centosx centos`
 
 ## Notas.
 - ~~Para arrancar docker en windows hay que lanzar el **Docker Quickstar Terminal** en modo administrador~~
