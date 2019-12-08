@@ -552,7 +552,18 @@ Options:
 - `docker run -d --name pg1 -e POSTGRES_PASSWORD=secret postgres`
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1134x69/d61771348314047f53a89ce1730dd1ea/image.png)
   - Podemos ver que la BBDD escucha por el puerto 5432. Como vamos a linkarlo con –link no es necesario “publicar” el puerto, como hemos hecho en el ejercicio anterior.
-  
+  - Nos conectamos a la base de datos (la password es la que hemos puesto al crear el contenedor, “secret” en mi caso). Usamos el comando “psql”. Si todo es correcto tenemos base de datos
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/354x81/3e597e5f7bf4e1672c4045bc72d96c9e/image.png)
+  - con `\q` salimos de `postgres=#`
+- Arrancamos Drupal
+- `docker run -d --name dp1 --link pg1:postgres -p 8080:80 drupal`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1150x67/1e7fd4c1b2611c15acb1475fbdb4fbe8/image.png)
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/712x288/df47349d259e98019b776ea1a564d0ba/image.png)
+  - `cat /etc/hosts`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/389x141/ec15b1c6eee7dd817235e340a62485c6/image.png)
+  - `pings`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/566x256/bf51602c28695d789a6d5c6f79747c4d/image.png)
+- Como ya sabemos link es unidireccional con lo cual no se puede hacer `ping <nombre>` desde postgres a drupal
 
 
 ### [49. Enlazar contenedores en Redes personalizadas. Con imagen Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9633152#questions/8801798)
