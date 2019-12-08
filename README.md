@@ -19,6 +19,9 @@
 - Iniciar sesion en un contenedor: `docker exec -it <NAMES> bash` bash es la app con la que interactuaremos
 - Arrancar un contenedor que esté como servicio: `docker run -itd --name centosx centos`
 
+## Bash contenedores:
+- `apt-get update; apt-get install iputils-ping -y; apt-get update; apt-get install net-tools -y`
+
 ## Notas.
 - ~~Para arrancar docker en windows hay que lanzar el **Docker Quickstar Terminal** en modo administrador~~
 - ~~**`<programs>\git-bash.exe --login -i "<programs>\docker-toolbox\start.sh"`**~~
@@ -60,3 +63,4 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 yo@my_pc MINGW64 /<project>/escuela_it (master)
 $
 ```
+- **docker inspect** sirve para mostrar información de configuración del contenedor. Esta herramienta nos permite pedir info de red de un servicio sin necesidad de instalar las apps de red dentro de este.

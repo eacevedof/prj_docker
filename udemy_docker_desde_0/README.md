@@ -460,8 +460,23 @@ Options:
 
 ### [45. Asociar contenedores a una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630896#questions/8801798)
 - Las redes de tipo bridge se pueden configurar de forma sencilla para que los contenedores que se encuentren en ella puedan conectarse entre si.
-- 
-
+- `docker run -it --name <cont NAMES> --network <nw NAME> <REPOSITORY>`
+- `docker run -it --name ubuntua --network red1 ubuntu`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/389x91/680c88760770883c97d6fa6a38edf5e4/image.png)
+- `docker run -d --name nginx4 --network red1 nginx`
+- `docker inspect nginx4 | grep IPAd`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/383x84/196648f6cb7e2feee40c49b4584f54ba/image.png)
+- **ping**:*apt-get update; apt-get install iputils-ping -y*
+- `ping 172.18.0.3` ok
+- **ifconfig**:*apt-get update; apt-get install net-tools -y*
+- `ifconfig`
+- Se puede añadir un contenedor a varias redes. **connect**
+- `dcoker network connect <nw NAME> <cont NAMES>`
+- `docker network connect red2 ubuntua`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/591x55/8c4b7b73f573f762c67f79039f08ccaa/image.png)
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/404x165/8d37e0a4f73ef60bff7754e1a38c7f49/image.png)
+- `docker network disconnect red2 ubuntua`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/383x135/eea9ed911f2faed05aa4f1fa646cd65f/image.png)
 
 ### [46. Prácticas: Creación de redes y asociación de contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9766566#questions/8801798)
 - 
