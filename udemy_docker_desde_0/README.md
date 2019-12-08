@@ -543,10 +543,9 @@ Options:
   - crea un contenedor con el mapeo de b1 en **/etc/hosts**
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/420x208/f1d09140fdf876637b397a0eef30cec5/image.png)
 - Los enlaces son **unidireccionales** ya que el ping solo lo puede hacer (por nombre) la maquina (contenedor) donde se ha configurado **--link**
-
-
 ### [48. Práctica-Enlazar con link. Ejemplo Drupal y PostgreSQL](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9774582#questions/8801798)
 - 
+
 ### [49. Enlazar contenedores en Redes personalizadas. Con imagen Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9633152#questions/8801798)
 - 
 ### [50. NOTA IMPORTANTE RESPECTO AL SIGUIENTE VÍDEO](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/10714234#questions/8801798)
