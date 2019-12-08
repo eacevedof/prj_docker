@@ -454,20 +454,13 @@ Options:
 - `docker inspect red1`
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/608x267/b677d913358f4725908971ea0280d6f1/image.png)
 - Docker recomienda que creemos nuestras propias redes de modo que cuando asociemos nuestro contenedores a esa red verán todos sus puertos publicados de manera automática.
-- 
-
-
-
-
-
-
-
-
-
-
+- `docker network create --subnet=192.168.0.0/16 red2`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/540x63/b7d5496c5659eb6a00ad49996b6cd10f/image.png)
 
 ### [45. Asociar contenedores a una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630896#questions/8801798)
 - 
+
+
 ### [46. Prácticas: Creación de redes y asociación de contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9766566#questions/8801798)
 - 
 ### [47. Enlazar contenedores con --link. Con imagen Busybox](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9631694#questions/8801798)
