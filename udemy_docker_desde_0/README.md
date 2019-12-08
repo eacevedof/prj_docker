@@ -583,7 +583,14 @@ Options:
 - No hemos necesitado `--link` ya que al estar los contenedores en una red personalizada, esta (la red), crea su propio DNS de forma que todas las maquinas se ven entre si
 
 ### [50. NOTA IMPORTANTE RESPECTO AL SIGUIENTE VÍDEO](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/10714234#questions/8801798)
-- 
+```
+NOTA IMPORTANTE. En la versión 8 de MYSQL han cambiado el tratamiento de las password 
+y aplicaciones que no están preparadas no funcionan. por ejemplo wordpress o  joomla.
+
+Por tanto, es necesario descargarse la IMAGEN versión 5.7 o anterior.
+
+También se puede usar MariaDB que es la versión open source de MYSQL
+``` 
 ### [51. Ejemplo enlazar contenedores. WordPress y Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9633144#questions/8801798)
 - Wp se va a conectar a mysql_wp y creara esa bd
 - ![arquitectura](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/690x327/1f2354585edc0698ba1c48373a7ba2fa/image.png)
