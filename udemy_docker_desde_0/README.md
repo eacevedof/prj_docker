@@ -569,7 +569,18 @@ Options:
 - Tenemos dos redes: red1 y red2
 - Instalaremos una imagen de mysql
 - Cuando se arranca un contenedor crea una bd por defecto 
-- Al arrancar el contenedor hay que pasarle una **variable de entorno: -e** 
+- Al arrancar el contenedor hay que pasarle una **variable de entorno: -e** **MYSQL_ROOT_PASSWORD**
+- Tendremos un mysql **servidor** y uno **cliente**
+- `docker run -d --name my_s --rm --network red1 -e MYSQL_ROOT_PASSWORD=secret mysql`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1083x57/184a7e45774d1309d29446c20e20a9d2/image.png)
+  - No hemos publicado ningún puerto (-p) porque no queremos acceder desde la maq host sino desde otro contenedor
+  - `docker exec -it my_s bash`
+  - `mysql -u root -p` nos conectamos al cliente 
+- `docker run -it --name my_c --rm --network red1 mysql bash` 
+  - importante al final pasar **bash** porque de lo contrario intentará crear la bd
+-  en **my_c** `mysql -h my_s -u root -p`
+  - conectamos con **my_s**
+- No hemos necesitado `--link` ya que al estar los contenedores en una red personalizada, esta (la red), crea su propio DNS de forma que todas las maquinas se ven entre si
 
 ### [50. NOTA IMPORTANTE RESPECTO AL SIGUIENTE VÍDEO](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/10714234#questions/8801798)
 - 
