@@ -517,7 +517,15 @@ Options:
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/514x88/82a2e84c848461a5f4ca4d66c5c5779f/image.png)
 
 ### [47. Enlazar contenedores con --link. Con imagen Busybox](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9631694#questions/8801798)
-- 
+- Veremos enlaces por bridge por defecto y bridge personalizadas
+- Los contenedores que están asociados a la red predefinida
+- El flag **--link** se usa para contenedores legacy. Se recomienda no utilizrlo
+- Contenedores asociados a otra red esta opción (link) no es necesaria.
+- `docker ps -a | wc -l`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/194x57/f8eb5458b78b7f68d597a55bc23e5018/image.png)
+- Borrar todos los contenedores 
+  - `docker rm -f $(docker ps -q)`, `docker rm -f \`docker ps -q)\``
+
 ### [48. Práctica-Enlazar con link. Ejemplo Drupal y PostgreSQL](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9774582#questions/8801798)
 - 
 ### [49. Enlazar contenedores en Redes personalizadas. Con imagen Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9633152#questions/8801798)
