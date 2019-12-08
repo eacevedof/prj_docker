@@ -529,7 +529,7 @@ Options:
   ```
   docker rm -f $(docker ps -q)
   ó
-  docker rm -f `docker ps -q)`
+  docker rm -f `docker ps -q`
   ```
 - Imagen **busybox**
   - Contenedor navaja suiza. Muy sencillo con utilidades
