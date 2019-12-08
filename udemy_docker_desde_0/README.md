@@ -13,6 +13,7 @@
 - [pdf](https://a2.udemycdn.com/2018-03-15_10-17-37-b55782c603d5ecd0cc007432116aa550/original.pdf?nva=20191110205206&download=True&filename=1-Practicas-Docker.Instalar-Centos.pdf&token=0e65864f2497f13cb7d83)
 ### [11. Instalar Docker en Windows Parte 1](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626120#overview)
 - Docker Toolbox está desactualizada
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/864x348/530e61d9f38f98bef5337af76d0a3b77/image.png)
 ### [12. Instalar Windows en Docker Parte 2](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626858#overview)
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/396x244/ae59381db77f38adcb816fc81e6a4604/image.png)
 - Windows containers y linux container
@@ -629,7 +630,12 @@ id ec29947ac692073069cb853e671d91f8e0ba912e286c0b8e201bd123a933405f has active e
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/655x324/8a21fe05387c383e6325ebc2df3a9777/image.png)
 
 ### [55. Crear un volumen en un contenedor](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630904#questions/8804326)
-- 
+- La forma más facil de crear un volumen es con **-v** al crear el contenedor
+```
+/var/lib/docker is mounted on the persistent Virtual Disk of the VM which is under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
+```
+
+
 ### [56. Visualizar información de volúmenes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634186#questions/8804326)
 - 
 ### [57. Práctica: Crear un volumen en contenedor. Imagen Owncloud](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9780654#questions/8804326)
