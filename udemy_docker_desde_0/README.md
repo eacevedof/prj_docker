@@ -524,7 +524,7 @@ Options:
 - `docker ps -a | wc -l`
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/194x57/f8eb5458b78b7f68d597a55bc23e5018/image.png)
 - Borrar todos los contenedores 
-  - `docker rm -f $(docker ps -q)`, `docker rm -f `docker ps -q)``
+  - `docker rm -f $(docker ps -q)`, `docker rm -f &#96;docker ps -q)&#96;`
 
 ### [48. Práctica-Enlazar con link. Ejemplo Drupal y PostgreSQL](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9774582#questions/8801798)
 - 
