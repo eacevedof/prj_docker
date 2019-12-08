@@ -608,9 +608,9 @@ in Standard input code on line 22
 authentication method unknown to the client in Standard input code on line 22
 MySQL Connection Error: (2054) The server requested authentication method unknown to the client
 ```
-
 ### [52. Práctica-Enlazar contenedores con redes personalizadas. Joomla y Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9778720#questions/8801798)
 - 
+
 ### [53. Borrar una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630898#questions/8801798)
 - 
 
