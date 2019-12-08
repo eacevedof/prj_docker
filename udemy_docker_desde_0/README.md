@@ -469,7 +469,7 @@ Options:
 - **ping**:*apt-get update; apt-get install iputils-ping -y*
 - `ping 172.18.0.3` ok
 - **ifconfig**:*apt-get update; apt-get install net-tools -y*
-- `ifconfig`
+- `apt-get update; apt-get install iputils-ping -y; apt-get update; apt-get install net-tools -y`
 - Se puede añadir un contenedor a varias redes. **connect**
 - `dcoker network connect <nw NAME> <cont NAMES>`
 - `docker network connect red2 ubuntua`
@@ -487,8 +487,34 @@ Options:
   - Si inspeccionamos las NIC de centos aparecería un nuevo adaptador levantado y conectado a algo como: br-*2af896b355f5* ...
   - Lo he revisado en windows y solo tengo interfaces que no coincidan con el rango de **net1** que vá de: `172.19.0.1 - 172.19.255.254`
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/291x297/2d0fd50b2254db0a5ff0bfd81ebc51fc/image.png)
-
-
+- `docker run -d -p 27017:27017 --network net1 --name mongo1 mongo`
+  - Crear contenedor mongo dentro de la red net1 con un mapeo de puertos fijos
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/378x83/00d889aea8b9e02941f249f1f6504f04/image.png)
+- `docker run -d -p 27018:27017 --network net1 --name mongo2 mongo`
+  - ping correcto entre mongo1 y mongo2
+- `docker network create net2 --subnet=172.30.0.0/16 --ip-range=172.30.10.0/24`
+  - subred sea la 172.30.0.0/16
+  - Que los contenedores se les asocie una IP que comience a partir de la 172.30.10.0/24
+- `docker run -d --name mongo3 --network net2 mongo`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/749x141/92e6b0615b7a5c57c009fc8b7f20734c/image.png)
+  ```
+  "NetworkID": "b3148cf95d0279b51de5b2dfc6a58b5dd13090f8accfef8516e6e9d4843119c6",
+  "EndpointID": "2f6f8cb2ef41ab7ff1979c3f2576e2e776dea021cf6d519e1a3de1a9f965a173",
+  "Gateway": "172.30.10.0",
+  "IPAddress": "172.30.10.1",  
+  ```
+  - Si intentamos acceder desde la bash que tenemos abierta en “mongo1” a mongo3 no la encuentra porque no están en la misma subred
+- `docker network connect net1 mongo3`
+  ```
+  "NetworkID": "b3148cf95d0279b51de5b2dfc6a58b5dd13090f8accfef8516e6e9d4843119c6",
+  "EndpointID": "2f6f8cb2ef41ab7ff1979c3f2576e2e776dea021cf6d519e1a3de1a9f965a173",
+  "Gateway": "172.30.10.0",
+  "IPAddress": "172.30.10.1",
+  ```
+- `ping mongo3`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/587x118/df209f9dcfcfb2aead0b2cbd7025da12/image.png)
+- `docker network disconnect net1 mongo3`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/514x88/82a2e84c848461a5f4ca4d66c5c5779f/image.png)
 
 ### [47. Enlazar contenedores con --link. Con imagen Busybox](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9631694#questions/8801798)
 - 
