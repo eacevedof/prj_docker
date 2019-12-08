@@ -517,7 +517,7 @@ Options:
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/514x88/82a2e84c848461a5f4ca4d66c5c5779f/image.png)
 
 ### [47. Enlazar contenedores con --link. Con imagen Busybox](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9631694#questions/8801798)
-- Veremos enlaces por bridge por defecto y bridge personalizadas
+- Veremos enlaces en bridge por defecto usando flag **--link** 
 - Los contenedores que están asociados a la red predefinida
 - El flag **--link** se usa para contenedores legacy. Se recomienda no utilizrlo
 - Contenedores asociados a otra red esta opción (link) no es necesaria.
@@ -529,6 +529,21 @@ Options:
   ó
   docker rm -f `docker ps -q)`
   ```
+- Imagen **busybox**
+  - Contenedor navaja suiza. Muy sencillo con utilidades
+  - Permite poner aplicaciones encima
+  - Tiene utilidades GNU
+- `docker run -it --rm --name b1 busybox`
+  - Para que no se nos quede en ejecución. En cuanto salgamos borra el contenedor
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/657x142/36270cfa80ac71a288225b6fb32dc153/image.png)
+  - `docker exec -it b1 sh`
+- Vamos a enlazar un segundo contenedor con este **b1**
+- `docker run -it --rm --name b2 busybox`
+- `docker run -it --rm --name b3 --link b1:maquina1 busybox`
+  - crea un contenedor con el mapeo de b1 en **/etc/hosts**
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/420x208/f1d09140fdf876637b397a0eef30cec5/image.png)
+- Los enlaces son **unidireccionales** ya que el ping solo lo puede hacer (por nombre) la maquina (contenedor) donde se ha configurado **--link**
+
 
 ### [48. Práctica-Enlazar con link. Ejemplo Drupal y PostgreSQL](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9774582#questions/8801798)
 - 
