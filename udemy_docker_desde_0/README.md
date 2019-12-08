@@ -594,6 +594,20 @@ También se puede usar MariaDB que es la versión open source de MYSQL
 ### [51. Ejemplo enlazar contenedores. WordPress y Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9633144#questions/8801798)
 - Wp se va a conectar a mysql_wp y creara esa bd
 - ![arquitectura](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/690x327/1f2354585edc0698ba1c48373a7ba2fa/image.png)
+- `docker run -d --name my_wp --rm --network red1 -e MYSQL_ROOT_PASSWORD=secret mysql`
+- `docker run -d --name wp -p 8080:80 --rm --network red1 -e WORDPRESS_DB_HOST=my_wp -e WORDPRESS_DB_PASSWORD=secret wordpress`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1068x51/568d638de218eda53e4501bf864cc685/image.png)
+- **No está bien** no hemos configurado el puerto (corregido arriba)
+- *No conecta con mysql debido al error comentado en 50*
+```
+[08-Dec-2019 22:29:17 UTC] PHP Warning:  mysqli::__construct(): 
+The server requested authentication method unknown to the client [caching_sha2_password]
+in Standard input code on line 22
+
+[08-Dec-2019 22:29:17 UTC] PHP Warning:  mysqli::__construct(): (HY000/2054): The server requested 
+authentication method unknown to the client in Standard input code on line 22
+MySQL Connection Error: (2054) The server requested authentication method unknown to the client
+```
 
 ### [52. Práctica-Enlazar contenedores con redes personalizadas. Joomla y Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9778720#questions/8801798)
 - 
