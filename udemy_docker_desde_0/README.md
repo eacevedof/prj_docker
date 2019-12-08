@@ -612,7 +612,16 @@ MySQL Connection Error: (2054) The server requested authentication method unknow
 - 
 
 ### [53. Borrar una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630898#questions/8801798)
-- 
+- si hay contenedores en ejecución no deja borrar la red
+- `docker network rm red1`
+```
+λ docker network rm red1
+Error response from daemon: error while removing network: network red1 
+id ec29947ac692073069cb853e671d91f8e0ba912e286c0b8e201bd123a933405f has active endpoints
+```
+- `docker stop wp`
+- `docker stop my_wp`
+- `docker network rm red1`
 
 ## Sección 4: Volúmenes
 ### []()
