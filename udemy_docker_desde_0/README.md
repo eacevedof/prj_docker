@@ -633,7 +633,8 @@ id ec29947ac692073069cb853e671d91f8e0ba912e286c0b8e201bd123a933405f has active e
 ### [55. Crear un volumen en un contenedor](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630904#questions/8804326)
 - La forma más facil de crear un volumen es con **-v** al crear el contenedor
 ```
-/var/lib/docker is mounted on the persistent Virtual Disk of the VM which is under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
+/var/lib/docker is mounted on the persistent Virtual Disk of the VM which is 
+under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 ```
 
 
