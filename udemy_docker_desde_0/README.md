@@ -459,6 +459,7 @@ Options:
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/374x187/d100740bc97503661f7517b71c9f5200/image.png)
 
 ### [45. Asociar contenedores a una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630896#questions/8801798)
+- Las redes de tipo bridge se pueden configurar de forma sencilla para que los contenedores que se encuentren en ella puedan conectarse entre si.
 - 
 
 
