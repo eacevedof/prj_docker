@@ -479,7 +479,17 @@ Options:
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/383x135/eea9ed911f2faed05aa4f1fa646cd65f/image.png)
 
 ### [46. Prácticas: Creación de redes y asociación de contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9766566#questions/8801798)
-- 
+- [13-Pr-cticas-Crear-redes]()
+- `docker network ls`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/509x218/48b97edd9a0cc25c0f020e815d79c017/image.png)
+- Si estuviera en centos ocurriria esto:
+  - Despues de crear la red docker le asigna un id, en mi caso *2af896b355f5*
+  - Si inspeccionamos las NIC de centos aparecería un nuevo adaptador levantado y conectado a algo como: br-*2af896b355f5* ...
+  - Lo he revisado en windows y solo tengo interfaces que no coincidan con el rango de **net1** que vá de: `172.19.0.1 - 172.19.255.254`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/291x297/2d0fd50b2254db0a5ff0bfd81ebc51fc/image.png)
+
+
+
 ### [47. Enlazar contenedores con --link. Con imagen Busybox](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9631694#questions/8801798)
 - 
 ### [48. Práctica-Enlazar con link. Ejemplo Drupal y PostgreSQL](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9774582#questions/8801798)
