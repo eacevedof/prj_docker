@@ -625,7 +625,9 @@ id ec29947ac692073069cb853e671d91f8e0ba912e286c0b8e201bd123a933405f has active e
 
 ## Sección 4: Volúmenes
 ### [54. Conceptos de volúmenes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630902#questions/8804326)
-- 
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/748x351/d14501781fa8b94d67a890ae592a06a5/image.png)
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/655x324/8a21fe05387c383e6325ebc2df3a9777/image.png)
+
 ### [55. Crear un volumen en un contenedor](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630904#questions/8804326)
 - 
 ### [56. Visualizar información de volúmenes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634186#questions/8804326)
