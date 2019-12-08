@@ -14,6 +14,7 @@
 ### [11. Instalar Docker en Windows Parte 1](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626120#overview)
 - Docker Toolbox está desactualizada
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/864x348/530e61d9f38f98bef5337af76d0a3b77/image.png)
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/442x135/6583dd430cf253227f655d4014a524f8/image.png)
 ### [12. Instalar Windows en Docker Parte 2](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9626858#overview)
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/396x244/ae59381db77f38adcb816fc81e6a4604/image.png)
 - Windows containers y linux container
