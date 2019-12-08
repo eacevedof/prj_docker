@@ -565,9 +565,12 @@ Options:
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/566x256/bf51602c28695d789a6d5c6f79747c4d/image.png)
 - Como ya sabemos link es unidireccional con lo cual no se puede hacer `ping <nombre>` desde postgres a drupal
 
-
 ### [49. Enlazar contenedores en Redes personalizadas. Con imagen Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9633152#questions/8801798)
-- 
+- Tenemos dos redes: red1 y red2
+- Instalaremos una imagen de mysql
+- Cuando se arranca un contenedor crea una bd por defecto 
+- Al arrancar el contenedor hay que pasarle una **variable de entorno: -e** 
+
 ### [50. NOTA IMPORTANTE RESPECTO AL SIGUIENTE VÍDEO](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/10714234#questions/8801798)
 - 
 ### [51. Ejemplo enlazar contenedores. WordPress y Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9633144#questions/8801798)
