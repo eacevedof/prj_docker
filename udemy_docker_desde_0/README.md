@@ -544,7 +544,16 @@ Options:
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/420x208/f1d09140fdf876637b397a0eef30cec5/image.png)
 - Los enlaces son **unidireccionales** ya que el ping solo lo puede hacer (por nombre) la maquina (contenedor) donde se ha configurado **--link**
 ### [48. Práctica-Enlazar con link. Ejemplo Drupal y PostgreSQL](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9774582#questions/8801798)
-- 
+- Enlazar contenedores con `--link`
+- Vamos a montar un enlace entre un Drupal (un gestor de contenidos open-source de los más usados) y una Base de datos PosrtgreSQL
+- `docker pull drupal`
+- `docker pull postgres`
+- Vamos en primer lugar a arrancar el contenedor Postgresql y crear la Base de datos. Le tenemos que indicar un nombre y luego una variable de entorno para la password, en este caso he puesto “secret”
+- `docker run -d --name pg1 -e POSTGRES_PASSWORD=secret postgres`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1134x69/d61771348314047f53a89ce1730dd1ea/image.png)
+  - Podemos ver que la BBDD escucha por el puerto 5432. Como vamos a linkarlo con –link no es necesario “publicar” el puerto, como hemos hecho en el ejercicio anterior.
+  
+
 
 ### [49. Enlazar contenedores en Redes personalizadas. Con imagen Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9633152#questions/8801798)
 - 
@@ -553,6 +562,7 @@ Options:
 ### [51. Ejemplo enlazar contenedores. WordPress y Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9633144#questions/8801798)
 - Wp se va a conectar a mysql_wp y creara esa bd
 - ![arquitectura](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/690x327/1f2354585edc0698ba1c48373a7ba2fa/image.png)
+
 ### [52. Práctica-Enlazar contenedores con redes personalizadas. Joomla y Mysql](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9778720#questions/8801798)
 - 
 ### [53. Borrar una red](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630898#questions/8801798)
