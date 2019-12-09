@@ -648,10 +648,14 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1001x64/a7a0214a93e4a4f0242af71f303d96ed/image.png)
   - A partir de este momento todo el *CRUD* que se realice dentro de `ubuntu_v/datos_eaf` o `centos_host/var/lib/docker/volumes/<hash-de-datos_eaf>/_data/` sera lo mismo ya que es un mapeo de **host_folder:container_folder**
   - Una vez que se crea un contenedor con un volumen ese volumen es persistente.
-
-
 ### [56. Visualizar información de volúmenes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634186#questions/8804326)
-- 
+- Comando `docker volume`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/555x212/2b5a0b2e535d5056b65e77b27d34e838/image.png)
+- `docker volume ls`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/684x81/6dfee09147742e29a13a163653fae167/image.png)
+- `dcoker volume inspect 2ef303689a893306a0a7dccfbef14fb7f65b90d0038a5b495b12284d51c66fa0`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/713x196/5373314e224718d50810531d792ed123/image.png)
+
 ### [57. Práctica: Crear un volumen en contenedor. Imagen Owncloud](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9780654#questions/8804326)
 - 
 ### [58. Crear un directorio compartido con el host](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630908#questions/8804326)
