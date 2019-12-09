@@ -675,6 +675,8 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 
 ### [58. Crear un directorio compartido con el host](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630908#questions/8804326)
 - La forma ideal de compartir un volumen entre host-contenedor es hacerlo en el arranque
+- **NOTA:** Esto no es totalmente compatible con win pq usa el host de centos
+- ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/e7e725116a6b63a3c6f50f812354ab8e/image.png)
 
 
 ### [59. Compartir volúmenes entre contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630912#questions/8804326)
