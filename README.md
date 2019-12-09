@@ -70,3 +70,11 @@ $
     - >Error response from daemon: OCI runtime create failed: container_linux.go:346: starting container process caused "exec: \"--name\": executable file not found in $PATH": unknown.
   - `docker run -d --name apache1 -p 80:80 --rm -v e:/docker/app:/usr/local/apache2/htdocs/ httpd`
     - Esta si crea el contenedor
+- **docker hub**
+  - mostrar botón crear respositorio:
+    ```
+    - Ir al nombre de mii cuenta (almacse)
+    - Seleccionar "My content"
+    - Y luego al seleccionar Repositories en el menu superior ya me aparece.
+    ```
+    - [https://hub.docker.com/repository/create](https://hub.docker.com/repository/create)

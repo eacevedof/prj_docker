@@ -714,8 +714,10 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 ### [60. Práctica: Compartir directorios con host principal. Con imagen APACHE HTTPD](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9782042#questions/8804326)
 - [17-Practicas-Crear-un-directorio-compartido.pdf]()
 - `docker pull httpd` Instlación de APACHE HTTPD
-- 
-
+- `docker run -d --name apache1 -p 80:80 --rm -v e:/docker/app:/usr/local/apache2/htdocs/ httpd`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1058x173/0c93fab0c2ef7fef0f7ce919d4d2845d/image.png)
+- `docker inspect apache1`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/466x151/b6ec108f7dc37c08688544eaaa740103/image.png)
 
 ### [61. Crear un volumen independiente](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634100#questions/8804326)
 - 
