@@ -713,6 +713,7 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 
 ### [60. Práctica: Compartir directorios con host principal. Con imagen APACHE HTTPD](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9782042#questions/8804326)
 - 
+
 ### [61. Crear un volumen independiente](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634100#questions/8804326)
 - 
 ### [62. Borrar un volumen](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634094#questions/8804326)
