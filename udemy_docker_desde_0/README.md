@@ -693,10 +693,15 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 - `docker inspect ubuntu2 > ubuntu.json`
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/359x118/c8b46adfe64335c61fb89bde298a9d63/image.png)
 
-
-
 ### [59. Compartir volúmenes entre contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630912#questions/8804326)
-- 
+- Vamos a crear un volumen en un contenedor que sea utilizado por otros contenedores
+- `docker run -it -v /datoseaf --name ubuntu4 ubuntu bash`
+  - En windows esto crea un directorio **E:** ^^
+  
+- Ya tenemos el volumen **datoseaf**
+- Compartiremos *datoseaf* con ubuntu5 **--volumes-from**
+  - `docker run -it --name ubuntu5 --volumes-from ubuntu4`
+
 ### [60. Práctica: Compartir directorios con host principal. Con imagen APACHE HTTPD](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9782042#questions/8804326)
 - 
 ### [61. Crear un volumen independiente](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634100#questions/8804326)
