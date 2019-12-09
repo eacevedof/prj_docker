@@ -661,7 +661,15 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 - Volumenes que ya vienen con el contenedor: *OwnCloud*
 - Vamos a lanzar un contenedor y vamos a ver como se crea un volumen de forma automática y para ver donde lo deja.
 - En este caso vamos a usar una imagen de OwnCloud, que nos permite disponer de nuestro almacenamiento privado en la nube.
-
+- `docker pull owncloud`
+- `docker rm $(docker ps -q)`
+  - Eliminamos todos los contenedores
+- `docker volume prune`
+  - Borramos los volumenes huerfanos
+- Si comprobamos `centos/var/lib/docker/volumes/` no debería haber nada más que **metadata.db**
+- Para probar que funciona correctamente, vamos a crear un contenedor que se elimine al salir
+  - `docker run -d --rm -p 80:80 --name cloudx owncloud`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/563x231/5d72d7e691f07ed75630307e9555c257/image.png)
 
 ### [58. Crear un directorio compartido con el host](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630908#questions/8804326)
 - 
