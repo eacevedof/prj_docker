@@ -737,7 +737,7 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 - `docker volume prune`
 
 ### [63. Practica: Crear volumenes y borrarlos](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9782926#questions/8804326)
-- [18-Pr-cticas-Crear-volumenes.pdf]()
+- [18-Pr-cticas-Crear-volumenes.pdf](https://github.com/eacevedof/prj_docker/blob/master/udemy_docker_desde_0/practicas/18-Pr-cticas-Crear-volumenes.pdf)
 
 ## Sección 5: Crear y gestionar imágenes
 - [Github]()
