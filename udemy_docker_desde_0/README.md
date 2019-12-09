@@ -657,7 +657,12 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/713x196/5373314e224718d50810531d792ed123/image.png)
 
 ### [57. Práctica: Crear un volumen en contenedor. Imagen Owncloud](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9780654#questions/8804326)
-- 
+- >ownCloud es una aplicación de software libre del tipo Servicio de alojamiento de archivos, que permite el almacenamiento en línea y aplicaciones en línea (cloud computing). ownCloud puede ser instalado dentro de un servidor que disponga de una versión reciente de PHP (mayor o igual a 5.6) y soporte de SQLite (base de datos por defecto), MySQL o PostgreSQL.
+- Volumenes que ya vienen con el contenedor: *OwnCloud*
+- Vamos a lanzar un contenedor y vamos a ver como se crea un volumen de forma automática y para ver donde lo deja.
+- En este caso vamos a usar una imagen de OwnCloud, que nos permite disponer de nuestro almacenamiento privado en la nube.
+
+
 ### [58. Crear un directorio compartido con el host](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630908#questions/8804326)
 - 
 ### [59. Compartir volúmenes entre contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630912#questions/8804326)
