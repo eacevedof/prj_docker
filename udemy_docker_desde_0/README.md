@@ -724,6 +724,7 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 
 ### [61. Crear un volumen independiente](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634100#questions/8804326)
 - 
+
 ### [62. Borrar un volumen](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634094#questions/8804326)
 - 
 ### [63. Practica: Crear volumenes y borrarlos](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9782926#questions/8804326)
