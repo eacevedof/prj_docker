@@ -712,7 +712,10 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/528x195/43853d79ebe1000d678b14c7022dc4de/image.png)
 
 ### [60. Práctica: Compartir directorios con host principal. Con imagen APACHE HTTPD](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9782042#questions/8804326)
+- [17-Practicas-Crear-un-directorio-compartido.pdf]()
+- `docker pull httpd` Instlación de APACHE HTTPD
 - 
+
 
 ### [61. Crear un volumen independiente](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634100#questions/8804326)
 - 
