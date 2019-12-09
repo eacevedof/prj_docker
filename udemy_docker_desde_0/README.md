@@ -640,13 +640,14 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
   - No deberiamos de tocar este directorio
   - en `/var/lib/docker` encontramos una carpeta **volumes**
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/725x168/2e9f3cd186f130cdc0586590cca5881c/image.png)
-- `docker run -it -v /datos_eaf --name ubuntu_v ubuntu bash`
+  - `docker run -it -v /datos_eaf --name ubuntu_v ubuntu bash`
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1104x65/684c36ee7e89e643f1a0277e587972f8/image.png)
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/826x412/a0cc3216186e3afdb17440f0168590f9/image.png)
   - Esto habría creado un nuevo hash dentro de `/var/lib/docker/volumes/<hash-de-datos_eaf>/`
   - Esta ruta es un nuevo directorio con un subdir `_data`
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1001x64/a7a0214a93e4a4f0242af71f303d96ed/image.png)
   - A partir de este momento todo el *CRUD* que se realice dentro de `ubuntu_v/datos_eaf` o `centos_host/var/lib/docker/volumes/<hash-de-datos_eaf>/_data/` sera lo mismo ya que es un mapeo de **host_folder:container_folder**
+  - Una vez que se crea un contenedor con un volumen ese volumen es persistente.
 
 
 ### [56. Visualizar información de volúmenes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634186#questions/8804326)
