@@ -643,7 +643,11 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 - `docker run -it -v /datos_eaf --name ubuntu_v ubuntu bash`
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1104x65/684c36ee7e89e643f1a0277e587972f8/image.png)
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/826x412/a0cc3216186e3afdb17440f0168590f9/image.png)
-  
+  - Esto habría creado un nuevo hash dentro de `/var/lib/docker/volumes/<hash-de-datos_eaf>/`
+  - Esta ruta es un nuevo directorio con un subdir `_data`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1001x64/a7a0214a93e4a4f0242af71f303d96ed/image.png)
+  - A partir de este momento todo el *CRUD* que se realice dentro de `ubuntu_v/datos_eaf` o `centos_host/var/lib/docker/volumes/<hash-de-datos_eaf>/_data/` sera lo mismo ya que es un mapeo de **host_folder:container_folder**
+
 
 ### [56. Visualizar información de volúmenes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634186#questions/8804326)
 - 
