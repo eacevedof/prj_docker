@@ -718,6 +718,9 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1058x173/0c93fab0c2ef7fef0f7ce919d4d2845d/image.png)
 - `docker inspect apache1`
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/466x151/b6ec108f7dc37c08688544eaaa740103/image.png)
+- compartiremos el directorio `e:/docker/app` con otro contenedor
+- `docker run -d --rm --name apache2 -p 8080:80 --volumes-from apache1 httpd`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/983x249/71563ee9af4171f71347ec3cc3d56cef/image.png)
 
 ### [61. Crear un volumen independiente](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634100#questions/8804326)
 - 
