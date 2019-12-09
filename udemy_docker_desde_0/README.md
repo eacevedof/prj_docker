@@ -695,12 +695,21 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 
 ### [59. Compartir volúmenes entre contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630912#questions/8804326)
 - Vamos a crear un volumen en un contenedor que sea utilizado por otros contenedores
-- `docker run -it -v /datoseaf --name ubuntu4 ubuntu bash`
-  - En windows esto crea un directorio **E:** ^^
-  
+- `winpty docker run -it -v /datoseaf --name ubuntu4 ubuntu bash`
+  - **error** En windows esto crea un directorio **E:** ^^
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/477x84/4836285fd168e6065058ef169eb18944/image.png)
+- Pruebo en cmd: `docker run -it -v /datoseaf --name ubuntu4 ubuntu bash`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/512x106/1fc522ce781d2049d7bb4b71a738197f/image.png)
 - Ya tenemos el volumen **datoseaf**
 - Compartiremos *datoseaf* con ubuntu5 **--volumes-from**
-  - `docker run -it --name ubuntu5 --volumes-from ubuntu4`
+  - `docker run -it --name ubuntu5 --volumes-from ubuntu4 ubuntu bash`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/519x108/1fb380bd3b4c8230f44f5f724732154e/image.png)
+- Compartimos **datoseaf** con ubuntu6
+  - `docker run -it --name ubuntu6 --volumes-from ubuntu4 ubuntu bash`
+- En el momento que borro el último contenedor enlazado a un volumen este queda huerfano y es imposible volverlo a enganchar con un contenedor.
+- Los datos se mantienen.
+- Para borrar los volumenes huerfanos se usa `docker volume prune`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/528x195/43853d79ebe1000d678b14c7022dc4de/image.png)
 
 ### [60. Práctica: Compartir directorios con host principal. Con imagen APACHE HTTPD](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9782042#questions/8804326)
 - 
