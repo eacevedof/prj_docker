@@ -18,6 +18,7 @@
 ## Comandos importantes:
 - Iniciar sesion en un contenedor: `docker exec -it <NAMES> bash` bash es la app con la que interactuaremos
 - Arrancar un contenedor que esté como servicio: `docker run -itd --name centosx centos`
+- Iniciar sesion sin **exec** `docker start -i <NAMES>`
 
 ## Bash contenedores:
 - `apt-get update; apt-get install iputils-ping -y; apt-get update; apt-get install net-tools -y`
