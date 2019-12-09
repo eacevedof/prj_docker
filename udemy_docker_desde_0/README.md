@@ -674,7 +674,9 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 - La parte 2 es similar a 56. Me la salto
 
 ### [58. Crear un directorio compartido con el host](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630908#questions/8804326)
-- 
+- La forma ideal de compartir un volumen entre host-contenedor es hacerlo en el arranque
+
+
 ### [59. Compartir volúmenes entre contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630912#questions/8804326)
 - 
 ### [60. Práctica: Compartir directorios con host principal. Con imagen APACHE HTTPD](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9782042#questions/8804326)
