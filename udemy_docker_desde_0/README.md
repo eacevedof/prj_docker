@@ -723,7 +723,14 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/983x249/71563ee9af4171f71347ec3cc3d56cef/image.png)
 
 ### [61. Crear un volumen independiente](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634100#questions/8804326)
-- 
+- `docker volume create vol1`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/480x194/b3839b1914534770aa7e568aa29913b1/image.png)
+- con el volumen *vol1* **huerfano** creado vamos a asociarlo a un contenedor
+- `docker run -d -it --rm --name ubuntu7 -v vol1:/dir7 ubuntu bash`
+- montamos otro contenedor con un dir read-only
+- `docker run -d -it --rm --name ubuntu8 -v vol1:/datos_sl:ro ubuntu`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/521x174/5d5ac2b78f909c02a7d35766239cfb07/image.png)
+
 
 ### [62. Borrar un volumen](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634094#questions/8804326)
 - 
