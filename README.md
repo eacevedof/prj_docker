@@ -65,3 +65,8 @@ yo@my_pc MINGW64 /<project>/escuela_it (master)
 $
 ```
 - **docker inspect** sirve para mostrar información de configuración del contenedor. Esta herramienta nos permite pedir info de red de un servicio sin necesidad de instalar las apps de red dentro de este.
+- **no es lo mismo**
+  - `docker run -d --rm -v e:/docker/app:/usr/local/apache2/htdocs/ httpd --name apache1 -p 80:80` y
+    - >Error response from daemon: OCI runtime create failed: container_linux.go:346: starting container process caused "exec: \"--name\": executable file not found in $PATH": unknown.
+  - `docker run -d --name apache1 -p 80:80 --rm -v e:/docker/app:/usr/local/apache2/htdocs/ httpd`
+    - Esta si crea el contenedor
