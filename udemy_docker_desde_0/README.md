@@ -636,7 +636,14 @@ id ec29947ac692073069cb853e671d91f8e0ba912e286c0b8e201bd123a933405f has active e
 /var/lib/docker is mounted on the persistent Virtual Disk of the VM which is 
 under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 ```
-
+- **Si estuvieramos en centos**
+  - No deberiamos de tocar este directorio
+  - en `/var/lib/docker` encontramos una carpeta **volumes**
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/725x168/2e9f3cd186f130cdc0586590cca5881c/image.png)
+- `docker run -it -v /datos_eaf --name ubuntu_v ubuntu bash`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1104x65/684c36ee7e89e643f1a0277e587972f8/image.png)
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/826x412/a0cc3216186e3afdb17440f0168590f9/image.png)
+  
 
 ### [56. Visualizar información de volúmenes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634186#questions/8804326)
 - 
