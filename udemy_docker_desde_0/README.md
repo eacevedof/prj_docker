@@ -732,7 +732,9 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/521x174/5d5ac2b78f909c02a7d35766239cfb07/image.png)
 
 ### [62. Borrar un volumen](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9634094#questions/8804326)
-- 
+- `docker volume rm <VOLUME NAME>`
+- antes de borrar un volumen hay que borrar los contenedores que están apuntando a este
+- `docker volume prune`
 
 ### [63. Practica: Crear volumenes y borrarlos](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9782926#questions/8804326)
 - 
