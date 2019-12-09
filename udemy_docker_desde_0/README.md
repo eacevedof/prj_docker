@@ -631,6 +631,8 @@ id ec29947ac692073069cb853e671d91f8e0ba912e286c0b8e201bd123a933405f has active e
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/655x324/8a21fe05387c383e6325ebc2df3a9777/image.png)
 
 ### [55. Crear un volumen en un contenedor](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630904#questions/8804326)
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/543x96/ec7db4ef2692067789f38833f9c990ec/image.png)
+- **docker volumen en windows** `docker run --rm -v c:/Users:/data alpine ls /data`
 - La forma más facil de crear un volumen es con **-v** al crear el contenedor
 ```
 /var/lib/docker is mounted on the persistent Virtual Disk of the VM which is 
@@ -676,7 +678,9 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 ### [58. Crear un directorio compartido con el host](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630908#questions/8804326)
 - La forma ideal de compartir un volumen entre host-contenedor es hacerlo en el arranque
 - **NOTA:** Esto no es totalmente compatible con win pq usa el host de centos
+- `docker run -it -v /root/dir1:dir1 --name ubuntud1 ubuntu`
 - ![](https://trello-attachments.s3.amazonaws.com/5b014dcaf4507eacfc1b4540/5dea358db633626932c2649a/e7e725116a6b63a3c6f50f812354ab8e/image.png)
+
 
 
 ### [59. Compartir volúmenes entre contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630912#questions/8804326)
