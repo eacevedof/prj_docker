@@ -686,7 +686,13 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/792x99/b4b5b64fa615499fc0b15248ce8e7d25/image.png)
   - **ok**
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/509x52/1ddab8ea361a44d1cee44d2e3fdeaebd/image.png)
-  
+  - **ok**
+- `docker run -v e:/docker/dir1:/dir1 --name ubuntu3 ubuntu`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/470x41/f34c619fe71574ab17c6a938f98afb95/image.png)
+- Realmente no es un volumen es un montaje o bind.
+- `docker inspect ubuntu2 > ubuntu.json`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/359x118/c8b46adfe64335c61fb89bde298a9d63/image.png)
+
 
 
 ### [59. Compartir volúmenes entre contenedores](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9630912#questions/8804326)
