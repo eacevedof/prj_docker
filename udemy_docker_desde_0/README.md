@@ -816,7 +816,24 @@ RUN echo 1.0 >> /etc/version && apt-get install -y git \
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/561x236/56f4b0efb5b9d7f6689d8a43a0c2bc00/image.png)
 
 ### [70. CMD](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9649772#questions/8804326)
--
+- Nos permite indicar el comando por defecto del contenedor
+- Despues de arrancar el contenedor se ejecutará el comando por defecto (el CMD)
+```Dockerfile
+FROM ubuntu
+RUN apt-get update
+# no puede haber nada interactivo por eso el flag -y sino daría error
+RUN apt-get install -y python
+# con && evitamos que se cree una capa por RUN 
+RUN echo 1.0 >> /etc/version && apt-get install -y git \
+    && apt-get install -y iputils-ping
+# el cmd que vale siempre es el último
+CMD echo "Welcome to this container"
+```
+- `docker build -t image:v1 .`
+- `docker run -it --rm image:v1`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/310x48/73ce4a483f9e3032bb49532713690cec/image.png)
+
+
 ### [71. ENTRYPOINT](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9658432#questions/8804326)
 -
 ### [72. WORKDIR](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9671888#questions/8804326)

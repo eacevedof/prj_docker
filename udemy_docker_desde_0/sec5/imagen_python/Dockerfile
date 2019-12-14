@@ -5,3 +5,5 @@ RUN apt-get install -y python
 # con && evitamos que se cree una capa por RUN 
 RUN echo 1.0 >> /etc/version && apt-get install -y git \
     && apt-get install -y iputils-ping
+# el cmd que vale siempre es el último
+CMD echo "Welcome to this container"
