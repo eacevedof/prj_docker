@@ -852,6 +852,7 @@ RUN echo 1.0 >> /etc/version && apt-get install -y git \
 # lo ideal sería que solo ejecutara /bin/bash es por esto que se monta en un json
 # CMD /bin/bash
 
+# con esta directiva hacemos que entre automaticamente en el bash al hacer el run -it
 CMD ["/bin/bash"]
 ```
 
