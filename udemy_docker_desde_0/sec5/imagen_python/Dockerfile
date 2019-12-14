@@ -17,6 +17,7 @@ COPY index.html .
 COPY app.log /datos
 
 ## ADD ##
+# crea subdir en /datos1/docs
 ADD docs docs
 ADD f* /datos/
 ADD f.tar .
