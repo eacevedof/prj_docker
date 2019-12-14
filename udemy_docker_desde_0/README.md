@@ -880,6 +880,16 @@ CMD ["/bin/bash"]
 ENTRYPOINT ["/bin/bash"]
 ```
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/416x60/70a9724289dcaf18dd9ce1b5c1cbfa3a/image.png)
+```Dockerfile
+...
+# diskfile
+ENTRYPOINT ["df"]
+```
+- `docker run -it --rm image:v2` lanza: df 
+- `docker run -it --rm image:v2 -h` lanza: df -h
+
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/510x310/7bb3ea2eb530db173963e67349e07f14/image.png)
+
 
 ### [72. WORKDIR](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9671888#questions/8804326)
 -

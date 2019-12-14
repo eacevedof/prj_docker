@@ -20,6 +20,7 @@ RUN echo 1.0 >> /etc/version && apt-get install -y git \
 # CMD ["/bin/bash"]
 
 # la recomendacion es ponerlo en formato json (para su ejecucion con EXEC)
-ENTRYPOINT ["/bin/bash"]
+# diskfile
+ENTRYPOINT ["df"]
 
 
