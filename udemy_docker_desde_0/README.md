@@ -750,7 +750,21 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 - Cada contenedor es la suma de cada capa de la imágen
 - Veremos como modificar un contenedor y crear nuestras propias imágenes
 ### [65. Modificar un contenedor](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635050#questions/8804326)
--
+- `docker run -it --name ubuntu1 ubuntu bash` creamos un contenedor
+- supongamos que necesito el comando wget
+- no lo tengo por defecto
+- `apt-get update`
+  - Se trae todo lo que necesita, la gestión de los paquetes y el repositorio
+- `apt-get install wget -y`
+- `wget google.es` ya funciona
+- `docker run -it --name ubuntu2 ubuntu bash`
+  - no tendría el wget
+- Los cambios en un contenedor no se replican a otro
+- con `docker diff ubuntu1` o `docker diff <cont NAMES>`
+  - A: added, D: deleted, C: changed
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/866x165/1f414ba0324e4f8d651167444d0f43a8/image.png)
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/183x92/8e855a84724a831675126037a7eafe85/image.png)
+
 ### [66. Docker commit. Crear una imagen manualmente](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635056#questions/8804326)
 -
 ### [67. Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635062#questions/8804326)
