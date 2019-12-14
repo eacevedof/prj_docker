@@ -853,13 +853,37 @@ RUN echo 1.0 >> /etc/version && apt-get install -y git \
 # CMD /bin/bash
 
 # con esta directiva hacemos que entre automaticamente en el bash al hacer el run -it
+# lo que hay en cmd podría rescribirlo con otro comando (p.e. ls) al lanzar el contenedor
+CMD ["/bin/bash"]
+
+# rescritura con: df -h
+# docker run -it --rm image:v2 df -h
+```
+### [71. ENTRYPOINT](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9658432#questions/8804326)
+- Al igual que CMD hace algo al arrancar el contenedor
+- La diferencia es que ENTRYPOINT obliga a que ese comando se lance siempre
+```Dockerfile
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install -y python
+RUN echo 1.0 >> /etc/version && apt-get install -y git \
+    && apt-get install -y iputils-ping
+# con esta directiva hacemos que entre automaticamente en el bash al hacer el run -it
 CMD ["/bin/bash"]
 ```
+- rescribiendo el comando que hay en CMD: `docker run -it --rm image:v2`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/442x146/a52d2dcb91dbc9e4dc360d87e5a70cad/image.png)
+```Dockerfile
+...
+    && apt-get install -y iputils-ping
+# la recomendacion es ponerlo en formato json (para su ejecucion con EXEC)
+ENTRYPOINT ["/bin/bash"]
+```
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/416x60/70a9724289dcaf18dd9ce1b5c1cbfa3a/image.png)
 
-### [71. ENTRYPOINT](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9658432#questions/8804326)
--
 ### [72. WORKDIR](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9671888#questions/8804326)
 -
+
 ### [73. COPY-ADD](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9672634#questions/8804326)
 -
 ### [74. ENV](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9685174#questions/8804326)

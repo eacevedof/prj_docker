@@ -17,6 +17,9 @@ RUN echo 1.0 >> /etc/version && apt-get install -y git \
 # lo ideal sería que solo ejecutara /bin/bash es por esto que se monta en un json
 # CMD /bin/bash
 
-CMD ["/bin/bash"]
+# CMD ["/bin/bash"]
+
+# la recomendacion es ponerlo en formato json (para su ejecucion con EXEC)
+ENTRYPOINT ["/bin/bash"]
 
 
