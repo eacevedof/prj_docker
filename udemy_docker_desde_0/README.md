@@ -766,7 +766,17 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/183x92/8e855a84724a831675126037a7eafe85/image.png)
 
 ### [66. Docker commit. Crear una imagen manualmente](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635056#questions/8804326)
--
+- Lo mejor es hacer construcción de imagenes automáticas
+  - `dcoker commit <cont NAMES> <img REPOSITORY>`
+    - Crea imagen a partir de contenedor
+
+- Vamos a usar el cont **ubuntu1**
+- `docker commit ubuntu1 mi_ubuntu` el tag por defecto es **latest**
+  - Añade la imagen como respositorio 
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1093x210/1a6d7cdd37e96df65bb934c19f221e57/image.png)
+- `docker run -it mi_ubuntu bash`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/666x101/f4501161df016f2107ee59a1ef392a1f/image.png)
+
 ### [67. Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635062#questions/8804326)
 -
 ### [68. Crear una imagen de un Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635066#questions/8804326)
