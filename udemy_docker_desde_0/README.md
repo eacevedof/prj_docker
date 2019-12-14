@@ -911,7 +911,34 @@ ENTRYPOINT ["/bin/bash"]
 - `docker run -i --rm image:v3`
 ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/448x78/2757491d4b11f362b2017a7d4c5a76d1/image.png)
 ### [73. COPY-ADD](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9672634#questions/8804326)
--
+- 
+```Dockerfile
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install -y python
+RUN echo 1.0 >> /etc/version && apt-get install -y git \
+    && apt-get install -y iputils-ping
+
+## WORKDIR
+RUN mkdir /datos
+WORKDIR /datos
+RUN touch f1.txt
+RUN mkdir /datos1
+WORKDIR /datos1
+RUN touch f2.txt
+
+## COPY
+COPY index.html .
+COPY app.log /datos
+
+## ENTRYPOINT
+ENTRYPOINT ["/bin/bash"]
+```
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/751x142/365acb5b1c6d5e9e1823a7996456634f/image.png)
+- **ADD**
+
+
+
 ### [74. ENV](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9685174#questions/8804326)
 -
 ### [75. ARG](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9691772#questions/8804326)
