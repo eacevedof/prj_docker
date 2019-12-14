@@ -16,6 +16,11 @@ RUN touch f2.txt
 COPY index.html .
 COPY app.log /datos
 
+## ADD ##
+ADD docs docs
+ADD f* /datos/
+ADD f.tar .
+
 ## ENTRYPOINT
 ENTRYPOINT ["/bin/bash"]
 
