@@ -15,6 +15,7 @@ RUN touch f2.txt
 ## COPY
 COPY index.html .
 COPY app.log /datos
+COPY add_user.sh .
 
 ## ADD ##
 # crea subdir en /datos1/docs y copia ./docs a /datos1/dos
@@ -33,5 +34,8 @@ RUN mkdir $dir && mkdir $dir1
 # no tengo la obligacion de aplicar valor a dir2
 ARG dir2
 RUN mkdir $dir2
+ARG user
+ENV user_docker $user
+RUN /datos1/add_user.sh
 
 ENTRYPOINT ["/bin/bash"]
