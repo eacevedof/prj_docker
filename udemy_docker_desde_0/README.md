@@ -973,7 +973,26 @@ ENTRYPOINT ["/bin/bash"]
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/380x108/fbf5ef36cbae7caced84ca39c2f0138a/image.png)
 
 ### [74. ENV](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9685174#questions/8804326)
--
+- Como usar variables dentro de las imagenes
+- Utilizar una var cuando lanzamos un contenedor
+- flags: `-e  o --env`
+- `docker run -it --rm --env x=10 image:v5`
+- `env` devuelve todas las viables de entorno
+  - `echo $<nombre variable>`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/550x398/ed034fdeaad213daf5e7b9cb3687e718/image.png)
+```Dockerfile
+
+## ENV
+ENV dir=/data dir1=/data1
+RUN mkdir $dir && mkdir $dir1
+
+## ENTRYPOINT
+# ENTRYPOINT ["/bin/bash","-c","/datos1/welcome.sh"] ??? 
+# esto da error pq no existe welcome.sh y no deja entrar al bash
+
+ENTRYPOINT ["/bin/bash"]
+```
+
 ### [75. ARG](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9691772#questions/8804326)
 -
 ### [76. EXPOSE](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9691968#questions/8804326)

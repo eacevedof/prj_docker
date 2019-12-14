@@ -24,7 +24,12 @@ ADD f* /datos/
 # esto descomprime f.tar en /datos1
 ADD f.tar .
 
+## ENV
+ENV dir=/data dir1=/data1
+RUN mkdir $dir && mkdir $dir1
+
 ## ENTRYPOINT
+# ENTRYPOINT ["/bin/bash","-c","/datos1/welcome.sh"] ??? 
+# esto da error pq no existe welcome.sh y no deja entrar al bash
+
 ENTRYPOINT ["/bin/bash"]
-
-
