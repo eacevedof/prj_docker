@@ -28,8 +28,10 @@ ADD f.tar .
 ENV dir=/data dir1=/data1
 RUN mkdir $dir && mkdir $dir1
 
-## ENTRYPOINT
-# ENTRYPOINT ["/bin/bash","-c","/datos1/welcome.sh"] ??? 
-# esto da error pq no existe welcome.sh y no deja entrar al bash
+## ARG
+# nos permite pasar variables en la construcción
+# no tengo la obligacion de aplicar valor a dir2
+ARG dir2
+RUN mkdir $dir2
 
 ENTRYPOINT ["/bin/bash"]

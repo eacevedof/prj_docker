@@ -981,20 +981,35 @@ ENTRYPOINT ["/bin/bash"]
   - `echo $<nombre variable>`
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/550x398/ed034fdeaad213daf5e7b9cb3687e718/image.png)
 ```Dockerfile
-
 ## ENV
 ENV dir=/data dir1=/data1
 RUN mkdir $dir && mkdir $dir1
 
-## ENTRYPOINT
-# ENTRYPOINT ["/bin/bash","-c","/datos1/welcome.sh"] ??? 
-# esto da error pq no existe welcome.sh y no deja entrar al bash
+ENTRYPOINT ["/bin/bash"]
+```
+### [75. ARG](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9691772#questions/8804326)
+- Tambien setea variables
+- Es similar a ENV
+```Dockerfile
+## ENV
+ENV dir=/data dir1=/data1
+RUN mkdir $dir && mkdir $dir1
+
+## ARG
+# nos permite pasar variables en la construcción
+# no tengo la obligacion de aplicar valor a dir2
+ARG dir2
+RUN mkdir $dir2
 
 ENTRYPOINT ["/bin/bash"]
 ```
+- `docker build -t image:v6 .`
+  - Error falta argumento
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/666x96/6de5f8f3e56c33943cf8e31cedce5614/image.png)
+- `docker build -t image:v6 --build-arg dir2=/data_eaf .`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/408x122/cc415760c93bcf84d2160c29745c9bca/image.png)
 
-### [75. ARG](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9691772#questions/8804326)
--
+
 ### [76. EXPOSE](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9691968#questions/8804326)
 -
 ### [77. VOLUME](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9707668#questions/8804326)
