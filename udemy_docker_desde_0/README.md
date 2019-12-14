@@ -778,7 +778,16 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/666x101/f4501161df016f2107ee59a1ef392a1f/image.png)
 
 ### [67. Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635062#questions/8804326)
--
+- Vamos a crear imagenes de forma automática
+- Vamos a ver las opciones más importantes de **dockerfile**
+- Ejemplo dockerfile:
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/479x244/0dc8dcaaba8756c79400829f6f68de95/image.png)
+  - Por cada linea se crea una capa
+- dockerfile de ubuntu:
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/836x291/2cb8c12d3bd372af80abe8a6bdbeb41e/image.png)
+  - cada directiva es una capa
+- [Directivas](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#dockerfile-instructions)
+
 ### [68. Crear una imagen de un Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635066#questions/8804326)
 -
 ### [69. RUN](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635082#questions/8804326)
