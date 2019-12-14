@@ -789,7 +789,13 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 - [Directivas](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#dockerfile-instructions)
 
 ### [68. Crear una imagen de un Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635066#questions/8804326)
--
+- `docker build -t <img REPOSITORY> <path Dockerfile>`
+  - Construye una imágen (repositorio) a partir de un fichero Dockerfile
+- `docker build -t imagen_python .`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/925x127/68a6bfb5d1f74b40af6ff37fd38cef34/image.png)
+- `docker -it imagen_python python`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/619x124/1a5e09115d4bad4194865b63a19898a8/image.png)
+
 ### [69. RUN](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635082#questions/8804326)
 -
 ### [70. CMD](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9649772#questions/8804326)
