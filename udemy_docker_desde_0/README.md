@@ -1008,7 +1008,8 @@ ENTRYPOINT ["/bin/bash"]
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/666x96/6de5f8f3e56c33943cf8e31cedce5614/image.png)
 - `docker build -t image:v6 --build-arg dir2=/data_eaf .`
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/408x122/cc415760c93bcf84d2160c29745c9bca/image.png)
-
+- `docker build -t image:v7 --build-arg dir2=/data2 --build-arg user=tom .`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/477x114/01af1d2859e96561a2cdf5e2a07af390/image.png)
 
 ### [76. EXPOSE](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9691968#questions/8804326)
 -
