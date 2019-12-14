@@ -891,8 +891,25 @@ ENTRYPOINT ["df"]
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/510x310/7bb3ea2eb530db173963e67349e07f14/image.png)
 
 ### [72. WORKDIR](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9671888#questions/8804326)
--
-
+- Nos permite indicar el directorio de trabajo para otras directivas
+- Que un comando se ejecute dentro de un directorio
+```Dockerfile
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install -y python
+RUN echo 1.0 >> /etc/version && apt-get install -y git \
+    && apt-get install -y iputils-ping
+RUN mkdir /datos
+WORKDIR /datos
+RUN touch f1.txt
+RUN mkdir /datos1
+WORKDIR /datos1
+RUN touch f2.txt
+ENTRYPOINT ["/bin/bash"]
+```
+- `docker build -t image.v3 .`
+- `docker run -i --rm image:v3`
+![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/448x78/2757491d4b11f362b2017a7d4c5a76d1/image.png)
 ### [73. COPY-ADD](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9672634#questions/8804326)
 -
 ### [74. ENV](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9685174#questions/8804326)
