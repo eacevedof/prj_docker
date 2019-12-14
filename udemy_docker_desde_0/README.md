@@ -797,7 +797,24 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/619x124/1a5e09115d4bad4194865b63a19898a8/image.png)
 
 ### [69. RUN](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635082#questions/8804326)
--
+- `docker image history <img REPOSITORY>`
+  - Muestra el historico de cambios con los hash de las capas
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/930x317/4b142ee0bd11d978d93e61ab13ca6891/image.png)
+- Probamos este Dockerfile
+```dockerfile
+FROM ubuntu
+RUN apt-get update
+# no puede haber nada interactivo por eso el flag -y sino daría error
+RUN apt-get install -y python
+# con && evitamos que se cree una capa por RUN 
+RUN echo 1.0 >> /etc/version && apt-get install -y git \
+    && apt-get install -y iputils-ping
+```
+- `docker build -t imagen_python:v1 .`
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/818x210/08da48b2818b0f7d33c572fe2d335ccb/image.png)
+- ` docker run -it --rm imagen_python:v1 bash`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/561x236/56f4b0efb5b9d7f6689d8a43a0c2bc00/image.png)
+
 ### [70. CMD](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9649772#questions/8804326)
 -
 ### [71. ENTRYPOINT](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9658432#questions/8804326)
