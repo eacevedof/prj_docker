@@ -741,7 +741,14 @@ under C:\Users\Public\Documents\Hyper-V\Virtual hard disks
 
 ## Sección 5: Crear y gestionar imágenes
 ### [64. Introducción a las imágenes Docker](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635216#questions/8804326)
--
+- Capas:
+  - bootfs (lectura)
+  - rootfs (lectura)
+  - n capas de imagen (lectura)
+  - container (lectura/escritura)
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1136x543/5df527493ab5aee658c13f6eb4b35a79/image.png)
+- Cada contenedor es la suma de cada capa de la imágen
+- Veremos como modificar un contenedor y crear nuestras propias imágenes
 ### [65. Modificar un contenedor](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635050#questions/8804326)
 -
 ### [66. Docker commit. Crear una imagen manualmente](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9635056#questions/8804326)
