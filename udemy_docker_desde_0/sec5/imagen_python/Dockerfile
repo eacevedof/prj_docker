@@ -17,9 +17,11 @@ COPY index.html .
 COPY app.log /datos
 
 ## ADD ##
-# crea subdir en /datos1/docs
+# crea subdir en /datos1/docs y copia ./docs a /datos1/dos
 ADD docs docs
+# copia todos los f a /datos/
 ADD f* /datos/
+# esto descomprime f.tar en /datos1
 ADD f.tar .
 
 ## ENTRYPOINT
