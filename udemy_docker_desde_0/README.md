@@ -930,13 +930,12 @@ RUN touch f2.txt
 COPY index.html .
 COPY app.log /datos
 
-
-
 ## ENTRYPOINT
 ENTRYPOINT ["/bin/bash"]
 ```
 - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/751x142/365acb5b1c6d5e9e1823a7996456634f/image.png)
 - **ADD**
+- `tar cvf f.tar f1 f2 f3 f4 f5`
 
 
 ### [74. ENV](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9685174#questions/8804326)
