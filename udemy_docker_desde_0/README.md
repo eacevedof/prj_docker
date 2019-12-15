@@ -1477,11 +1477,14 @@ services:
   web:
     image: nginx:alpine
     volumes:
+      # tipo volume crea un hash en la maq virtual
       - type: volume
         source: mydata
         target: /data
         volume:
           nocopy: true
+      
+      # bind: mapeo de directorios maq host y contenedor
       - type: bind
         source: ./static
         target: /opt/app/static
@@ -1490,13 +1493,20 @@ services:
   db:
     image: postgres:latest
     volumes:
+      # bind: mapeo de ficheros maq host y contenedor
       - "/var/run/postgres/postgres.sock:/var/run/postgres/postgres.sock"
       - "dbdata:/var/lib/postgresql/data"
 
 volumes:
+  # redeclaramos estos vol q tenemos como tipos volume y no como bind
+  # para confirmar que son volumenes
   mydata:
   dbdata:
 ```
+- Evidentemente a mi en windows esto no me va a funcionar el socket
+- creo fichero static/f1
+- `docker-compose exec web sh`
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/605x348/6d3192edc8e899ba97dede288d039992/image.png)
 
 ### [92. Redes en Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9872366#questions)
 - 
