@@ -1012,10 +1012,65 @@ ENTRYPOINT ["/bin/bash"]
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/477x114/01af1d2859e96561a2cdf5e2a07af390/image.png)
 
 ### [76. EXPOSE](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9691968#questions/8804326)
--
+- Los puertos no se publican por defecto
+- Ayuda a la persona que va a utilizar la imagen que puertos va implementar
+- creamos un script: entrypoint.sh, arrancará el apache
+```sh
+# entrypoint.sh
+# arrancar apache
+echo "arrancando apachectl..."
+apachectl start
+/bin/bash
+echo "apache arrancado!"
+```
+
+```Dockerfile
+...
+## ENV
+ENV dir=/data dir1=/data1
+RUN mkdir $dir && mkdir $dir1
+
+## ARG
+# nos permite pasar variables en la construcción
+# no tengo la obligacion de aplicar valor a dir2
+# ARG dir2
+# RUN mkdir $dir2
+# ARG user
+# ENV user_docker $user
+# RUN /datos1/add_user.sh
+
+## EXPOSE puertos
+
+# instalo apache
+RUN apt-get install -y apache2
+# publico el puerto 80
+EXPOSE 80
+# copio mi sh en /datos1
+ADD entrypoint.sh /datos1
+
+## CMD
+# pq no uso RUN? pq RUN no arranca servicios
+# los cambios de estado dentro del cotenedor se hance usando .sh
+# si se desea arrancar servicios una vez creado el contenedor
+# se debe hacer usando un .sh 
+CMD /datos1/entrypoint.sh
+
+# ENTRYPOINT ["/bin/bash"]
+```
+- `docker run -it --rm image:v7`
+- Error con el puerto:
+  - > AH00558: apache2: Could not reliably determine the server's fully qualified doma
+in name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress t
+his message
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/645x66/ceb9186edd76b621ce74336b8e087674/image.png)
+  - Hay que mapearlo con la maquina local
+- `docker run -it --rm -p 3000:80 image:v7`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1083x54/a567b552ba6fcf9f1b048796af7e1b6d/image.png)
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/564x203/919c13a2a385250d9c87ef159c631d45/image.png)
+
 ### [77. VOLUME](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9707668#questions/8804326)
 -
-### [78. Práctica Dockerfile 1: Crear una imagende Nginx](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9797880#questions/8804326)
+### [78. Práctica Dockerfile 1: Crear una imagen de Nginx](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9797880#questions/8804326)
 -
 ### [79. Práctica Dockerfile 2. Crear imagen PostgreSQL con variables y scripts](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9858260#questions/8804326)
 -
