@@ -1069,7 +1069,14 @@ his message
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/564x203/919c13a2a385250d9c87ef159c631d45/image.png)
 
 ### [77. VOLUME](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9707668#questions/8804326)
--
+- Asociar una pagina web a un vol concreto de modo que se pueda compartir entre los distintos contenedores
+- carpeta **paginas**
+```dockerfile
+
+```
+
+
+
 ### [78. Práctica Dockerfile 1: Crear una imagen de Nginx](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9797880#questions/8804326)
 -
 ### [79. Práctica Dockerfile 2. Crear imagen PostgreSQL con variables y scripts](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9858260#questions/8804326)
