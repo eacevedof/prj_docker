@@ -1469,7 +1469,9 @@ PID    USER   TIME   COMMAND
   ```
 
 ### [91. Volúmenes en Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9872356#questions)
-- 
+- carpeta: sec6/cap_91
+- recurso: docker-compose.yml
+-
 
 ### [92. Redes en Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9872366#questions)
 - 
