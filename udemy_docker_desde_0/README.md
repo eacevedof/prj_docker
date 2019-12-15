@@ -294,6 +294,8 @@ Un saludo a todos
     - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1101x71/a023bf8f875810448f608d464cf9f3e4/image.png)
   - `docker container ls --help`
 ### [34. Docker Logs y Docker Kill](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9628656#questions/8801798)
+- *tags*:
+  - ver rendimiento, comprobar consumo, revisar recursos
 - Hay contenedores que se pueden ejecutar en background
 - `docker run -d ubuntu sh -c "while true; do date; done"`
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/527x55/12484b390df62dfadb93ee5feb39747f/image.png)
