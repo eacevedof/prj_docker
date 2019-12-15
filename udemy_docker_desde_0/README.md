@@ -1072,10 +1072,33 @@ his message
 - Asociar una pagina web a un vol concreto de modo que se pueda compartir entre los distintos contenedores
 - carpeta **paginas**
 ```dockerfile
+# Dockerfile
+...
+## EXPOSE 
+RUN apt-get install -y apache2
+EXPOSE 80
+ADD entrypoint.sh /datos1
 
+# VOLUME
+ADD paginas /var/www/html
+# similar a -v
+VOLUME ["/var/www/html"]
+
+# arranca apache
+CMD /datos1/entrypoint.sh
+
+# ENTRYPOINT ["/bin/bash"]
 ```
-
-
+- `docker build -t image:v8 .`
+- `docker run -it --rm --name ap1 -p 3000:80 image:v8`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1077x51/0f0c480fa8dd577ade894c1adcef3ec0/image.png)
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/591x271/73fd368c11db37379ed1e3c7e484e361/image.png)
+- `docker volume inspect <hash>`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/964x188/300c57d201a0ea9905d3b73053a34f29/image.png)
+- **--volumes-from**
+- `docker run -it --rm -p 9000:80 --volumes-from ap1 --name ap2 image:v8`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/600x146/bf844861cfe0401fdf1d32c8c0a6e157/image.png)
+  - no se ha creado otro volumen
 
 ### [78. Práctica Dockerfile 1: Crear una imagen de Nginx](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9797880#questions/8804326)
 -

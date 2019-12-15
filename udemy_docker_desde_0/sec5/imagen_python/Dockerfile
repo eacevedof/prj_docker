@@ -49,8 +49,8 @@ ADD entrypoint.sh /datos1
 
 # VOLUME
 ADD paginas /var/www/html
-VOLUME [""]
-
+# similar a -v
+VOLUME ["/var/www/html"]
 
 ## CMD
 # pq no uso RUN? pq RUN no arranca servicios
