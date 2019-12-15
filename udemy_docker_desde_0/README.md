@@ -1434,7 +1434,40 @@ a526dce0e0d0        cap_89_default      bridge              local
 ef5418a416d9        host                host                local
 ```
 ### [90. Diversos comandos de Docker-Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9863672#questions)
-- 
+- Veremos algunos de los comandos
+- `docker-compose ps` ya visto
+- `docker-compose images`
+  - con docker images no veria este contenido
+- `docker-compose config`
+  - Muestra el contenido de docker-compose.yml
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/447x305/6744a290f7e68b72c4f13e367ecfa90a/image.png)
+  - flag `-q` comprueba si hay algun error
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/594x100/7384bb20769aa872cb9a3532729ab7ff/image.png)
+- `docker-compose start`
+  - Arranca los servicios
+- `docker-compose logs wordpress`
+- `docker-compose top dbserver`
+```
+λ docker-compose top dbserver
+cap_89_dbserver_1
+El sistema no puede encontrar la ruta especificada.
+PID    USER   TIME   COMMAND
+----------------------------
+5555   999    0:03   mysqld
+```
+- `docker-compose pause`
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/785x200/3110fdf89f2ff62fd26d25ea7ad8a31e/image.png)
+- `docker-compose unpause`
+- `docker-compose restart`
+- `docker-compose rm`
+  ```
+  λ docker-compose rm
+  Going to remove cap_89_wordpress_1, cap_89_dbserver_1
+  Are you sure? [yN] y
+  Removing cap_89_wordpress_1 ... done
+  Removing cap_89_dbserver_1  ... done  
+  ```
+
 ### [91. Volúmenes en Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9872356#questions)
 - 
 ### [92. Redes en Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9872366#questions)
