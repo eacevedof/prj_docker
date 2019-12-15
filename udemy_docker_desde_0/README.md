@@ -1507,6 +1507,11 @@ volumes:
 - creo fichero static/f1
 - `docker-compose exec web sh`
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/605x348/6d3192edc8e899ba97dede288d039992/image.png)
+- `docker-compose down`
+  - para los servicios
+  - borra los volumenes
+  - borra los contenedores
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/612x119/1519e09bc285d3f44818deee81de6f07/image.png)
 
 ### [92. Redes en Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9872366#questions)
 - 
