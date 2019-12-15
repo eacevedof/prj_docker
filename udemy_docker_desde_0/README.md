@@ -1103,7 +1103,25 @@ CMD /datos1/entrypoint.sh
 ### [78. Práctica Dockerfile 1: Crear una imagen de Nginx](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9797880#questions/8804326)
 - To-Do:
   - Vamos a realizar un ejemplo práctico de Dockerfile  creando una imagen de Nginx con variables de entorno, ficheros asociados.y volúmenes
-- 
+- *solo hago la última práctica* **counter-strike**
+  ```Dockerfile
+  FROM ubuntu:12.04
+  MAINTAINER Apasoft Formacion "apasoft.formacion@gmail.com"
+  RUN apt-get update
+  RUN apt-get install -y nginx
+  ##RUN echo 'Mi primer Dockerfile' > /usr/share/nginx/www/index.html
+  VOLUME /usr/share/nginx/www/
+  ARG webpage
+  ADD $webpage /usr/share/nginx/www/
+  ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
+  EXPOSE 80  
+  ```
+  - **construimos la imagen**
+  - `docker build -t trainingdock/nginx:v3 --build-arg webpage=web1`
+  - **creamos el contenedor**
+  - `docker run -d -p 80:80 --name nginx2 --rm trainingdock/nginx:v3`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1107x77/53ffceff3056d52343b628f1885a0e68/image.png)
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/792x226/f1144f24c030fb41034cab970c098a29/image.png)
 
 ### [79. Práctica Dockerfile 2. Crear imagen PostgreSQL con variables y scripts](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9858260#questions/8804326)
 -
