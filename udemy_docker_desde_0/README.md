@@ -1389,7 +1389,9 @@ services:
 - Si lo tendría ejecutandose en modo background para detener docker-compose hubiera tenido que uasar **docker-compose stop**
 
 ### [88. Práctica: Crear un Docker Compose básico](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9861416#questions)
-- 
+- Ejemplo se basa en la imagen nginx:v3 (counterstrike)
+- Me salto la práctica, no tengo nginx:v3
+
 ### [89. Enlazar servicios. Puertos y variables](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9863402#questions)
 - 
 ### [90. Diversos comandos de Docker-Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9863672#questions)
