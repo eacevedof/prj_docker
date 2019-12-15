@@ -1342,14 +1342,53 @@ CMD /usr/local/bin/entrypoint.sh
 -
 
 ## Sección 7: Docker Registry
-### []()
--
+### [95. Introducción a Docker Registry]()
+- 
+### [96. Crear un registro de imágenes]()
+- 
+### [97. Subir y bajar imágenes del registro]()
+- 
+### [98. Cambiar el almacenamiento del Docker Registry]()
+- 
 
 ## Sección 8: Docker Swarm. Docker en Cluster
-### []()
+### [99. Introducción a Docker Swarm]()
 -
+### [100. Crear un cluster de Docker Swarm]()
+-
+### [101. Añadir nodos al cluster]()
+-
+### [102. Trabajar con los nodos del cluster]()
+-
+### [103. Crear y trabajar con servicios]()
+-
+### [104. Escalar un servicio]()
+-
+### [105. Borrar un servicio]()
+- 
 
 ## Sección 9: Introducción a Kubernetes
-### []()
+### [106. Introducción a Kubernetes]()
 -
-
+### [107. Arquitectura de Kubernetes]()
+-
+### [108. Tipos de instalación]()
+-
+### [109. Requisitos instalación Minikube]()
+-
+### [110. Instalar Kubectl]()
+-
+### [111. Instalar y probar minikube]()
+-
+### [112. Minikube dashboard]()
+-
+### [113. Crear un Deployment y un pod]()
+-
+### [114. Kubectl proxy. Acceder al pod]()
+-
+### [115. kubectl. Comandos log, describe y exec]()
+-
+### [116. Crear un servicio. Exponer un deployment]()
+-
+### [117. Escalar un servicio]()
+-
