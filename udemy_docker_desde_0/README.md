@@ -1315,7 +1315,7 @@ CMD /usr/local/bin/entrypoint.sh
   - Al tener la cuenta gratuita la encola
 - Esto nos permite que con cada cambio en una app se actualice su imagen
 ### [83. Práctica: Subir imágenes a DockerHub](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9860878#questions/8804326)
--
+- El ejemplo trata sobre la subida de las imagenes de la práctica anterior
 
 ## Sección 6: Docker Compose
 ### []()
