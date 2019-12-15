@@ -1334,7 +1334,34 @@ CMD /usr/local/bin/entrypoint.sh
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/684x334/2fe2494e96ba06cb15983adc8047fd99/image.png)
 
 ### [86. Fichero docker-compose.yml](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9698422#questions)
-- 
+- **docker-compose.yml**
+- Fichero escrito en YAML - Yet another markup language
+- Usaremos un lenguaje ya predefinido
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/374x57/61d4d0c83827e5fda9d242e6a9da9b90/image.png)
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/451x326/e675de8b7b70c689b2eccebba13fce95/image.png)
+```yaml
+version: "3"
+services: 
+  web:
+    # construye la imagen con dockerfile
+    build: .
+    ports:
+    - "5000:5000"
+    volumes: 
+    - .:/code
+    - logvolume01:/var/log
+    links: 
+    - redis
+  redis:
+    image: redis
+
+volumes:
+  logovolume01: {}
+```
+- En **services** tendremos todos los servicios y ponemos nombres descriptivos
+- Cada servicio es un contenedor
+- Todo servicio debe tener o el comando **build** o **image**
+
 ### [87. Mi primer proyecto Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9698434#questions)
 - 
 ### [88. Práctica: Crear un Docker Compose básico](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9861416#questions)
