@@ -1396,6 +1396,7 @@ services:
 
 ### [89. Enlazar servicios. Puertos y variables](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9863402#questions)
 - Ejemplo: wordpress y mysql
+- wp acceso: u:y pass: (e)tmt(v)
 ```yml
 # docker-compose.yml cap_88
 version: "3"
@@ -1423,7 +1424,15 @@ services:
     ports:
       - 3306:3306
 ```
-
+- `docker stats`
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1181x62/b2b88be832847d6e70cd790e533fc191/image.png)
+```
+λ docker network ls
+NETWORK ID          NAME                DRIVER              SCOPE
+f260be727fac        bridge              bridge              local
+a526dce0e0d0        cap_89_default      bridge              local
+ef5418a416d9        host                host                local
+```
 ### [90. Diversos comandos de Docker-Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9863672#questions)
 - 
 ### [91. Volúmenes en Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9872356#questions)
