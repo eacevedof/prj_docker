@@ -1380,6 +1380,14 @@ services:
 - Con el contenedor levantado podría trabajar con el comando **docker** pero no es recomendable.
 - Ha creado una red:
   - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/548x135/a68a0c4c68c840092e0fa571f6ed36f1/image.png)
+- **`docker-compose ps`**
+  - muestra el conjuto de microservicios
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/620x98/998a46a7e1f0e2019caca3927dfbd62d/image.png)
+- En **docker-compose** hay comandos similares a **docker**
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/619x415/660884c2aa9165b6e0e21e2055591f63/image.png)
+- Si detengo docker-compose (ctrl+c)
+- Si lo tendría ejecutandose en modo background para detener docker-compose hubiera tenido que uasar **docker-compose stop**
+
 ### [88. Práctica: Crear un Docker Compose básico](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9861416#questions)
 - 
 ### [89. Enlazar servicios. Puertos y variables](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9863402#questions)
