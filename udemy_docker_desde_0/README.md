@@ -1363,7 +1363,23 @@ volumes:
 - Todo servicio debe tener o el comando **build** o **image**
 
 ### [87. Mi primer proyecto Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9698434#questions)
-- 
+- crear carpeta **pr_nginx**
+```yml
+version:  "3"
+services: 
+  minginx:
+    image: nginx
+    ports:
+    - "80:80"
+```
+- dentro de la carpeta **pr_nginx** ...
+- `docker-compose up`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/625x83/878fe65ffb5c2d034bcc0f69ef10bb48/image.png)
+  - Se queda en modo servicio 
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1175x77/c37e339c1b49c06bf79c617d94092fd9/image.png)
+- Con el contenedor levantado podría trabajar con el comando **docker** pero no es recomendable.
+- Ha creado una red:
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/548x135/a68a0c4c68c840092e0fa571f6ed36f1/image.png)
 ### [88. Práctica: Crear un Docker Compose básico](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9861416#questions)
 - 
 ### [89. Enlazar servicios. Puertos y variables](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9863402#questions)
