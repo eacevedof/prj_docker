@@ -1,18 +1,25 @@
+# docker-compose.yml cap_88
 version: "3"
+
 services: 
+  # mi php
   wordpress:
     image: wordpress
     environment: 
+      # apunta a otro servicio
       WORDPRESS_DB_HOST: dbserver:3306
       WORDPRESS_DB_PASSWORD: mysqlpw
+    # es lo mismo que -p
     ports:
       - 80:80
+    # para q wp funcione antes tiene que arrancar dbserver
     depends_on: 
       - dbserver
 
-dbserver:
-  image: mysql:5.7
-  environment: 
-    MYSQL_ROOT_PASSWORD: mysqlpw
-  ports:
-    - 3306:3306
+  # mi bd
+  dbserver:
+    image: mysql:5.7
+    environment: 
+      MYSQL_ROOT_PASSWORD: mysqlpw
+    ports:
+      - 3306:3306

@@ -1393,7 +1393,35 @@ services:
 - Me salto la práctica, no tengo nginx:v3
 
 ### [89. Enlazar servicios. Puertos y variables](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9863402#questions)
-- 
+- Ejemplo: wordpress y mysql
+```yml
+# docker-compose.yml cap_88
+version: "3"
+
+services: 
+  # mi php
+  wordpress:
+    image: wordpress
+    environment: 
+      # apunta a otro servicio
+      WORDPRESS_DB_HOST: dbserver:3306
+      WORDPRESS_DB_PASSWORD: mysqlpw
+    # es lo mismo que -p
+    ports:
+      - 80:80
+    # para q wp funcione antes tiene que arrancar dbserver
+    depends_on: 
+      - dbserver
+
+  # mi bd
+  dbserver:
+    image: mysql:5.7
+    environment: 
+      MYSQL_ROOT_PASSWORD: mysqlpw
+    ports:
+      - 3306:3306
+```
+
 ### [90. Diversos comandos de Docker-Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9863672#questions)
 - 
 ### [91. Volúmenes en Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9872356#questions)
