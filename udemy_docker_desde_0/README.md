@@ -1281,7 +1281,39 @@ CMD /usr/local/bin/entrypoint.sh
 - `docker pull ioedu/testimg:v7`
 
 ### [82. Integración continua. Ejemplo: Conectar DockerHub y GIthub de forma automática](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9707152#questions/8804326)
--
+- Cada vez que se actualice en **github** automaticamente se creará una imagen asociada en **docker hub**
+- Creamos el repo [**prj_docker_ci**](https://github.com/eacevedof/prj_docker_ci)
+- Copiamos `sec5\imagen_python` en este repo
+- Vinculamos cuentas:
+  - [linked-accounts](https://hub.docker.com/settings/linked-accounts)
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/557x360/6694f4a70acf4b4254becac27c4e1435/image.png)
+  ```sh
+  # email
+  Hey eacevedof!
+  A third-party OAuth application (Docker Hub Builder) with repo scope was recently authorized to access your account.
+  Visit https://github.com/settings/connections/applications/<token> for more information.
+  To see this and other security events for your account, visit 
+    https://github.com/settings/security
+  If you run into problems, please contact support by visiting 
+    https://github.com/contact
+  Thanks,
+  The GitHub Team
+  ```
+  - Configuro el repo en docker hub:
+    - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/992x251/161f45b81c7ea41317b2b03be6bffffc/image.png)
+    - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/919x291/12f904e5c13be0208e1e788802be9ddf/image.png)
+    ```sh
+    # email
+    The following SSH key was added to the eacevedof/prj_docker_ci repository by eacevedof:
+    Docker Cloud Build
+    xx:yy:zz:...
+    If you believe this key was added in error, you can remove the key and disable
+    access at the following location:    
+    ```
+- Con cada push en **github** se lanzará un autobuild en docker hub
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/907x130/939470ec8e0c8b194b9266c0cf35f4fa/image.png)
+  - Al tener la cuenta gratuita la encola
+- Esto nos permite que con cada cambio en una app se actualice su imagen
 ### [83. Práctica: Subir imágenes a DockerHub](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9860878#questions/8804326)
 -
 
