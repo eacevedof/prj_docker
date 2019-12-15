@@ -1263,7 +1263,17 @@ CMD /usr/local/bin/entrypoint.sh
 - vamos a ver como subir alguna de las img que hemos ido creando
 
 ### [81. Subir imágenes a Docker Hub](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9706114#questions/8804326)
--
+- [Crear repo](https://hub.docker.com/repository/create)
+- Conectar con dockerhub
+  - `docker login`
+- directamente con docker push no podría subirlo por no respetar el patron **<mi-usuario>/<img-nombre>:<tag>**
+- debo cambiar a un nombre valido la imagen (con docker image tag)
+- **`docker image tag image:v7 ioedu/testimg:v7`**
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/697x115/bb09b95e6d8c6ce5137c85f71950d1ee/image.png)
+- **`docker push ioedu/testimg:v7`**
+  - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/475x95/aba741ff7da59563d9491fcf831f7684/image.png)
+
+
 ### [82. Integración continua. Ejemplo: Conectar DockerHub y GIthub de forma automática](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9707152#questions/8804326)
 -
 ### [83. Práctica: Subir imágenes a DockerHub](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9860878#questions/8804326)
