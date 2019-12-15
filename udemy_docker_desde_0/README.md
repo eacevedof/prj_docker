@@ -1512,6 +1512,7 @@ volumes:
   - borra los volumenes
   - borra los contenedores
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/612x119/1519e09bc285d3f44818deee81de6f07/image.png)
+- `docker volume prune`
 
 ### [92. Redes en Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9872366#questions)
 - 
