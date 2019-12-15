@@ -1255,7 +1255,13 @@ CMD /usr/local/bin/entrypoint.sh
 - `docker exec -it postgres2 bash`
 
 ### [80. Repaso de Docker Hub](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9705848#questions/8804326)
--
+- Subir nuestras imágenes al repo de docker hub
+- Dockerhub solo permite una cuenta privada gratuita
+- nombres tipo raiz "fabricantes"
+- nombre-usuario/repositorio "particulares"
+  - mi caso: **ioedu/<repositorio>**
+- vamos a ver como subir alguna de las img que hemos ido creando
+
 ### [81. Subir imágenes a Docker Hub](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9706114#questions/8804326)
 -
 ### [82. Integración continua. Ejemplo: Conectar DockerHub y GIthub de forma automática](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9707152#questions/8804326)
