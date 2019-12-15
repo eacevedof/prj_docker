@@ -1319,7 +1319,14 @@ CMD /usr/local/bin/entrypoint.sh
 
 ## Sección 6: Docker Compose
 ### [84. Introducción a Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9692498#questions)
--
+- El potencial de docker es poder enteneder los contenedores como microservicios
+- Yo podría configurar una arquitectura de microservicios pero hacerlo de forma manual es muy laborioso
+- Docker Compose orquesta estos servicios
+- Contiene las instrucciones que relacionan estos contenedores
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/922x359/c369037b60aa35d2715e82fa624ddd59/image.png)
+- Ejemplo **stack MEAN**:
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1098x490/725fc4041345ad48771a02173cb0a14c/image.png)
+
 ### [85. Instalar Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9696910#questions)
 - 
 ### [86. Fichero docker-compose.yml](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9698422#questions)
