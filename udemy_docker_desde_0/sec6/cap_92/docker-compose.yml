@@ -1,0 +1,36 @@
+version: '3.3'
+
+services:
+  app:
+    image: client
+    container_name: client
+    build: .
+    ports: 
+      - 80:3000
+    environment:
+      - MONGO_URI=mongodb://mongo_db/sample
+    depends_on: 
+      - db
+    networks: 
+      - net3
+  db:
+    image: mongo:3.0.15
+    container_name: mongo_db
+    volumes:
+      - ./db:/data/db
+    networks:
+      net3:
+        aliases:
+          - "mongo_db"
+        ipv4_address: 172.16.238.10
+        ipv6_address: 2001:3984:3989::10
+networks:
+  net3:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      -
+        subnet: 172.16.238.0/24
+      -
+        subnet: 2001:3984:3989::/64
