@@ -1272,7 +1272,13 @@ CMD /usr/local/bin/entrypoint.sh
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/697x115/bb09b95e6d8c6ce5137c85f71950d1ee/image.png)
 - **`docker push ioedu/testimg:v7`**
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/475x95/aba741ff7da59563d9491fcf831f7684/image.png)
-
+- Cuando hemos renombrado la imagen le hemos pasado v7 como tag, pero podriamos haber puesto **latest**
+  - `docker image tag image:v7 ioedu/testimg:latest`
+- Una vez que está subido podemos agregar información por tag.
+- *me está tardando mucho el push ^^ como 15min y sigue...*
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/790x144/6552ccfd593d7ba4c01b538de5af4319/image.png)
+- ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/970x87/3ba9c16e98a3e5094dd8a95bf0bea0a7/image.png)
+- `docker pull ioedu/testimg:v7`
 
 ### [82. Integración continua. Ejemplo: Conectar DockerHub y GIthub de forma automática](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9707152#questions/8804326)
 -
