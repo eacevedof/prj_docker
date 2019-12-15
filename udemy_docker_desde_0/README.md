@@ -1266,7 +1266,7 @@ CMD /usr/local/bin/entrypoint.sh
 - [Crear repo](https://hub.docker.com/repository/create)
 - Conectar con dockerhub
   - `docker login`
-- directamente con docker push no podría subirlo por no respetar el patron **<mi-usuario>/<img-nombre>:<tag>**
+- directamente con docker push no podría subirlo por no respetar el patron **`<mi-usuario>/<img-nombre>:<tag>`**
 - debo cambiar a un nombre valido la imagen (con docker image tag)
 - **`docker image tag image:v7 ioedu/testimg:v7`**
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/697x115/bb09b95e6d8c6ce5137c85f71950d1ee/image.png)
