@@ -1328,7 +1328,11 @@ CMD /usr/local/bin/entrypoint.sh
   - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1098x490/725fc4041345ad48771a02173cb0a14c/image.png)
 
 ### [85. Instalar Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9696910#questions)
-- 
+- En windows ya viene el instalador de docker-compose
+- En linux hay que usar curl de un repo de github
+- comando: **docker-compose**
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/684x334/2fe2494e96ba06cb15983adc8047fd99/image.png)
+
 ### [86. Fichero docker-compose.yml](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9698422#questions)
 - 
 ### [87. Mi primer proyecto Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9698434#questions)
