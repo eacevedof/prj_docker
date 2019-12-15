@@ -1318,77 +1318,74 @@ CMD /usr/local/bin/entrypoint.sh
 - El ejemplo trata sobre la subida de las imagenes de la práctica anterior
 
 ## Sección 6: Docker Compose
-### [84. Introducción a Docker Compose]()
+### [84. Introducción a Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9692498#questions)
 -
-### [85. Instalar Docker Compose]()
+### [85. Instalar Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9696910#questions)
 - 
-### [86. Fichero docker-compose.yml]()
+### [86. Fichero docker-compose.yml](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9698422#questions)
 - 
-### [87. Mi primer proyecto Compose]()
+### [87. Mi primer proyecto Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9698434#questions)
 - 
-### [88. Práctica: Crear un Docker Compose básico]()
+### [88. Práctica: Crear un Docker Compose básico](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9861416#questions)
 - 
-### [89. Enlazar servicios. Puertos y variables]()
+### [89. Enlazar servicios. Puertos y variables](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9863402#questions)
 - 
-### [90. Diversos comandos de Docker-Compose]()
+### [90. Diversos comandos de Docker-Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9863672#questions)
 - 
-### [91. Volúmenes en Docker Compose]()
+### [91. Volúmenes en Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9872356#questions)
 - 
-### [92. Redes en Docker Compose]()
+### [92. Redes en Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9872366#questions)
 - 
-### [93. Práctica: crear un MEAN Stack con Composer]()
+### [93. Práctica: crear un MEAN Stack con Composer](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9874566#questions)
 - 
-### [94. Algunas opciones interesantes en Dockerfile]()
+### [94. Algunas opciones interesantes en Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9876792#questions)
 -
-
 ## Sección 7: Docker Registry
-### [95. Introducción a Docker Registry]()
+### [95. Introducción a Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11582990#questions)
 - 
-### [96. Crear un registro de imágenes]()
+### [96. Crear un registro de imágenes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11583588#questions)
 - 
-### [97. Subir y bajar imágenes del registro]()
+### [97. Subir y bajar imágenes del registro](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11659550#questions)
 - 
-### [98. Cambiar el almacenamiento del Docker Registry]()
+### [98. Cambiar el almacenamiento del Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11660588#questions)
 - 
-
 ## Sección 8: Docker Swarm. Docker en Cluster
-### [99. Introducción a Docker Swarm]()
+### [99. Introducción a Docker Swarm](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828351#questions)
 -
-### [100. Crear un cluster de Docker Swarm]()
+### [100. Crear un cluster de Docker Swarm](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828676#questions)
 -
-### [101. Añadir nodos al cluster]()
+### [101. Añadir nodos al cluster](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828824#questions)
 -
-### [102. Trabajar con los nodos del cluster]()
+### [102. Trabajar con los nodos del cluster](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828940#questions)
 -
-### [103. Crear y trabajar con servicios]()
+### [103. Crear y trabajar con servicios](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12838906#questions)
 -
-### [104. Escalar un servicio]()
+### [104. Escalar un servicio](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12839094#questions)
 -
-### [105. Borrar un servicio]()
+### [105. Borrar un servicio](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12839140#questions)
 - 
-
 ## Sección 9: Introducción a Kubernetes
-### [106. Introducción a Kubernetes]()
+### [106. Introducción a Kubernetes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12973616#questions)
 -
-### [107. Arquitectura de Kubernetes]()
+### [107. Arquitectura de Kubernetes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12986974#questions)
 -
-### [108. Tipos de instalación]()
+### [108. Tipos de instalación](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12997456#questions)
 -
-### [109. Requisitos instalación Minikube]()
+### [109. Requisitos instalación Minikube](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/13007348#questions)
 -
-### [110. Instalar Kubectl]()
+### [110. Instalar Kubectl](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/13007454#questions)
 -
-### [111. Instalar y probar minikube]()
+### [111. Instalar y probar minikube](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/13007766#questions)
 -
-### [112. Minikube dashboard]()
+### [112. Minikube dashboard](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/13015096#questions)
 -
-### [113. Crear un Deployment y un pod]()
+### [113. Crear un Deployment y un pod](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/13015276#questions)
 -
-### [114. Kubectl proxy. Acceder al pod]()
+### [114. Kubectl proxy. Acceder al pod](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/13015532#questions)
 -
-### [115. kubectl. Comandos log, describe y exec]()
+### [115. kubectl. Comandos log, describe y exec](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/13015728#questions)
 -
-### [116. Crear un servicio. Exponer un deployment]()
+### [116. Crear un servicio. Exponer un deployment](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/13016442#questions)
 -
-### [117. Escalar un servicio]()
+### [117. Escalar un servicio](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/13016502#questions)
 -
