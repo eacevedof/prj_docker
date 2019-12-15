@@ -1124,7 +1124,8 @@ CMD /datos1/entrypoint.sh
   - ![](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/792x226/f1144f24c030fb41034cab970c098a29/image.png)
 
 ### [79. Práctica Dockerfile 2. Crear imagen PostgreSQL con variables y scripts](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9858260#questions/8804326)
--
+- > En esta práctica puedes probar la construcción de una imagen de la Base de Datos PostgreSQL con variables y scrtips
+- 
 ### [80. Repaso de Docker Hub](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9705848#questions/8804326)
 -
 ### [81. Subir imágenes a Docker Hub](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9706114#questions/8804326)
