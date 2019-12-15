@@ -1101,7 +1101,10 @@ CMD /datos1/entrypoint.sh
   - no se ha creado otro volumen
 
 ### [78. Práctica Dockerfile 1: Crear una imagen de Nginx](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9797880#questions/8804326)
--
+- To-Do:
+  - Vamos a realizar un ejemplo práctico de Dockerfile  creando una imagen de Nginx con variables de entorno, ficheros asociados.y volúmenes
+- 
+
 ### [79. Práctica Dockerfile 2. Crear imagen PostgreSQL con variables y scripts](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9858260#questions/8804326)
 -
 ### [80. Repaso de Docker Hub](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9705848#questions/8804326)
