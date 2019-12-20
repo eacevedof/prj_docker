@@ -1518,7 +1518,6 @@ volumes:
 - Usando recursos del capitulo en cap_92
 - Despliegue de app en node.js
 
-
 ### [93. Práctica: crear un MEAN Stack con Composer](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9874566#questions)
 - 
 ### [94. Algunas opciones interesantes en Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9876792#questions)
