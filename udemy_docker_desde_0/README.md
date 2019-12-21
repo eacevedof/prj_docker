@@ -1700,7 +1700,8 @@ services:
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/669x260/2fcf87d05eb4e7a9bd913c7a3fbe08f4/image.png)
 
 ### [94. Algunas opciones interesantes en Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9876792#questions)
--
+- 
+
 ## Sección 7: Docker Registry
 ### [95. Introducción a Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11582990#questions)
 - 
