@@ -1559,7 +1559,8 @@ volumes:
       image: mongo:3.0.15
       container_name: mongo_db
       volumes:
-        - ./db:/data/db
+        # esto parece que da un error
+        - /db:/data/db
       networks:
         # como se va a configurar más cosas en net3 no se usa -
         net3:  
@@ -1582,19 +1583,35 @@ volumes:
         -
           subnet: 2001:3984:3989::/64
   ```
-- *dentro de cap_92* `docker compose up`
+- *dentro de cap_92* `docker-compose up`
   - **error**
   ```
+  # da error al levantar mongo, me crea la carpeta db pero como que no puede escribir
+  # he configurado todos los permisos y no consigo que escriba
+  # en google no hay mucha info
+  3b235ec82f1c_mongo_db | 2019-12-21T14:02:29.124+0000 I JOURNAL  [initandlisten] journal 
+  dir=/data/db/journal
+  3b235ec82f1c_mongo_db | 2019-12-21T14:02:29.126+0000 I JOURNAL  [initandlisten] recover : 
+  no journal files present, no recovery needed
+  3b235ec82f1c_mongo_db | 2019-12-21T14:02:29.129+0000 I JOURNAL  [initandlisten] info preallocateIsFaster couldn't run due to: couldn't open file 
+  /data/db/journal/tempLatencyTest for writing errno:9 Bad file descriptor; returning false
+  3b235ec82f1c_mongo_db | 2019-12-21T14:02:29.132+0000 I STORAGE  [initandlisten] exception 
+  in initAndListen: 13516 couldn't open file /data/db/journal/j._0 for writing errno:9 
+  Bad file descriptor, terminating
+
+  # por el error anterior el cliente da error
   Please check that you have mongo installed or an environment variable "MONGO_URI" 
   with a URL pointing to a running Mongo server.     
 
   /app/node_modules/mongodb/lib/server.js:267
     process.nextTick(function() { throw err; })
-                                      ^                                                                     
+                                      ^       
   MongoError: failed to connect to server [mongo_db:27017] on first connect 
   [MongoError: getaddrinfo ENOTFOUND mongo_db mongo_db:27017]
     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:328:35)
   ```
+  - **sol**
+  - Habia que ejecutarlo con `docker-compose up -d`
 
 ### [93. Práctica: crear un MEAN Stack con Composer](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9874566#questions)
 - 

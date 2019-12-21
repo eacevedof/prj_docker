@@ -4,6 +4,7 @@ COPY . /app
 
 WORKDIR /app
 
+# instalacion de node_modules
 RUN ["npm", "install"]
 
 EXPOSE 3000/tcp
