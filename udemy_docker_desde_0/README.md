@@ -1516,7 +1516,63 @@ volumes:
 
 ### [92. Redes en Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9872366#questions)
 - Usando recursos del capitulo en cap_92
-- Despliegue de app en node.js
+- Despliegue de app en node.js y mongo
+- **Dockerfile**
+  ```Dockerfile
+  # recupera imagen de node
+  FROM node:8.4
+  # copia todo lo que hay en cap_92 dentro de <contenedor>/app
+  COPY . /app
+  # hace un cd dentro de <contenedor>/app
+  WORKDIR /app
+  # ejecuta npm e install
+  RUN ["npm", "install"]
+  # publica el puerto 3000
+  EXPOSE 3000/tcp
+  # lanza el servicio
+  CMD ["npm", "start"]
+  ```
+- **docker-compose.yml**
+  ```yml
+  version: '3.3'
+
+  services:
+    app:
+      image: client
+      container_name: client
+      build: .
+      ports: 
+        - 80:3000
+      environment:
+        - MONGO_URI=mongodb://mongo_db/sample
+      depends_on: 
+        - db
+      networks: 
+        - net3
+    
+    db:
+      image: mongo:3.0.15
+      container_name: mongo_db
+      volumes:
+        - ./db:/data/db
+      networks:
+        net3:
+          aliases:
+            - "mongo_db"
+          ipv4_address: 172.16.238.10
+          ipv6_address: 2001:3984:3989::10
+
+  networks:
+    net3:
+      driver: bridge
+      ipam:
+        driver: default
+        config:
+        -
+          subnet: 172.16.238.0/24
+        -
+          subnet: 2001:3984:3989::/64
+  ```
 
 ### [93. Práctica: crear un MEAN Stack con Composer](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9874566#questions)
 - 
