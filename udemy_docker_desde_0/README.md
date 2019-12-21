@@ -1611,8 +1611,8 @@ volumes:
   [MongoError: getaddrinfo ENOTFOUND mongo_db mongo_db:27017]
     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:328:35)
   ```
-  - **sol**
-  - Habia que ejecutarlo con `docker-compose up -d`
+  - ~~**sol**~~
+  - ~~Habia que ejecutarlo con `docker-compose up -d`~~
 
 ### [93. Práctica: crear un MEAN Stack con Composer](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9874566#questions)
 - 
