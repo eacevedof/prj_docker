@@ -1593,7 +1593,8 @@ volumes:
   dir=/data/db/journal
   3b235ec82f1c_mongo_db | 2019-12-21T14:02:29.126+0000 I JOURNAL  [initandlisten] recover : 
   no journal files present, no recovery needed
-  3b235ec82f1c_mongo_db | 2019-12-21T14:02:29.129+0000 I JOURNAL  [initandlisten] info preallocateIsFaster couldn't run due to: couldn't open file 
+  3b235ec82f1c_mongo_db | 2019-12-21T14:02:29.129+0000 I JOURNAL  [initandlisten] info 
+  preallocateIsFaster couldn't run due to: couldn't open file 
   /data/db/journal/tempLatencyTest for writing errno:9 Bad file descriptor; returning false
   3b235ec82f1c_mongo_db | 2019-12-21T14:02:29.132+0000 I STORAGE  [initandlisten] exception 
   in initAndListen: 13516 couldn't open file /data/db/journal/j._0 for writing errno:9 
