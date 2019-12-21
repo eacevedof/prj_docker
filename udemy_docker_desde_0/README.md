@@ -1517,6 +1517,7 @@ volumes:
 ### [92. Redes en Docker Compose](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9872366#questions)
 - Usando recursos del capitulo en cap_92
 - Despliegue de app en node.js y mongo
+- En este cap se presta atención a la configuración de redes
 - **Dockerfile**
   ```Dockerfile
   # recupera imagen de node
