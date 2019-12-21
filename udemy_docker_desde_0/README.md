@@ -1616,7 +1616,10 @@ volumes:
   - ~~Habia que ejecutarlo con `docker-compose up -d`~~
 
 ### [93. Práctica: crear un MEAN Stack con Composer](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9874566#questions)
+- [22-Pr-ctica-Docker-Compose-mean-stack]()
+- Instalamos Angular-cli
 - 
+
 ### [94. Algunas opciones interesantes en Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9876792#questions)
 -
 ## Sección 7: Docker Registry
