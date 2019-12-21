@@ -1673,7 +1673,31 @@ CMD ["npm", "start"]
 - `docker build -t server:v1 .`
 - `docker run -d --name e1 -p 3000:3000 server:v1`
 - **5. Conectar los componentes . Docker Compose**
-- 
+- creamos dentro de mean el fichero: **docker-compose.yml**
+```yml
+# Vamos a definir los servicios y contenedores a usar
+version: '3'
+
+services:
+  # Preparamos el cliente
+  angular:
+    image: angular-cli:v1 # 
+    ports:
+     - "4200:4200" # Puerto del cliente
+  
+  # Preparamos el servidor
+  servidor:
+    image: server:v1
+    ports:
+     - "3000:3000" #Puerto del servidor
+
+  #Contenedor de Mongo
+  database:
+    image: mongo
+    ports:
+     - "27017:27017"
+```
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/669x260/2fcf87d05eb4e7a9bd913c7a3fbe08f4/image.png)
 
 ### [94. Algunas opciones interesantes en Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9876792#questions)
 -
