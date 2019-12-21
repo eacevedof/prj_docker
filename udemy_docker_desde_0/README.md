@@ -1617,7 +1617,11 @@ volumes:
 
 ### [93. Práctica: crear un MEAN Stack con Composer](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9874566#questions)
 - [22-Pr-ctica-Docker-Compose-mean-stack]()
-- Instalamos Angular-cli
+- Instalamos Angular-cli `npm install -g @angular/cli`
+- `mkdir mean`
+- `ng new angular-cli` crea carpeta angular-cli
+- `ng serve` sirve el sitio por 4200
+- `Paramos el servidor con CTRL-C`
 - 
 
 ### [94. Algunas opciones interesantes en Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9876792#questions)
