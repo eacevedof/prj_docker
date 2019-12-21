@@ -1622,7 +1622,27 @@ volumes:
 - `ng new angular-cli` crea carpeta angular-cli
 - `ng serve` sirve el sitio por 4200
 - `Paramos el servidor con CTRL-C`
-- 
+- En package.json
+  - `"start": "ng serve --host 0.0.0.0",`
+- Dentro de la carpeta **angular-cli** creamos el dockerfile
+```Dockerfile
+# Lo iniciamos con la imagen official de Node 8
+FROM node:8
+# Vamos a crear un directorio donde dejar la aplicación Angular
+RUN mkdir -p /usr/mi-app
+# Nos cambiamos a ese directorio
+WORKDIR /usr/mi-app
+# Copiamos el paquete json para gestionar las dependencias
+COPY package.json /usr/mi-app
+# Instalamos esas depndencias
+RUN npm install
+# Copiamos el código que hemos generado en el punto anterior, al crear la aplicación angular-cli
+COPY . /usr/mi-app
+# Exponemos el Puerto
+EXPOSE 4200
+# Arrancamos
+CMD ["npm", "start"]
+```
 
 ### [94. Algunas opciones interesantes en Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9876792#questions)
 -
