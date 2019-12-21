@@ -1627,7 +1627,7 @@ volumes:
 - Dentro de la carpeta **angular-cli** creamos el dockerfile
 ```Dockerfile
 # Lo iniciamos con la imagen official de Node 8
-FROM node:8
+FROM node:latest
 # Vamos a crear un directorio donde dejar la aplicación Angular
 RUN mkdir -p /usr/mi-app
 # Nos cambiamos a ese directorio
@@ -1643,6 +1643,12 @@ EXPOSE 4200
 # Arrancamos
 CMD ["npm", "start"]
 ```
+- dentro de **angular-cli**
+- crear imagen: `docker build -t angular-cli:v1 .`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/710x95/21e47deaf67842453118006111d7f996/image.png)
+- crear el contenedor: `docker run -d --name a1 -p 4200:4200 angular-cli:v1`
+- **servidor express**
+- 
 
 ### [94. Algunas opciones interesantes en Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9876792#questions)
 -
