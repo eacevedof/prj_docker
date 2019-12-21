@@ -22,6 +22,7 @@ services:
       net3:
         aliases:
           - "mongo_db"
+          - "mongo_server"
         ipv4_address: 172.16.238.10
         ipv6_address: 2001:3984:3989::10
 networks:

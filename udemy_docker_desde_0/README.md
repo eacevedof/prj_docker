@@ -1539,14 +1539,19 @@ volumes:
   services:
     app:
       image: client
+      # le puedo dar un nombre al contenedor
       container_name: client
+      # construye la imagen a partir de Dockerfile
       build: .
       ports: 
         - 80:3000
       environment:
+        # apunta al contenedor del servicio db "mongo_db"
         - MONGO_URI=mongodb://mongo_db/sample
       depends_on: 
         - db
+
+      # ejecuta: --network net3
       networks: 
         - net3
     
@@ -1556,13 +1561,17 @@ volumes:
       volumes:
         - ./db:/data/db
       networks:
-        net3:
+        # como se va a configurar más cosas en net3 no se usa -
+        net3:  
           aliases:
-            - "mongo_db"
+            - "mongo_db"     # un alias
+            # otro nombre alternativo por si hay otro servicio apuntando a ese nombre
+            - "mongo_server" 
           ipv4_address: 172.16.238.10
           ipv6_address: 2001:3984:3989::10
 
   networks:
+    # crea red: cap_92_net3
     net3:
       driver: bridge
       ipam:
@@ -1572,6 +1581,19 @@ volumes:
           subnet: 172.16.238.0/24
         -
           subnet: 2001:3984:3989::/64
+  ```
+- *dentro de cap_92* `docker compose up`
+  - **error**
+  ```
+  Please check that you have mongo installed or an environment variable "MONGO_URI" 
+  with a URL pointing to a running Mongo server.     
+
+  /app/node_modules/mongodb/lib/server.js:267
+    process.nextTick(function() { throw err; })
+                                      ^                                                                     
+  MongoError: failed to connect to server [mongo_db:27017] on first connect 
+  [MongoError: getaddrinfo ENOTFOUND mongo_db mongo_db:27017]
+    at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:328:35)
   ```
 
 ### [93. Práctica: crear un MEAN Stack con Composer](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9874566#questions)
