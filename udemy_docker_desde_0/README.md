@@ -1859,7 +1859,8 @@ To add a worker to this swarm, run the following command:
 To add a manager to this swarm, run 'docker swarm join-token manager' 
 and follow the instructions.
 ```
-- Los nodos del cluster deben de tener una ip fija
+- Los nodos del cluster deben de tener una ip fija, configuro la ip de mi tarjeta de red por cable
+
 
 
 
