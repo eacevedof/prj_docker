@@ -1929,7 +1929,20 @@ Commands:
   - En el nodo1: `docker swarm join --token ....`
 
 ### [103. Crear y trabajar con servicios](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12838906#questions)
--
+- `nodo3: docker service create --replicas 1 --name servicio1 alpine ping docker.com`
+  - replicas: cuantas veces se va a lanzar en los distintos nodos del cluster
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/892x121/6369d31946a8c4d88518bf9163c66754/image.png)
+  - `verify: Service converged`
+- `nodo3: docker service ls`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1098x121/913f1947939dcd318ee19f83133aeca8/image.png)
+- `nodo3: docker service ps servicio1`
+  - Aporta más información
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1189x122/94fd4c9cbc43c96d3aef43a2a76c5d28/image.png)
+- `nodo2: docker service ps servicio1` no funciona, por no ser manager
+- `nodo2: docker ps`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1053x106/194ff958efe2f8a0bd014faa60a591c5/image.png)
+- `nodo3: docker service logs servicio1`
+- `nodo3: docker service inspect --pretty servicio1`
 
 ### [104. Escalar un servicio](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12839094#questions)
 -
