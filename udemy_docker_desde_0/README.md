@@ -1792,17 +1792,23 @@ localhost:5000/miubu   latest              775349758637        7 weeks ago      
 - Hay que usar la opción -v para modificar el sitio donde almacenaremos las imágenes
 - creo carpeta reg_docker
 ```
-E:\projects\prj_docker\udemy_docker_desde_0\sec7\cap98 (master -> origin)
-λ docker run -d --name cont1 -p 5000:5000 -v ./reg_docker:/var/lib/registry registry
-3be3a4bff972e7ff149dbdd93b0cb19c7994d9e77141502a2bdefa455fae3759
-
-E:\projects\prj_docker\udemy_docker_desde_0\sec7\cap98 (master -> origin)
-λ docker ps                       
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS          
-    PORTS                    NAMES
-3be3a4bff972        registry            "/entrypoint.sh /etc…"   4 seconds ago       Up 3 seconds    
-    0.0.0.0:5000->5000/tcp   cont1
+E:\projects\prj_docker\udemy_docker_desde_0\sec7\cap98\reg_docker (master -> origin)
+λ docker run -d --name cont1 -p 5000:5000 -v 
+E:\projects\prj_docker\udemy_docker_desde_0\sec7\cap98\reg_docker:/var/lib/registry registry
+Unable to find image 'registry:latest' locally
+latest: Pulling from library/registry
+c87736221ed0: Pull complete
+1cc8e0bb44df: Pull complete
+54d33bcb37f5: Pull complete
+e8afc091c171: Pull complete
+b4541f6d3db6: Pull complete
+Digest: sha256:8004747f1e8cd820a148fb7499d71a76d45ff66bac6a29129bfdbfdc0154d146
+Status: Downloaded newer image for registry:latest
+f0084b5985e062b98d1bb5ce93bd9b29ed5f823b8a4a0edf778a98965dfbd4ee
 ```
+- `docker tag ubuntu localhost:5000/ubuntu:prueba`
+- `docker push localhost:5000/ubuntu:prueba`
+
 ## Sección 8: Docker Swarm. Docker en Cluster
 ### [99. Introducción a Docker Swarm](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828351#questions)
 -
