@@ -1787,7 +1787,21 @@ localhost:5000/miubu   latest              775349758637        7 weeks ago      
   - descargando...: `docker pull localhost:5000/miubu`
 
 ### [98. Cambiar el almacenamiento del Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11660588#questions)
-- 
+- Comprobar y modificar el sitio donde tenemos el registro
+- Lo ideal es tener el registro en una unidad de disco que sea rápida
+- Hay que usar la opción -v para modificar el sitio donde almacenaremos las imágenes
+```
+E:\projects\prj_docker\udemy_docker_desde_0\sec7\cap98 (master -> origin)
+λ docker run -d --name cont1 -p 5000:5000 -v ./reg_docker:/var/lib/registry registry
+3be3a4bff972e7ff149dbdd93b0cb19c7994d9e77141502a2bdefa455fae3759
+
+E:\projects\prj_docker\udemy_docker_desde_0\sec7\cap98 (master -> origin)
+λ docker ps                       
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS          
+    PORTS                    NAMES
+3be3a4bff972        registry            "/entrypoint.sh /etc…"   4 seconds ago       Up 3 seconds    
+    0.0.0.0:5000->5000/tcp   cont1
+```
 
 ## Sección 8: Docker Swarm. Docker en Cluster
 ### [99. Introducción a Docker Swarm](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828351#questions)
