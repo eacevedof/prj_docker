@@ -1860,13 +1860,29 @@ To add a manager to this swarm, run 'docker swarm join-token manager'
 and follow the instructions.
 ```
 - Los nodos del cluster deben de tener una ip fija, configuro la ip de mi tarjeta de red por cable
-
-
-
-
+- `docker info`
+  - Se puede ver en la parte de Sarm
+  ```
+  Swarm: active
+  NodeID: g78vzintlij8vbkyxjgtxt08i
+  Is Manager: true
+  ClusterID: 6yn6kxpzwwyrze87757z6bdh8
+  Managers: 1
+  Nodes: 1
+  Default Address Pool: 10.0.0.0/8
+  SubnetSize: 24
+  ...
+  Root Rotation In Progress: false
+  Node Address: 192.168.1.129
+  Manager Addresses:
+   192.168.1.129:2377
+  ```
+- comprobar comando para unirse al cluster:
+  - `docker swarm join-token`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1093x63/4392b0b716c614018acd33342a9711f7/image.png)
 
 ### [101. Añadir nodos al cluster](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828824#questions)
--
+
 
 ### [102. Trabajar con los nodos del cluster](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828940#questions)
 -
