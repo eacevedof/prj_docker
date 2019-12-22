@@ -1754,6 +1754,8 @@ pr1_wordpress_1   docker-entrypoint.sh apach ...   Up      0.0.0.0:80->80/tcp
 - Vamos a asociar nuestra imagen de ubuntu a nuestro registro uno **reg1**
 - Antes de subir cualquier imagen a un registro hay que etiquetarla.
 - Para etiquetar:
+  - `docker image tag <img-original> <un-repo-name>/<img-nombre>:<tag>`
+  - Como ya cuento con una imagen de ubuntu:latest lo hago con esta
   - `docker tag ubuntu localhost:5000/miubu`
 ```sh
 λ docker images localhost:5000/miubu
@@ -1773,7 +1775,16 @@ localhost:5000/miubu   latest              775349758637        7 weeks ago      
   ```
 - En la vida real debería subirlo a un servidor de la organización
 - Descargar la imágen:
-  - ``
+  - comprobar todo lo que hay en el registro:
+  - Todas las imagenes locales 
+  ```
+  λ docker images localhost:5000/*
+  REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
+  localhost:5000/miubu   latest              775349758637        7 weeks ago         64.2MB
+  ```
+  - Borrando a nivel local
+  - `docker rmi localhost:5000/miubu`
+  - descargando...: `docker pull localhost:5000/miubu`
 
 
 ### [98. Cambiar el almacenamiento del Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11660588#questions)
