@@ -1968,10 +1968,11 @@ Commands:
 
 ## Sección 9: Introducción a Kubernetes
 ### [106. Introducción a Kubernetes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12973616#questions)
-- Es una introducción básica 
+- Es una introducción básica. (Kubernetes = timonel) o **k8s** *keits*
 - Es un orquestador de contenedores. Es similar Swarm pero con mayores posibilidades
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/788x339/f9e985e531d9a3befad6e03bd68181d5/image.png)
-
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/772x293/c90d5e65691c73f4762b61921fad5859/image.png)
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/809x365/27d4c4c5ecae0ac8e780ff763dd399db/image.png)
 ### [107. Arquitectura de Kubernetes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12986974#questions)
 -
 ### [108. Tipos de instalación](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12997456#questions)
