@@ -1975,6 +1975,7 @@ Commands:
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/809x365/27d4c4c5ecae0ac8e780ff763dd399db/image.png)
 ### [107. Arquitectura de Kubernetes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12986974#questions)
 -
+
 ### [108. Tipos de instalación](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12997456#questions)
 -
 ### [109. Requisitos instalación Minikube](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/13007348#questions)
