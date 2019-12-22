@@ -1958,7 +1958,13 @@ Commands:
   - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1114x124/826b68b4ce5852189edc28543e958593/image.png)
 
 ### [105. Borrar un servicio](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12839140#questions)
-- 
+- Bajar el numero de replicas o tareas
+- `nodo3: docker service scale servicio1=3`
+  - Este proceso tarda un rato
+  - ![](https://trello-attachments.s3.amazonaws.com/5c0935ef647dd339b9e7f791/5dc83c983b83fa63f035cf35/c0fd1970e7834bbb63779ca65dd4cafe/image.png)
+- Supongamos que ya no necesito servicio1
+  - `nodo3: docker service rm servicio1`
+  - El comando no es inmediato, tiene que acabar el proceso en cada contenedor.
 
 ## Sección 9: Introducción a Kubernetes
 ### [106. Introducción a Kubernetes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12973616#questions)
