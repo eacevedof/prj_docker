@@ -1819,7 +1819,11 @@ f0084b5985e062b98d1bb5ce93bd9b29ed5f823b8a4a0edf778a98965dfbd4ee
   - Worker - Nodo que se encarga del trabajo y donde se desplegará el contenedor
   - Cada nodo es una maquina virtual
   - Tendremos varios nodos, un numero n de workers
-  
+  - La relación de manager <-> worker es un crossjoin
+- Componente que se encargará de una determinada tarea. Bd, app-web, etc
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/782x444/d1e7c268a301df27739ac9b4017ea663/image.png)
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/792x367/66777dd67636165b2859909e4404e427/image.png)
+
 ### [100. Crear un cluster de Docker Swarm](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828676#questions)
 -
 
