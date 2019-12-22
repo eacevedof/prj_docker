@@ -1825,7 +1825,7 @@ f0084b5985e062b98d1bb5ce93bd9b29ed5f823b8a4a0edf778a98965dfbd4ee
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/792x367/66777dd67636165b2859909e4404e427/image.png)
 
 ### [100. Crear un cluster de Docker Swarm](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828676#questions)
--
+- 
 
 ### [101. Añadir nodos al cluster](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828824#questions)
 -
