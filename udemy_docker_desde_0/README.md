@@ -1808,10 +1808,17 @@ f0084b5985e062b98d1bb5ce93bd9b29ed5f823b8a4a0edf778a98965dfbd4ee
 ```
 - `docker tag ubuntu localhost:5000/ubuntu:prueba`
 - `docker push localhost:5000/ubuntu:prueba`
+- **nota** *subo la imagen en reg_docker para tener la conf de la estructura son unos 25MB*
 
 ## Sección 8: Docker Swarm. Docker en Cluster
 ### [99. Introducción a Docker Swarm](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828351#questions)
--
+- Docker funciona de manera independiente, **stand-alone**
+- Docker swarm usa el concepto de servicio, una servidor web o una bd
+- Un cluster de docker está conformado por:
+  - Managers
+  - Worker - Nodo que se encarga del trabajo y donde se desplegará el contenedor
+  - Cada nodo es una maquina virtual
+  - Tendremos varios nodos, un numero n de workers
 
 ### [100. Crear un cluster de Docker Swarm](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828676#questions)
 -
