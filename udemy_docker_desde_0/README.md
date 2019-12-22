@@ -1894,7 +1894,24 @@ and follow the instructions.
 - ![](https://trello-attachments.s3.amazonaws.com/5c0935ef647dd339b9e7f791/5dc83c983b83fa63f035cf35/1f50d486b560ac30851659a6734abfe4/image.png)
 
 ### [102. Trabajar con los nodos del cluster](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828940#questions)
--
+- `docker swarm nodes`
+```
+Commands:
+  ca          Display and rotate the root CA
+  init        Initialize a swarm
+  join        Join a swarm as a node and/or manager
+  join-token  Manage join tokens
+  leave       Leave the swarm
+  unlock      Unlock swarm
+  unlock-key  Manage the unlock key
+  update      Update the swarm
+```
+- `docker node ls`
+  - ![](https://trello-attachments.s3.amazonaws.com/5c0935ef647dd339b9e7f791/5dc83c983b83fa63f035cf35/417cdd404cb199bf1e7ab61de71223a5/image.png)
+- `docker node inspect --pretty node2`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/814x250/bc13f9d4c65669cb9412568e5a54aa0c/image.png)
+
+
 ### [103. Crear y trabajar con servicios](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12838906#questions)
 -
 ### [104. Escalar un servicio](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12839094#questions)
