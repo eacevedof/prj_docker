@@ -1752,6 +1752,14 @@ pr1_wordpress_1   docker-entrypoint.sh apach ...   Up      0.0.0.0:80->80/tcp
 
 ### [97. Subir y bajar imágenes del registro](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11659550#questions)
 - Vamos a asociar nuestra imagen de ubuntu a nuestro registro uno **reg1**
+- Antes de subir cualquier imagen a un registro hay que etiquetarla.
+- Para etiquetar:
+  - `docker tag ubuntu localhost:5000/miubu`
+```sh
+λ docker images localhost:5000/miubu
+REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
+localhost:5000/miubu   latest              775349758637        7 weeks ago         64.2MB
+```
 
 
 ### [98. Cambiar el almacenamiento del Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11660588#questions)
