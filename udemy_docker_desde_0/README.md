@@ -1771,6 +1771,9 @@ localhost:5000/miubu   latest              775349758637        7 weeks ago      
   cc967c529ced: Pushed
   latest: digest: sha256:some-hash size: 1152  
   ```
+- En la vida real debería subirlo a un servidor de la organización
+- Descargar la imágen:
+  - ``
 
 
 ### [98. Cambiar el almacenamiento del Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11660588#questions)
