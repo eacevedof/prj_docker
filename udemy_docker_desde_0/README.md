@@ -1969,6 +1969,7 @@ Commands:
 ## Sección 9: Introducción a Kubernetes
 ### [106. Introducción a Kubernetes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12973616#questions)
 -
+
 ### [107. Arquitectura de Kubernetes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12986974#questions)
 -
 ### [108. Tipos de instalación](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12997456#questions)
