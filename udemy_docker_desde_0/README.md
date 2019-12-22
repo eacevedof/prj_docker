@@ -1852,11 +1852,12 @@ Commands:
 - crear cluster: `docker warm init`
 - si quiero indicar una ip concreta: `docker swarm init --advertise-addr 192.168.1.129`
 ```
-λ docker swarm init
-Swarm initialized: current node (v55a567dbyfwme5zj3hq4w3yx) is now a manager.
+λ docker swarm init --advertise-addr 192.168.1.129
+Swarm initialized: current node (g78vzintlij8vbkyxjgtxt08i) is now a manager.
 To add a worker to this swarm, run the following command:
-  docker swarm join --token SWMTKN-1-2s7u8m6erm8pdugvf4s0y1cmtzqxqp6558o3zkf90nxq0ni30a-c2z8ky3799tumtzsglbd1h42d 192.168.65.3:2377
-To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+  docker swarm join --token SWMTKN-1-5l1s7487qzpt5h5on81ow2goyl8ikhcnki9pyv85zogwpbk12s-b5m17qdaqqf8h365fo8pwlvrb 192.168.1.129:2377
+To add a manager to this swarm, run 'docker swarm join-token manager' 
+and follow the instructions.
 ```
 - Los nodos del cluster deben de tener una ip fija
 
