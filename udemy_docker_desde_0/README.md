@@ -1712,10 +1712,22 @@ services:
 - **-p** | **--project-name <NAME>** 
   - `docker-compose --project-name this-prj-name`
   - Por defecto el nombre del proyecto equivale al nombre del directorio
-
-
-
-- creamos `compose`
+- creamos `compose-wp-mysql.yml` *copia de cap_89/docker-compose.yml*
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/596x123/e68c45d7a0197a8b95bc7173f9a7c730/image.png)
+- `docker-compose -f compose-wp-mysql.yml -p pr1 up -d`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/773x156/938ecff87f0d1edc9cf4b22d51ab7e7d/image.png)
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/639x72/1db45b4e8ba59674b707b306df764d06/image.png)
+- `docker-compose ps` no mostrará nada, porque busca el proyecto con el nombre del directorio
+- `docker-compose -p pr1 ps` le indicamos el nombre del proyecto
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/759x227/e9fae58505abfadc070981e09013397b/image.png)
+```sh
+λ docker-compose -p pr1 ps                                                                   
+El sistema no puede encontrar la ruta especificada.                                          
+     Name                    Command               State                 Ports               
+-------------------------------------------------------------------------------------------- 
+pr1_dbserver_1    docker-entrypoint.sh mysqld      Up      0.0.0.0:3306->3306/tcp, 33060/tcp 
+pr1_wordpress_1   docker-entrypoint.sh apach ...   Up      0.0.0.0:80->80/tcp                
+```
 
 ## Sección 7: Docker Registry
 ### [95. Introducción a Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11582990#questions)
