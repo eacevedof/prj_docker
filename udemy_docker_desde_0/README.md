@@ -1945,7 +1945,17 @@ Commands:
 - `nodo3: docker service inspect --pretty servicio1`
 
 ### [104. Escalar un servicio](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12839094#questions)
--
+- Escalar es repetir ese servicio varias veces
+- Se pueden replicar muchas veces tantas como quisiera
+- Cada vez que se lanza un servicio dentro de un entorno se le llama tareas
+- `nodo3: docker service scale servicio1=2`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/753x158/0c4539a76816ca06f2a6f8553480136b/image.png)
+- `nodo3: docker service ps servicio1`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1047x209/7c92f8a4fbfdf9f11926ddc14d12f490/image.png)
+- Otro ejemplo, desde el manager se le indica otras 5 replicas de alpine ping docker.com, y este se balancea de forma homogenea entre todos los nodos
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/955x484/7f7a2801c41c2097fa3df2cea0eb8811/image.png)
+- `nodo3: docker service ls`
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1114x124/826b68b4ce5852189edc28543e958593/image.png)
 
 ### [105. Borrar un servicio](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12839140#questions)
 - 
