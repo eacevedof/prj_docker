@@ -1786,9 +1786,9 @@ localhost:5000/miubu   latest              775349758637        7 weeks ago      
   - `docker rmi localhost:5000/miubu`
   - descargando...: `docker pull localhost:5000/miubu`
 
-
 ### [98. Cambiar el almacenamiento del Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11660588#questions)
 - 
+
 ## Sección 8: Docker Swarm. Docker en Cluster
 ### [99. Introducción a Docker Swarm](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828351#questions)
 -
