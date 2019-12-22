@@ -1790,6 +1790,7 @@ localhost:5000/miubu   latest              775349758637        7 weeks ago      
 - Comprobar y modificar el sitio donde tenemos el registro
 - Lo ideal es tener el registro en una unidad de disco que sea rápida
 - Hay que usar la opción -v para modificar el sitio donde almacenaremos las imágenes
+- creo carpeta reg_docker
 ```
 E:\projects\prj_docker\udemy_docker_desde_0\sec7\cap98 (master -> origin)
 λ docker run -d --name cont1 -p 5000:5000 -v ./reg_docker:/var/lib/registry registry
@@ -1802,10 +1803,10 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 3be3a4bff972        registry            "/entrypoint.sh /etc…"   4 seconds ago       Up 3 seconds    
     0.0.0.0:5000->5000/tcp   cont1
 ```
-
 ## Sección 8: Docker Swarm. Docker en Cluster
 ### [99. Introducción a Docker Swarm](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828351#questions)
 -
+
 ### [100. Crear un cluster de Docker Swarm](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828676#questions)
 -
 ### [101. Añadir nodos al cluster](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828824#questions)
