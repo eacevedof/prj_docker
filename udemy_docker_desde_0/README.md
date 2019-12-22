@@ -1735,7 +1735,10 @@ pr1_wordpress_1   docker-entrypoint.sh apach ...   Up      0.0.0.0:80->80/tcp
 ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1022x477/541719b54630b8476c27466ec8513cf6/image.png)
 
 ### [96. Crear un registro de imágenes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11583588#questions)
-- 
+- Hay que crear un contenedor basado en la imágen registry
+- `docker pull registry`
+- ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/645x197/b92ef9cd62383f21b5175acd7765b1f3/image.png)
+
 
 ### [97. Subir y bajar imágenes del registro](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11659550#questions)
 - 
