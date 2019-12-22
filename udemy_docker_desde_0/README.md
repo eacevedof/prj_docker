@@ -1736,8 +1736,19 @@ pr1_wordpress_1   docker-entrypoint.sh apach ...   Up      0.0.0.0:80->80/tcp
 
 ### [96. Crear un registro de imágenes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11583588#questions)
 - Hay que crear un contenedor basado en la imágen registry
+- Podemos tener tantos registros como contenedores podamos crear
+- Estos contenedores se almacenan en un volumen
+- Ahí se alojarían todas las imágenes
 - `docker pull registry`
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/645x197/b92ef9cd62383f21b5175acd7765b1f3/image.png)
+- `docker run -d -p 5000:5000 --name reg1 registry`
+  - se suele usar por convenio el puerto 5000
+  - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1181x140/1a4c5cc01f21542c9cbaa8e96d31bb3e/image.png)
+- Los nombres podrían ser las clasificaciones por departamentos en una empresa.
+- Puedo tener más de un registro pero no se puede usar el mismo puerto
+- `docker run -d -p 5001:5001 --name reg2 registry`
+- En este punto ya tengo dos registros **reg1 y reg2** con lo cual ya puedo subir unas imagenes a uno y otras a otro
+- Es un tema de organización. No es obligatorio crear un registro por grupo de imágenes
 
 
 ### [97. Subir y bajar imágenes del registro](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11659550#questions)
