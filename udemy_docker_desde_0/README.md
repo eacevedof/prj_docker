@@ -1882,7 +1882,16 @@ and follow the instructions.
   - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1093x63/4392b0b716c614018acd33342a9711f7/image.png)
 
 ### [101. Añadir nodos al cluster](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828824#questions)
-- 
+- **Nota!** para esta sección se necesita varias maquinas virtuales :(
+- En el ejemplo son 3 nodos. Se ha conectado por ssh
+- Usare las pantalla del curso
+- Arrancar el cluster: `nodo1: docker swarm init --advertise-addr 192.168.80.217`
+  - Ya tenemos el cluster funcionando (de momento solo con el maestro)
+- Arrancar esclavos:
+- `nodo2: docker swarm join --token SWMTKN-hash 192.168.80.217`
+- `nodo3: docker swarm join --token SWMTKN-hash 192.168.80.217`
+- `docker info`
+- ![](https://trello-attachments.s3.amazonaws.com/5c0935ef647dd339b9e7f791/5dc83c983b83fa63f035cf35/1f50d486b560ac30851659a6734abfe4/image.png)
 
 ### [102. Trabajar con los nodos del cluster](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828940#questions)
 -
