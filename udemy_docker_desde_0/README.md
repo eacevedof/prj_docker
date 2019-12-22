@@ -1910,7 +1910,23 @@ Commands:
   - ![](https://trello-attachments.s3.amazonaws.com/5c0935ef647dd339b9e7f791/5dc83c983b83fa63f035cf35/417cdd404cb199bf1e7ab61de71223a5/image.png)
 - `docker node inspect --pretty node2`
   - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/814x250/bc13f9d4c65669cb9412568e5a54aa0c/image.png)
-
+- Podemos tener varios manager de respaldo. 
+- Vamos a promover el nodo3 como manager como **Reachable**
+  - `docker node promote nodo3`
+  - ![](https://trello-attachments.s3.amazonaws.com/5c0935ef647dd339b9e7f791/5dc83c983b83fa63f035cf35/2b1a88c69ba7956eb6b52989695394bf/image.png)
+- Degradar de manager a worker
+  - `docker demote nodo1`
+  - `nodo1: docker node ls`  esto ahora daría error pq el comando docker node ls solo se puede ejecutar en managers
+- Ahora el **leader** es el nodo3
+  - ![](https://trello-attachments.s3.amazonaws.com/5c0935ef647dd339b9e7f791/5dc83c983b83fa63f035cf35/5fdc83d57fc2f45e8a3fa1c673f887cc/image.png)
+- Quitar un nodo del cluster `nodo1: docker swarm leave`
+  - ![](https://trello-attachments.s3.amazonaws.com/5c0935ef647dd339b9e7f791/5dc83c983b83fa63f035cf35/49349bb0e4c33b951d2440edbef00ae5/image.png)
+- El hecho de quitar un nodo del cluster hace que se elimine, para eso se usa:
+  - `nodo3: docker node rm nodo1`
+  - ![](https://trello-attachments.s3.amazonaws.com/5c0935ef647dd339b9e7f791/5dc83c983b83fa63f035cf35/db00170187ec8d74255f799c47e00c7b/image.png)
+- Lo puedo volver a añadir:
+  - `nodo3: docker swarm join-token worker` para saber el comando
+  - En el nodo1: `docker swarm join --token ....`
 
 ### [103. Crear y trabajar con servicios](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12838906#questions)
 -
