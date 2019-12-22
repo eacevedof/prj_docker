@@ -1751,7 +1751,8 @@ pr1_wordpress_1   docker-entrypoint.sh apach ...   Up      0.0.0.0:80->80/tcp
 - Es un tema de organización. No es obligatorio crear un registro por grupo de imágenes
 
 ### [97. Subir y bajar imágenes del registro](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11659550#questions)
-- 
+- Vamos a asociar nuestra imagen de ubuntu a nuestro registro uno **reg1**
+
 
 ### [98. Cambiar el almacenamiento del Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11660588#questions)
 - 
