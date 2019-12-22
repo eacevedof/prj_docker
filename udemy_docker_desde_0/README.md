@@ -1760,6 +1760,17 @@ pr1_wordpress_1   docker-entrypoint.sh apach ...   Up      0.0.0.0:80->80/tcp
 REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
 localhost:5000/miubu   latest              775349758637        7 weeks ago         64.2MB
 ```
+- Subir la imágen:
+  - `docker push localhost:5000/miubu`
+  ```
+  λ docker push localhost:5000/miubu
+  The push refers to repository [localhost:5000/miubu]
+  e0b3afb09dc3: Pushed
+  6c01b5a53aac: Pushed
+  2c6ac8e5063e: Pushed
+  cc967c529ced: Pushed
+  latest: digest: sha256:some-hash size: 1152  
+  ```
 
 
 ### [98. Cambiar el almacenamiento del Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11660588#questions)
