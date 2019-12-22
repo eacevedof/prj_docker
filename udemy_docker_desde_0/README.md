@@ -1849,6 +1849,7 @@ Commands:
   scale       Scale one or multiple replicated services
   update      Update a service
 ```
+- crear cluster: `docker warm init`
 
 ### [101. Añadir nodos al cluster](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828824#questions)
 -
