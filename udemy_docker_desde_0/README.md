@@ -1750,9 +1750,9 @@ pr1_wordpress_1   docker-entrypoint.sh apach ...   Up      0.0.0.0:80->80/tcp
 - En este punto ya tengo dos registros **reg1 y reg2** con lo cual ya puedo subir unas imagenes a uno y otras a otro
 - Es un tema de organización. No es obligatorio crear un registro por grupo de imágenes
 
-
 ### [97. Subir y bajar imágenes del registro](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11659550#questions)
 - 
+
 ### [98. Cambiar el almacenamiento del Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11660588#questions)
 - 
 ## Sección 8: Docker Swarm. Docker en Cluster
