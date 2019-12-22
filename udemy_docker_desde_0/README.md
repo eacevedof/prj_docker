@@ -1736,6 +1736,7 @@ pr1_wordpress_1   docker-entrypoint.sh apach ...   Up      0.0.0.0:80->80/tcp
 
 ### [96. Crear un registro de imágenes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11583588#questions)
 - 
+
 ### [97. Subir y bajar imágenes del registro](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11659550#questions)
 - 
 ### [98. Cambiar el almacenamiento del Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11660588#questions)
