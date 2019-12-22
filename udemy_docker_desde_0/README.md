@@ -1819,9 +1819,10 @@ f0084b5985e062b98d1bb5ce93bd9b29ed5f823b8a4a0edf778a98965dfbd4ee
   - Worker - Nodo que se encarga del trabajo y donde se desplegará el contenedor
   - Cada nodo es una maquina virtual
   - Tendremos varios nodos, un numero n de workers
-
+  
 ### [100. Crear un cluster de Docker Swarm](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828676#questions)
 -
+
 ### [101. Añadir nodos al cluster](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828824#questions)
 -
 ### [102. Trabajar con los nodos del cluster](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12828940#questions)
