@@ -1930,6 +1930,7 @@ Commands:
 
 ### [103. Crear y trabajar con servicios](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12838906#questions)
 -
+
 ### [104. Escalar un servicio](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12839094#questions)
 -
 ### [105. Borrar un servicio](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12839140#questions)
