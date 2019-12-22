@@ -1700,7 +1700,24 @@ services:
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/669x260/2fcf87d05eb4e7a9bd913c7a3fbe08f4/image.png)
 
 ### [94. Algunas opciones interesantes en Dockerfile](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/9876792#questions)
-- 
+- docker-compose opciones útiles:
+  ```ssh
+  Options:
+  -f, --file FILE             Specify an alternate compose file
+                              (default: docker-compose.yml)
+  -p, --project-name NAME     Specify an alternate project name
+                              (default: directory name)
+  ```
+- **-f**
+  - `docker-compose -f any-file-name.yml`
+  - Que el fichero no se tenga que llamar docker-compose.yml
+- **-p** | **--project-name <NAME>** 
+  - `docker-compose --project-name this-prj-name`
+  - Por defecto el nombre del proyecto equivale al nombre del directorio
+
+
+
+- creamos `compose`
 
 ## Sección 7: Docker Registry
 ### [95. Introducción a Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11582990#questions)
