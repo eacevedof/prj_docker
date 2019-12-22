@@ -1703,12 +1703,10 @@ services:
 - docker-compose opciones útiles:
   ```ssh
   Options:
-  -f, --file FILE             Specify an alternate compose file
-                              (default: docker-compose.yml)
-  -p, --project-name NAME     Specify an alternate project name
-                              (default: directory name)
+  -f, --file FILE          Specify an alternate compose file (default: docker-compose.yml)
+  -p, --project-name NAME  Specify an alternate project name (default: directory name)
   ```
-- **-f**
+- **-f** | **--file FILE**
   - `docker-compose -f any-file-name.yml`
   - Que el fichero no se tenga que llamar docker-compose.yml
 - **-p** | **--project-name <NAME>** 
