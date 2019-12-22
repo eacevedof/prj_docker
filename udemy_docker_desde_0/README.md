@@ -1731,7 +1731,8 @@ pr1_wordpress_1   docker-entrypoint.sh apach ...   Up      0.0.0.0:80->80/tcp
 
 ## Sección 7: Docker Registry
 ### [95. Introducción a Docker Registry](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11582990#questions)
-- 
+- Docker Registry es como un docker hub privado
+![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/1022x477/541719b54630b8476c27466ec8513cf6/image.png)
 
 ### [96. Crear un registro de imágenes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/11583588#questions)
 - 
