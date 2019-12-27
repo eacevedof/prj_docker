@@ -1714,7 +1714,7 @@ services:
   - Por defecto el nombre del proyecto equivale al nombre del directorio
 - creamos `compose-wp-mysql.yml` *copia de cap_89/docker-compose.yml*
   - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/596x123/e68c45d7a0197a8b95bc7173f9a7c730/image.png)
-- `docker-compose -f compose-wp-mysql.yml -p pr1 up -d`
+- `docker-compose -f compose-wp-mysql.yml -p pr1 up -d` *-d ejecuta en background*
   - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/773x156/938ecff87f0d1edc9cf4b22d51ab7e7d/image.png)
   - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/639x72/1db45b4e8ba59674b707b306df764d06/image.png)
 - `docker-compose ps` no mostrará nada, porque busca el proyecto con el nombre del directorio
