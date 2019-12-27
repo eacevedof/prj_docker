@@ -1974,7 +1974,15 @@ Commands:
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/772x293/c90d5e65691c73f4762b61921fad5859/image.png)
 - ![](https://trello-attachments.s3.amazonaws.com/5dc83c983b83fa63f035cf35/809x365/27d4c4c5ecae0ac8e780ff763dd399db/image.png)
 ### [107. Arquitectura de Kubernetes](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12986974#questions)
--
+- No solo trabaja con docker sino otras arquitecturas
+- Necesitaremos un master node
+  - Dentro de este un scheduler se planifican los procesos con los que estamos trabajando
+  - Controller comprueba que los estados esten funcionando
+  - Api-server: son todas las tareas de tipo administración que van a realizarse dentro del cluster
+  - TECD almacen clave:valor, mantiene el estado del cluster dentro de esta bd, puede ser interno o externo.
+- Nodo:
+  - Container runtime: 
+  - 
 
 ### [108. Tipos de instalación](https://www.udemy.com/course/aprende-docker-desde-cero/learn/lecture/12997456#questions)
 -
