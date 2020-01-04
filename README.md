@@ -78,3 +78,6 @@ $
     - Y luego al seleccionar Repositories en el menu superior ya me aparece.
     ```
     - [https://hub.docker.com/repository/create](https://hub.docker.com/repository/create)
+- Errores
+  - standard_init_linux.go:211: exec user process caused "no such file
+  - I open Shell Script file (entrypoint.sh) with VS Code, Change CRLF to LF, save it and then its work.
