@@ -1,5 +1,7 @@
 # prj_docker
 
+![](https://trello-attachments.s3.amazonaws.com/5c0935ef647dd339b9e7f791/5dc83c983b83fa63f035cf35/c96cf874041f4996e446b5242529e3b9/docker-cheatsheet.jpg)
+
 ## Indice
 - [Docker para desarrolladores - Jesus Matíz](https://github.com/eacevedof/prj_docker/tree/master/jesus_matiz_docker_para_dev#youtube-playlist---presentaci%C3%B3n-del-curso-docker-para-desarrolladores---jes%C3%BAs-matiz)
 - [Laravel + MySql con Docker Despliegue a Produccion - Jesus Matíz](https://github.com/eacevedof/prj_docker/tree/master/jesus_matiz_laravel#youtube---laravel--mysql-con-docker-despliegue-a-produccion---jesus-mat%C3%ADz)
