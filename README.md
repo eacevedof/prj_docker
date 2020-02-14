@@ -8,6 +8,9 @@
 - [Curso Docker - Escuela It](https://github.com/eacevedof/prj_docker/tree/master/escuela_it#youtube---curso-docker)
 - [Docker - Jesus Conde](https://github.com/eacevedof/prj_docker/tree/master/jesus_conde#youtube-playlist---curso-docker-jesus-conde)
 
+## Videografia
+- [Youtube - Should You Use Kubernetes and Docker In Your Next Project?](https://www.youtube.com/watch?v=u8dW8DrcSmo)
+
 ## Terminales:
 - ![cmder vs mingw64](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/1090x576/be1d634911b74db9d7039ba4cf7c9113/image.png)
 - ![cmder: docker run -it ubuntu](https://trello-attachments.s3.amazonaws.com/5dea358db633626932c2649a/657x184/a4e967fcbe8401bde66a60d3a2fc1e24/image.png)
